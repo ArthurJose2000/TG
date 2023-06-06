@@ -1,0 +1,57 @@
+The purpose of this graduation work aims to discuss the main maze exploration algorithms and then propose a method where multi-agents must find the maze solution without any type of communication, only working with probability distributions to guide their behaviors. The main challenge of this research is to find a distributed exploration approach with total communication restriction since an agent's partial knowledge cannot be shared with another agent and, at the same time, a single agent must avoid repeating a branch of another agent. The proposed maze structure abstraction is a traditional regular grid that can be generalized into graphs.
+
+This report is the initial part of the bachelor's thesis, and this chapter intends to introduce the general concept of the related thesis and present the motivation (Section \ref{section_intro_motivation}) and the related work (Section \ref{section_intro_relatedwork}).
+
+\section{Motivation}
+\label{section_intro_motivation}
+Graph exploration has been the target of studies since Leonhard Euler proved that Seven Bridges of Königsberg \cite{ShieldsR2012} has no solution. It has been researched not only in academia but also in the industry due to several practical applications, like airline scheduling, planning path on maps, search engine algorithms, social media marketing, Internet routing protocols, and robotics.
+
+Specifically in robotics, graph exploration can be used to explore a maze with a single agent through a bunch of traditional algorithms: random mouse, wall follower, Trémaux, etc. And it can be useful to guide many real-life problems such as search in nuclear plant disasters, burning buildings, and extraterrestrial environments. In these previous examples, the multi-agent exploration is more interesting than the single-agent approach since it can speed up the exploration. Recent studies have explored multi-agent maze exploration algorithms as seen in the Multi-Agent Maze Exploration paper \cite{KivelevitchCohen2010}, where authors proposed a Tarry's algorithm generalization. It is important to emphasize that maze-solving algorithms consider that the structure is unknown, and then traditional search algorithms, such as Dijkstra and A*, cannot be used to solve the maze.
+
+Multi-agent maze exploration approach is based on internal communication between agents where each agent knows about visited cells by another agent. It avoids a second exploration in a useless path and thus it decreases computational costs. However, there are some real situations where communication is limited or impossible, such as deep sea exploration, search in large wall structures, or search with low energy-based autonomous agents. 
+
+REMOVER?REMOVER?REMOVER? This incommunicable approach was not found in the literature despite it may have real applications and may guide search plans in real-world problems.
+
+\section{Related work}
+\label{section_intro_relatedwork}
+RELATED WORK
+
+\section{Exemplo}
+Manipuladores mecânicos \cite{Sbornian2002} vêm sendo utilizados há várias décadas para a automação de tarefas
+repetitivas em ambientes industriais, ambientes estes de fácil acesso tanto em termos físicos quanto em termos de baixo
+risco à saúde humana. Nos últimos anos, verifica-se uma utilização cada vez maior de manipuladores em
+ambientes de difícil acesso ou inóspitos, como no interior de usinas nucleares, no fundo dos oceanos e no
+espaço. A localização dos manipuladores nesta nova gama de aplicações faz com que sua manutenção,
+Dpós uma falha mecânica ou elétrica, seja custosa e demorada, portanto estes mecanismos requerem sofisticadas
+metodologias de controle tolerante a falhas \cite{ITALUS2004}.
+
+Após a ocorrência de uma falha em um de seus atuadores, o manipulador torna-se um sistema subatuado. Um sistema também pode se tornar subatuado quando é projetado  dessa maneira, ou quando o operador deliberadamente mantém um ou mais atuadores disponíveis inoperantes durante uma tarefa. Reduzindo o número de atuadores sem reduzir o número de graus de
+liberdade e ajustando-se o sistema de controle adequado, pode-se obter um mecanismo cujo consumo de energia é menor, mas cujas propriedades são mantidas \cite{Arystides1994}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap1/cupim}
+\caption{Proibido estacionar cupins. Legenda grande, com o objetivo de demonstrar a indentação na lista de figuras.}
+\label{cupim}
+\end{figure}
+
+Controle do manipulador após uma falha é fundamental do ponto de vista de operação, principalmente nos casos descritos acima, em que a localização do manipulador impede sua manutenção de forma fácil. Recentemente tem havido a combinação
+de algorítmos de detecção e isolação de falhas com os de controle pós-falha em um método unificado. Uma extensão desse trabalho, que vê o problema de controle tolerante a falhas através de uma perspectiva integrada, foi proposta por
+{marcel4}. Os autores apresentam um ambiente híbrido consistindo de três unidades básicas que garantem a compleição de tarefas na presença de qualquer número de juntas falhas (Figura \ref{cupim}). A primeira unidade é um esquema de detecção
+e isolação de falhas que continuamente monitora o manipulador para detectar e identificar possíveis falhas nas juntas. A segunda unidade é responsável pela reconfiguração do controle. A terceira unidade é composta de algorítmos de
+controle apropriados para cada tipo de configuração do robô, baseado na informação da unidade de reconfiguração \cite{COFFEE2000}.
+
+No presente trabalho nos concentramos na unidade de algorítmo de controle, e mais especificamente no problema de controle da posição  angular de uma junta falha para qualquer posição desejada de uma maneira subótima, quando dispomos
+de redundância de atuação para a realização dessa tarefa. O termo subótimo se deve ao fato de que não há garantias de otimalidade em vista das não-linearidades inerentes ao sistema e de outros fatores que serão abordados nos capítulos posteriores. Ao longo do texto, para simplificação, usaremos tanto o termo subótimo como ótimo para nos referirmos à metodologia utilizada.
+
+Segundo, o critério de otimização utilizado será o acoplamento entre as juntas do
+manipulador e neste caso, temos um sistema redundante quando ocorre falha de uma das juntas do manipulador de três juntas, e seu posicionamento é controlado pelas duas restantes. Nossa solução para o problema é baseada na formulação
+de redundância local, extensivamente estudada no contexto de cinemática inversa ({nakamura}). A principal contribuição deste trabalho é a extensão deste método usando as equações dinâmicas de manipuladores subatuados e a utilização do índice de acoplamento como um critério para a minimização do torque e da energia gasta pelo sistema durante o controle das juntas falhas.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{Cap1/cupimconcreto}
+\caption{Exemplo real de cupim frente ao seu dilema.}
+\label{FDII}
+\end{figure}
+

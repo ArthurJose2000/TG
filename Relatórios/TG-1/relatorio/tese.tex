@@ -1,0 +1,225 @@
+%%% Exemplo de utiliza��o da classe ITA
+%%%
+%%%   por        F�bio Fagundes Silveira   -  ffs [at] ita [dot] br
+%%%              Benedito C. O. Maciel     -  bcmaciel [at] ita [dot] br
+%%%              Giovani Volnei Meinertz   -  giovani [at] ita [dot] br
+%%%    	         Hudson Alberto Bode       -  bode [at] ita [dot]br
+%%%    	         P. I. Braga de Queiroz    -  pi [at] ita [dot] br
+%%%    	         Jorge A. B. Gripp         -  gripp [at] ita [dot] br
+%%%    	         Juliano Monte-Mor         -  jamontemor [at] yahoo [dot] com [dot] br
+%%%    	         Tarcisio A. B. Gripp      -  tarcisio.gripp [at] gmail [dot] com
+%%%    	         
+%%%
+%%%  IMPORTANTE: O texto contido neste exemplo nao significa absolutamente nada.  :-)
+%%%              O intuito aqui eh demonstrar os comandos criados na classe e suas
+%%%              respectivas utilizacoes.
+%%%
+%%%  Tese.tex  2016-08-25
+%%%  $HeadURL: http://www.apgita.org.br/apgita/teses-e-latex.php $
+%%%
+%%% ITALUS
+%%% Instituto Tecnol�gico de Aeron�utica --- ITA, Sao Jose dos Campos, Brasil
+%%%                   http://groups.yahoo.com/group/italus/
+%%% Discussion list: italus {at} yahoogroups.com
+%%%
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Para alterar o TIPO DE DOCUMENTO, preencher a linha abaixo \documentclass[?]{?}
+%   \documentclass[tg]{ita}			= Trabalho de Graduacao
+%   \documentclass[tgfem]{ita}	= Para Engenheiras
+%   								msc     		= Dissertacao de Mestrado
+%   								mscfem   		= Para Mestras
+%   								dsc      		= Tese de Doutorado
+%   								dscfem   		= Para Doutoras
+%   								quali    		= Exame de Qualificacao
+%   								qualifem 		= Exame de Qualificacao para Doutoras
+% Para 'Draft Version'/'Versao Preliminar' com data no rodape, adicionar 'dv':
+%   \documentclass[dsc, dv]{ita} 
+% Para trabalhos em Ingl�s, adicionar 'eng':
+%   \documentclass[dsc, eng]{ita}
+%		\documentclass[dsc, eng, dv]{ita}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\documentclass[tg, eng]{ita}    % ITA.cls based on standard book.cls 
+% Quando alterar a classe, por exemplo de [msc] para [msc, eng]) rode mais uma vez o bot�o BUILD OUTPUT caso haja erro
+\usepackage{ae}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{float}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Espa�amento padr�o de todo o documento
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\onehalfspacing
+
+%singlespacing Para um espa�amento simples
+%onehalfspacing Para um espa�amento de 1,5
+%doublespacing Para um espa�amento duplo
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Identificacoes (se o trabalho for em ingl�s, insira os dados em ingl�s)
+% Para entradas abreviadas de Professora (Profa.) em portugu�s escreva: Prof$^\textnormal{a}$.
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\course{Computer Engineering} % Programa de PG ou Curso de Gradua��o
+\area{Sistemas Aeroespaciais e Mecatr�nica} % �rea de concentra��o na PG (N�o utilizado no caso de TG)
+
+% Autor do trabalho: Nome Sobrenome
+\authorgender{masc}                     %sexo: masc ou fem
+\author{Arthur Jos\'{e}}{de Sousa Rodrigues}
+\itaauthoraddress{Rua H8B 226}{12.228-461}{S\'{a}o Jos\'{e} dos Campos--SP}
+
+% Titulo da Tese/Disserta��o
+\title{Multi-agent graph exploration without communication}
+
+% Orientador
+\advisorgender{masc}                    % masc ou fem
+\advisor{Prof.~Dr.}{Luiz Gustavo Bizarro Mirisola}{ITA}
+
+% Coorientador (Caso n�o haja coorientador, colocar ambas as vari�veis \coadvisorgender e \coadvisor comentadas, com um % na frente)
+\coadvisorgender{masc}									% masc ou fem
+%\coadvisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Doralice Serra}{OVNI}
+\coadvisor{Prof.~Dr.}{Vitor Venceslau Curtis}{ITA}
+
+% Pr�-reitor da P�s-gradua��o
+%\bossgender{masc}												% masc ou fem
+%\boss{Prof.~Dr.}{John von Neumann}
+
+%Coordenador do curso no caso de TG
+\bosscoursegender{masc}									% masc ou fem
+\bosscourse{Prof.~Dr.}{Marcos Ricardo Omena de Albuquerque M\'{a}ximo}
+
+% Palavras-Chaves informadas pela Biblioteca -> utilizada na CIP
+\kwcip{Cupim}
+\kwcip{Dilema}
+\kwcip{Constru��o}
+
+% membros da banca examinadora
+
+\examiner{Prof. Dr.}{Luiz Gustavo Bizarro Mirisola}{Presidente}{ITA}
+\examiner{Prof. Dr.}{Vitor Venceslau Curtis}{}{ITA}
+\examiner{Prof. Dr.}{Nei Yoshihiro Soma}{}{ITA}
+%\examiner{Prof. Dr.}{Donald Duck}{}{DYSNEY}
+%\examiner{Prof. Dr.}{Mickey Mouse}{}{DISNEY}
+
+% Data da defesa (m�s em mai�sculo, se trabalho em ingl�s, e min�sculo se trabalho em portugu�s) 
+\date{21}{May}{2023}
+
+% N�mero CDU - (somente para TG)
+\cdu{621.38}
+
+% Glossario
+\makeglossary
+\frontmatter
+
+\begin{document}
+% Folha de Rosto e Capa para o caso do TG
+\maketitle
+
+% Dedicatoria: Nao esqueca essa secao  ... :-)
+\begin{itadedication}
+Aos amigos da Gradua��o e P�s-Gradua��o do ITA por motivarem tanto a cria��o deste template pelo F�bio Fagundes Silveira quanto por motivarem a mim e outras pessoas a atualizarem e aprimorarem este excelente trabalho.
+\end{itadedication}
+
+% Agradecimentos
+\begin{itathanks}
+\input{Cap0/agradecimentos}
+\end{itathanks}
+
+% Ep�grafe
+\thispagestyle{empty}
+\ifhyperref\pdfbookmark[0]{\nameepigraphe}{epigrafe}\fi
+\begin{flushright}
+\begin{spacing}{1}
+\mbox{}\vfill
+{\sffamily\itshape
+``If I have seen farther than others,\\
+it is because I stood on the shoulders of giants.''\\}
+--- \textsc{Sir~Isaac Newton}
+\end{spacing}
+\end{flushright}
+
+% Resumo
+\begin{abstract}
+\noindent
+\input{Cap0/resumo}
+\end{abstract}
+
+% Abstract
+\begin{englishabstract}
+\noindent
+\input{Cap0/abstract}
+\end{englishabstract}
+
+% Lista de figuras
+\listoffigures %opcional
+
+% Lista de tabelas
+\listoftables %opcional
+
+% Lista de abreviaturas
+\listofabbreviations
+\input{Cap0/listaabreviaturas} %opcional
+
+% Lista de simbolos
+\listofsymbols
+\input{Cap0/listasimbolos} %opcional
+
+% Sumario
+\tableofcontents
+
+\mainmatter
+% Os capitulos comecam aqui
+
+\chapter{Introduction}
+\input{Cap1/cap1}
+
+\chapter{Modelagem Din�mica de Cupins Cibern�ticos}
+\input{Cap2/cap2}
+
+\chapter{Controle Robusto de Concretos Ca�ticos}
+\input{Cap3/cap3}
+
+\chapter{Conclus�o}
+\input{Cap4/cap4}
+
+% REFERENCIAS BIBLIOGRAFICAS
+\renewcommand\bibname{\itareferencesnamebabel} %renomear t�tulo do cap�tulo refer�ncias
+\bibliography{Referencias/referencias}
+
+% Apendices
+\appendix
+\chapter{T�picos de Dilema Linear} %opcional
+\input{ApeA/apendiceA}
+
+% Anexos
+\annex
+\chapter{Exemplo de um Primeiro Anexo} %opcional
+\input{AneA/anexoA}
+
+% Glossario
+%\itaglossary
+%\printglossary
+
+% Folha de Registro do Documento
+% Valores dos campos do formulario
+\FRDitadata{25 de mar�o de 2015}
+\FRDitadocnro{DCTA/ITA/DM-018/2015} %(o n�mero de registro voc� solicita a biblioteca)
+\FRDitaorgaointerno{Instituto Tecnol�gico de Aeron�utica -- ITA}
+%Exemplo no caso de p�s-gradua��o: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
+\FRDitapalavrasautor{Cupim; Cimento; Estruturas}
+\FRDitapalavrasresult{Cupim; Dilema; Constru��o}
+%Exemplo no caso de gradua��o (TG):
+%\FRDitapalavraapresentacao{Trabalho de Gradua��o, ITA, S�o Jos� dos Campos, 2015. \NumPenultimaPagina\ p�ginas.}
+%Exemplo no caso de p�s-gradua��o (msc, dsc):
+\FRDitapalavraapresentacao{ITA, S�o Jos� dos Campos. Curso de Mestrado. Programa de P�s-Gradua��o em Engenharia Aeron�utica e Mec�nica. �rea de Sistemas Aeroespaciais e Mecatr�nica. Orientador: Prof.~Dr. Adalberto Santos Dupont. Coorientadora: Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$. Doralice Serra. Defesa em 05/03/2015. Publicada em 25/03/2015.}
+\FRDitaresumo{\input{Cap0/resumo}}
+%  Primeiro Parametro: Nacional ou Internacional -- N/I
+%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+\FRDitaOpcoes{N}{O}
+% Cria o formulario
+\itaFRD
+
+\end{document}
+% Fim do Documento. O massacre acabou!!! :-)
