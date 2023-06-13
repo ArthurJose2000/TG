@@ -10,11 +10,15 @@ Specifically in robotics, graph exploration can be used to explore a maze with a
 
 Traditional multi-agent maze exploration approaches is based on internal communication between agents, where each agent knows about visited cells by another agent. It avoids a second exploration in a useless path and thus it decreases computational costs. However, there are some real situations where communication is limited or impossible, such as deep sea exploration, search in large wall structures, or search with low energy-based autonomous agents. 
 
-However, the incommunicable approach between agents have not been concretely found in the literature despite it may have real applications and may guide search plans in real-world problems. In order to explore it, this work presents some ways to achieve the maze solution based on agents without communication, that might be generalized to graph exploration algorithms.
+However, the incommunicable approach between agents have not been concretely found in the literature despite it may have real applications and may guide search plans in real-world problems. In order to explore it, this work presents some ways to achieve the solution of a maze based on agents without communication, that might be generalized to graph exploration algorithms.
 
 \section{Related work}
 \label{section_intro_relatedwork}
-RELATED WORK
+Multi-agent cooperative system approaches are common in literature, especially when it comes from robotics researches. In the context of communicable agents, mainly in robotics, this chapter presents some related works.
+
+Matari\'c (1995) established common properties across different scenarios of mobile multi-agent interactions, such as dispersion - ``the ability of a group of agents to spread out in order to establish and maintain some minimum interagent distance'' -, aggregation - ``the ability of a group of agents to gather in order to establish and maintain some maximum interagent distance'' -, homing - ``the ability of an agent to find a particular region or location'' -, etc. The author proposes a synthetic structure in order to abstract different types of interagent basis behaviors.
+
+Based around maze-solving algorithms, Kivelevitch and Cohen (2010) proposed a generalization of Tarry's algorithm, but the new approach is that all visited cells of the maze are known by each agent, since each agent shares its knowledge with all the others. In that sense, each one holds an dynamic map of the maze excluding redundant information, allowing information sharing. The authors presents in the article the performance of the proposed solution, where a group of virtual coordinate agents is required to find the goal without an a-priori knowledge of the maze, so-called ``maze exploration''.
 
 \section{Definitions}
 \label{section_intro_definitions}
