@@ -18,17 +18,42 @@ Multi-agent cooperative system approaches are common in literature, especially w
 
 \citen{MataricMJ1995} established common properties across different scenarios of mobile multi-agent interactions, such as dispersion - ``the ability of a group of agents to spread out in order to establish and maintain some minimum interagent distance'' -, aggregation - ``the ability of a group of agents to gather in order to establish and maintain some maximum interagent distance'' -, homing - ``the ability of an agent to find a particular region or location'' -, etc. The author proposes a synthetic structure in order to abstract different types of interagent basis behaviors.
 
+\citen{Burgard2005} pointed out that an exploration group of robots takes several advantages over single agent exploration, despite a coordinating group might introduce redundancy. The authors present an algorithm to efficiently explore an environment by mobile and autonomous robots within a communication range. 
+
 \citen{Sadik2010} presents, as seen in the title of the paper, a comprehensive and comparative study of maze-solving algorithms techniques by implementing graph theory. The research is delimited in the ``Micromouse competition'' context, which is a famous maze competition that has been performed worldwide since late 1970s. The authors compared maze-solving methods based on graph theory algorithms, such as DFS (Depth First Search) and BFS (Breath First Search) flood-fill, to common algorithms in the ``Micromouse'' context, such as Wall Follower. They concluded that, despite graph theory algorithms demands higher computational complexity, they are more proficient compared to non-graph theory methods.
 
 Based around maze-solving algorithms, \citen{KivelevitchCohen2010} proposed a generalization of Tarry's algorithm, but the new approach is that all visited cells of the maze are known by each agent, since each agent shares its knowledge with all the others. In that sense, each one holds an dynamic map of the maze excluding redundant information, allowing information sharing. The authors presents in the article the performance of the proposed solution, where a group of virtual coordinate agents is required to find the goal without an a-priori knowledge of the maze, so-called ``maze exploration''.
 
-\citen{Beisel2014} \textit{Distributed Maze Solving By Cooperative Robotic Platforms}
-
-Mainly considering these previous references, the next section intends to define common terms about maze-solving algorithms and graph theory. Furthermore, the next section also intends to clarify the approach domain of this work.
+\citen{Beisel2014}, similarly to aforementioned, worked in simulation and mathematical analysis for strategies related to cooperative autonomous robots, that can share messages with each other. The author concluded that a cooperative approach might result in significant performance improvements.
 
 \section{Definitions}
 \label{section_intro_definitions}
-DEFINITIONS
+Mainly considering these previous references, this chapter intends to define common terms about maze-solving algorithms, graph theory, and mathematical tools that were useful to abstract the proposed solution. Furthermore, it intends to clarify the approach domain of this work.
+
+\subsection{Graph}
+In the context of computer science, a graph is a abstract data type that can be represented topologically as a interconnected node network. Several computational problems are discussed in terms of graphs.
+
+
+\subsection{Tree}
+In the context of computer science, a tree is also a abstract data type, which can be represented topologically as a hierarchical structure of nodes. In fact, a tree is a subset of graph theory, therefore a tree is a graph under a different perspective.
+
+
+\subsection{Maze}
+This report define a maze at the same perspective presented in \citen{KivelevitchCohen2010}. A maze is a n-dimensional gridded space of any size, usually rectangular. The gridded space is composed by a set of cells, while a cell is the elementary item of a maze, defined as a delimited n-dimensional space. Cells might be connected or not connected to another adjacent cell, separated by a ``wall'' in the latter case. Without losing generality, as will be presented in Section \ref{section_models_maze}, this work considered a maze, for simulation purposes, as a two-dimensional gridded space composed by two-dimensional bounded cells.
+
+Thus, from the above definition, a graph or a tree are good candidates to abstract a maze, which might be described as a interrelated nodes (cells) network.
+
+\subsection{Agent}
+As defined in \citen{KivelevitchCohen2010}, an agent is an autonomous entity that can traverse the maze obeying the interrelation of the cells.
+
+In a maze context, a multi-agent approach describes the coordinating behavior of several autonomous agents.
+
+
+\subsection{Maze-solving algorithms}
+
+
+\subsection{Mixed Radix}
+
 
 %\section{Exemplo}
 %\begin{figure}[ht!]

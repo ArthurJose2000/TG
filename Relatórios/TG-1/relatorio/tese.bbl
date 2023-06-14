@@ -9,6 +9,14 @@
 \abntrefinfo{Beisel}{BEISEL}{2014}
 {Beisel, B. W. (2014). \textbf{Distributed Maze Solving By Cooperative Robotic Platforms.} University of Maryland, Department of Electrical and Computer Engineering.}
 
+\bibitem[Cormen et al. 2022]{Cormen2022}
+\abntrefinfo{Cormen et al.}{CORMEN et al.}{2022}
+{Cormen, Thomas H., Leiserson, Charles E., Rivest, Ronald L. and Stein, Clifford. \textbf{Introduction to Algorithms.} 4th : The MIT Press, 2022.}
+
+\bibitem[Burgard et al. 2010]{Burgard2005}
+\abntrefinfo{Burgard et al.}{BURGARD et al.}{2005}
+{Burgard, W., Moors, M., Stachniss, C., & Schneider, F. E. (2005). \textbf{Coordinated multi-robot exploration.} IEEE Transactions on Robotics, 21(3), 376-386. doi:10.1109/tro.2004.839232} 
+
 \bibitem[Kivelevitch \& Cohen 2010]{KivelevitchCohen2010}
 \abntrefinfo{Kivelevitch \& Cohen}{KIVELEVITCH; COHEN}{2010}
 {Kivelevitch, Elad \& Cohen, Kelly. (2010). \textbf{Multi-Agent Maze Exploration.} Journal of Aerospace Computing Information and Communication. 7. 391-405. 10.2514/1.46304.}
