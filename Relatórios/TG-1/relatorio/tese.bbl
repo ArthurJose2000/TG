@@ -5,6 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Beisel 2014]{Beisel2014}
+\abntrefinfo{Beisel}{BEISEL}{2014}
+{Beisel, B. W. (2014). \textbf{Distributed Maze Solving By Cooperative Robotic Platforms.} University of Maryland, Department of Electrical and Computer Engineering.}
+
 \bibitem[Kivelevitch \& Cohen 2010]{KivelevitchCohen2010}
 \abntrefinfo{Kivelevitch \& Cohen}{KIVELEVITCH; COHEN}{2010}
 {Kivelevitch, Elad \& Cohen, Kelly. (2010). \textbf{Multi-Agent Maze Exploration.} Journal of Aerospace Computing Information and Communication. 7. 391-405. 10.2514/1.46304.}

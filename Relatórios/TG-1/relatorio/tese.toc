@@ -7,9 +7,3 @@
 \contentsline {chapter}{\numberline {3}Results}{18}{chapter.3}
 \contentsline {chapter}{\numberline {4}Next steps}{19}{chapter.4}
 \contentsline {chapter}{Bibliography}{20}{chapter.5}
-\SetAppendixTocName {Appendix}
-\contentsline {chapter}{\numberline {A}T\IeC {\"\i }\IeC {\textquestiondown }\IeC {\textonehalf }picos de Dilema Linear}{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}Uma Primeira Se\c c\~ao para o Ap\^endice}{21}{section.A.1}
-\SetAppendixTocName {Annex}
-\contentsline {chapter}{\numberline {A}Exemplo de um Primeiro Anexo}{22}{annex.a}
-\contentsline {section}{\numberline {A.1}Uma Se\c c\~ao do Primeiro Anexo}{22}{section.a.1}
