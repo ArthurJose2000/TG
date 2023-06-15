@@ -33,9 +33,7 @@ Mainly considering these previous references, this chapter intends to define com
 \subsection{Graph}
 In the context of computer science, a graph is a abstract data type that can be represented topologically as a interconnected node network. Several computational problems are discussed in terms of graphs.
 
-
-\subsection{Tree}
-In the context of computer science, a tree is also a abstract data type, which can be represented topologically as a hierarchical structure of nodes. In fact, a tree is a subset of graph theory, therefore a tree is a graph under a different perspective.
+It is worth to mention that there is a subdomain of graph data type called tree. A tree is also a abstract data type, which can be represented topologically as a hierarchical structure of nodes. In fact, a tree is a subset of graph theory, therefore a tree is a graph under a different perspective. In Section \ref{section_models_maze}, a tree topology perspective of a maze will be explored.
 
 
 \subsection{Maze}
@@ -50,9 +48,24 @@ In a maze context, a multi-agent approach describes the coordinating behavior of
 
 
 \subsection{Maze-solving algorithms}
+A maze has a goal to be achieved, which is usually a single marked cell or a path for an agent to exit the maze. Since the last century, many scholars have been studied algorithms to solve the maze computationally, and the proposed solutions are so-called ``maze-solving algorithms''.
 
 
 \subsection{Mixed Radix}
+Mixed radix is a numerical representation that does not rely on standard positional numeral systems. In a traditional numerical system, there is not a base variation through the numbers, nevertheless, in a mixed radix representation, a number is represented by a sequence of numerals in different bases, where each numeral is a multiple of the previous numerical sequence, however relied on a different base.
+
+For example, \citen{Arndt2011} establishes a arithmetical method to manipulate a specific subset of mixed radix numbers. The mixed radix representation $A=[a_{0},a_{1},a_{2},...,a_{n-1}]$ of a number $x$ with respect to a radix vector $M=[m_{0},m_{1},m_{2},...,m_{n-1}]$ is given by:
+
+\begin{equation}
+	x = \sum_{k=0}^{n-1} a_{k} \prod_{j=0}^{k-1} m_j
+\end{equation}
+where $0 \le a_{j} < m_{j}$ (and $0 \le x < \prod_{j=0}^{n-1} m_j$, so that n digits suffice). In a traditional positional numerical system, the vector M is like $M=[r,r,r,...,r]$, and then the relation is simply given by:
+
+\begin{equation}
+	x = \sum_{k=0}^{n-1} a_{k} r^{k}
+\end{equation}
+
+Despite the aforementioned representation, this work presents a slightly different approach in Section \ref{section_models_mixed_radix}.
 
 
 %\section{Exemplo}

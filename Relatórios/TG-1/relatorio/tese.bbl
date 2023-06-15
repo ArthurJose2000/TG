@@ -5,17 +5,25 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Arndt 2011]{Arndt2011}
+\abntrefinfo{Arndt}{ARNDT}{2011}
+{Arndt, J. (2011). \textbf{Mixed radix numbers.} In: Matters Computational. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-14764-7_9}
+
 \bibitem[Beisel 2014]{Beisel2014}
 \abntrefinfo{Beisel}{BEISEL}{2014}
 {Beisel, B. W. (2014). \textbf{Distributed Maze Solving By Cooperative Robotic Platforms.} University of Maryland, Department of Electrical and Computer Engineering.}
+
+\bibitem[Burgard et al. 2010]{Burgard2005}
+\abntrefinfo{Burgard et al.}{BURGARD et al.}{2005}
+{Burgard, W., Moors, M., Stachniss, C., & Schneider, F. E. (2005). \textbf{Coordinated multi-robot exploration.} IEEE Transactions on Robotics, 21(3), 376-386. doi:10.1109/tro.2004.839232}
 
 \bibitem[Cormen et al. 2022]{Cormen2022}
 \abntrefinfo{Cormen et al.}{CORMEN et al.}{2022}
 {Cormen, Thomas H., Leiserson, Charles E., Rivest, Ronald L. and Stein, Clifford. \textbf{Introduction to Algorithms.} 4th : The MIT Press, 2022.}
 
-\bibitem[Burgard et al. 2010]{Burgard2005}
-\abntrefinfo{Burgard et al.}{BURGARD et al.}{2005}
-{Burgard, W., Moors, M., Stachniss, C., & Schneider, F. E. (2005). \textbf{Coordinated multi-robot exploration.} IEEE Transactions on Robotics, 21(3), 376-386. doi:10.1109/tro.2004.839232} 
+%\bibitem[Donald Knuth 1997]{Knuth1997}
+%\abntrefinfo{Knuth}{KNUTH}{1997}
+%{Donald Knuth. \textbf{The Art of Computer Programming}, Volume 2: Seminumerical Algorithms, Third Edition. Addison-Wesley, 1997. ISBN 0-201-89684-2. Pages 65-66, 208-209, and 290.}
 
 \bibitem[Kivelevitch \& Cohen 2010]{KivelevitchCohen2010}
 \abntrefinfo{Kivelevitch \& Cohen}{KIVELEVITCH; COHEN}{2010}
@@ -25,7 +33,7 @@
 \abntrefinfo{Matari\'c}{MATARI\'C}{1995}
 {Matari\'c, M. J. (1995). \textbf{Designing and Understanding Adaptive Group Behavior.} Adaptive Behavior, 4(1), 51-80. doi:10.1177/105971239500400104}
 
-\bibitem[MAN 2021]{MuhammadAN}
+\bibitem[MAN 2021]{Muhammad2021}
 \abntrefinfo{Muhammad}{MUHAMMAD}{2021}
 {Muhammad Ahsan Naeem. \textbf{pyamaze}. GitHub, 2021. Available at: \htmladdnormallink{$<$https:\-/\-/www\-.github\-.com\-/MAN1986\-/pyamaze$>$}{}. Accessed on: June 6, 2023.}
 
