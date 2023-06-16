@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  15 JUN 2023 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  15 JUN 2023 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,6 +765,8 @@ Package hyperref Info: Anchor `chapter*.4' on input line 156.
 Package hyperref Info: Anchor `listafiguras.0' on input line 156.
  (tese.lof
 Package hyperref Info: Reference (link) `figure.caption.9' on input line 4.
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 4.
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 4.
 )
 \tf@lof=\write5
 \openout5 = `tese.lof'.
@@ -772,6 +774,8 @@ Package hyperref Info: Reference (link) `figure.caption.9' on input line 4.
 Package hyperref Info: Anchor `page.ix' on input line 159.
  [9
 
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 4.
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 4.
 Package `hyperref' Info: End of reference (link) `figure.caption.9', line 4.
 ]
 Package hyperref Info: Anchor `chapter*.5' on input line 159.
@@ -1037,7 +1041,7 @@ Package hyperref Info: Reference (link) `figure.caption.9' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.9' on input line 11.
-<Cap2/maze_model.png, id=301, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=304, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1075,10 +1079,25 @@ Package `hyperref' Info: End of reference (link) `figure.caption.9', line 7.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 9.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 9.
 ]
-Package hyperref Info: Anchor `section.2.3' on input line 22.
 
-pdftex: bookmark at 22: {2.3} {\numberline{2.3}Mixed radix representation of th
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 COLOCAR UMA Á
+                   RVORE REPRESENTANDO UM LABIRINTO 3X3	
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Anchor `section.2.3' on input line 24.
+pdftex: bookmark at 24: {2.3} {\numberline{2.3}Mixed radix representation of th
 e agent path} {section.2.3}{1}{toc}
+Package hyperref Info: Anchor `section.2.4' on input line 27.
+pdftex: bookmark at 27: {2.4} {\numberline{2.4}Multi-agent exploration without 
+communication} {section.2.4}{1}{toc}
 )
 Package hyperref Info: Anchor `page.20' on input line 181.
  [20
@@ -1231,14 +1250,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 5EBA2619FDD8619BDB76EE7C7AD9E829;4334.
+
+Package rerunfilecheck Warning: File `tese.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tese.out':
+(rerunfilecheck)             Before: 5EBA2619FDD8619BDB76EE7C7AD9E829;4334
+(rerunfilecheck)             After:  EA36C58FAFC7EFFD4687189DA403F9B8;4645.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15125 strings out of 476331
- 250404 string characters out of 5787765
+ 15126 strings out of 476331
+ 250415 string characters out of 5787765
  1863660 words of memory out of 5000000
  35071 multiletter control sequences out of 15000+600000
  571142 words of font info for 138 fonts, out of 8000000 for 9000
@@ -1265,9 +1290,9 @@ ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTeX
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ar
 thu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on tese.pdf (25 pages, 625600 bytes).
+Output written on tese.pdf (25 pages, 626309 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
  259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

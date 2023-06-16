@@ -12,6 +12,7 @@
 \contentsline {section}{\numberline {2.1}Maze and multi-agent exploration}{19}{section.2.1}
 \contentsline {section}{\numberline {2.2}Maze from a graph topology perspective}{20}{section.2.2}
 \contentsline {section}{\numberline {2.3}Mixed radix representation of the agent path}{20}{section.2.3}
+\contentsline {section}{\numberline {2.4}Multi-agent exploration without communication}{20}{section.2.4}
 \contentsline {chapter}{\numberline {3}Results}{21}{chapter.3}
 \contentsline {chapter}{\numberline {4}Next steps}{22}{chapter.4}
 \contentsline {chapter}{Bibliography}{23}{chapter.5}
