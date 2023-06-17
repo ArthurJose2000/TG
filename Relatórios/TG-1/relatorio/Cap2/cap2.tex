@@ -17,12 +17,72 @@ The maze has a goal that is a single marked cell, and an agent inside the maze a
 
 \section{Maze from a graph topology perspective}
 \label{section_models_maze_graph}
-As pointed out in Section \ref{section_models_maze}, given that an agent ignores visited cells, there is one important point related to this work: if there is only one path to the goal from the agent's initial cell, it is valid to consider a maze as a tree, i.e., a perfect maze \cite{Muhammad2021}. However, if there is more than one path to the goal from the agent's initial cell, the maze cannot be considered as a tree, but it might be considered as a graph.
+As pointed out in Section \ref{section_models_maze}, given that an agent ignores visited cells, there are important statements related to this work:
 
-COLOCAR UMA ÁRVORE REPRESENTANDO UM LABIRINTO 3X3	
+\begin{itemize}
+\item if there is only one path to the goal from any cell, it is valid to consider a maze as a tree, i.e., a perfect maze \cite{Muhammad2021};
 
-\section{Mixed radix representation of the agent path}
-\label{section_models_mixed_radix}
+\item if there is more than one path to the goal from any cell, the maze cannot be considered as a tree, but it might be considered as a graph;
+
+\item despite the last statement, and also considering that an agent ignores visited cells, an agent path always might be individually interpreted as a tree.
+\end{itemize}
+
+Figure \ref{maze_example_graph} gives an example of the graph representation of the maze presented in Figure \ref{maze_example}, where a red agent is traversing the maze toward the green goal. As established by \citen{Muhammad2021}, the maze cells are programmatically addressed as indices of a matrix, such as represented in Figure \ref{maze_indices_muhammad}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap2/maze_indices_muhammad.png}
+\caption{Maze cell indices. Source: \citen{Muhammad2021}.}
+\label{maze_indices_muhammad}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.7\textwidth]{Cap2/maze_example.png}
+\caption{Red agent traversing a maze toward the green goal. This maze is not a perfect maze.}
+\label{maze_example}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap2/maze_example_graph.png}
+\caption{Graph representation of the maze presented in Figure \ref{maze_example}. The cell indices are pointed out. Furthermore, the visited cells by the red agent are also pointed out.}
+\label{maze_example_graph}
+\end{figure}	
 
 \section{Multi-agent exploration without communication}
 \label{section_models_mixed_radix}
+The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid traversing the maze through the same way related to another agent.
+
+First of all, this research considers a maze as a graph, where each node is a cell representation of the maze. Given a initial node that the agent starts its path through it, the agent checks if the node has children. Supposing that a node of the graph has at least one child, i.e., there are not completely walled cells, important statements are established:
+
+\begin{itemize}
+\item if an agent finds the node where is the goal, the agent finishes its path;
+
+\item if an agent is not in the node where is the goal and the node has only one child, the agent necessarily goes through this node child;
+
+\item if an agent is not in the node where is the goal and the node has more than one child, the agent needs to make a decision about which child to choose;
+\end{itemize}
+
+To establish an decision algorithm to the last statement, this work proposes firstly a interval division related to the agents and the children. Supposing that there are $n$ agents $a_{1}, a_{2},...,a_{n}$ to explore the maze, each agent will have a corresponding and proportional range of action related to the graph, as presented below:
+
+\begin{equation}
+	\begin{align}
+			d = 1/n\\
+		a_{1} \textnormal{: } [0, d[\\
+		a_{2} \textnormal{: } [d, 2d[\\
+		a_{3} \textnormal{: } [3d, 4d[\\
+		...\\
+		a_{n} \textnormal{: } [(n-1)d, 1]
+	\end{align}
+\end{equation}
+where $d$ it the size of the partition corresponding to each agent.
+
+On the other hand, this work has been handled corresponding intervals to each child of a node, as presented in Figure \ref{maze_example_graph_intervals}, that represents the maze in Figure \ref{maze_example}. Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the graph intervals. Furthermore, a mixed radix representation to the agent path has been studied.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap2/maze_example_graph_intervals.png}
+\caption{Graph representation of the maze presented in Figure \ref{maze_example}, with intervals related to the agent's range of action.}
+\label{maze_example_graph_intervals}
+\end{figure}	
