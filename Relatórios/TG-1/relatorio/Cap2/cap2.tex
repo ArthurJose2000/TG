@@ -1,8 +1,8 @@
 \section{Maze and multi-agent exploration}
 \label{section_models_maze}
-For simulation purposes, this work modeled a maze under an interrelated cells perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze across the related edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall.
+For simulation purposes, this work modeled a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze across the related edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall.
 
-The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm according the current explored path and its programmed initial rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, every time the agent find a branched cell (a cell with at least one edge without a wall), it ignores the already visited branches by itself, and, if there is not a candidate to be a possible branch, the agent go back to the previous visited cell. Furthermore, specifically to this research, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in a multi-agent situation to solve the maze.
+The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm according the current explored path and its programmed initial rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, when there are various posible branches to extend the agent's path, it ignores cells already visited by itself, and, if there is not a candidate to be a possible branch, the agent go back to the previous visited cell. Furthermore, specifically to this research, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in a multi-agent situation to solve the maze.
 
 \citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates randomly mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. The Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
 
@@ -22,7 +22,7 @@ As pointed out in Section \ref{section_models_maze}, given that an agent ignores
 \begin{itemize}
 \item if there is only one path to the goal from any cell, it is valid to consider a maze as a tree, i.e., a perfect maze \cite{Muhammad2021};
 
-\item if there is more than one path to the goal from any cell, the maze cannot be considered as a tree, but it might be considered as a graph;
+\item if there is more than one path to the goal from any cell, the maze cannot be considered as a tree, but it might be considered as a general 2D grid;
 
 \item despite the last statement, and also considering that an agent ignores visited cells, an agent path always might be individually interpreted as a tree.
 \end{itemize}
@@ -52,7 +52,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 
 \section{Multi-agent exploration without communication}
 \label{section_models_mixed_radix}
-The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid traversing the maze through the same way related to another agent.
+The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
 
 First of all, this research considers a maze as a graph, where each node is a cell representation of the maze. Given a initial node that the agent starts its path through it, the agent checks if the node has children. Supposing that a node of the graph has at least one child, i.e., there are not completely walled cells, important statements are established:
 
@@ -61,7 +61,7 @@ First of all, this research considers a maze as a graph, where each node is a ce
 
 \item if an agent is not in the node where is the goal and the node has only one child, the agent necessarily goes through this node child;
 
-\item if an agent is not in the node where is the goal and the node has more than one child, the agent needs to make a decision about which child to choose;
+\item if an agent is not in the node where is the goal and the node has more than one child, the agent needs to decide to which child it will move itself.
 \end{itemize}
 
 To establish an decision algorithm to the last statement, this work proposes firstly a interval division related to the agents and the children. Supposing that there are $n$ agents $a_{1}, a_{2},...,a_{n}$ to explore the maze, each agent will have a corresponding and proportional range of action related to the graph, as presented below:
@@ -78,7 +78,7 @@ To establish an decision algorithm to the last statement, this work proposes fir
 \end{equation}
 where $d$ it the size of the partition corresponding to each agent.
 
-On the other hand, this work has been handled corresponding intervals to each child of a node, as presented in Figure \ref{maze_example_graph_intervals}, that represents the maze in Figure \ref{maze_example}. Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the graph intervals. Furthermore, a mixed radix representation to the agent path has been studied.
+On the other hand, this work has handled corresponding intervals to each child of a node, as presented in Figure \ref{maze_example_graph_intervals}, that represents the maze in Figure \ref{maze_example}. Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the graph intervals. Furthermore, a mixed radix representation to the agent path has been studied.
 
 \begin{figure}[ht!]
 \centering

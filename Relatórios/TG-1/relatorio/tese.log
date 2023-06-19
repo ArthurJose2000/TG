@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  16 JUN 2023 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  18 JUN 2023 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,7 +910,7 @@ Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 9.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 9.
-Package hyperref Info: Anchor `page.14' on input line 10.
+Package hyperref Info: Anchor `page.14' on input line 13.
 [14
 
 
@@ -926,102 +926,102 @@ ine 9.
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
 ine 9.
 ]
-Package hyperref Info: Anchor `section.1.2' on input line 15.
+Package hyperref Info: Anchor `section.1.2' on input line 17.
 
-pdftex: bookmark at 15: {1.2} {\numberline{1.2}Related work} {section.1.2}{1}{t
+pdftex: bookmark at 17: {1.2} {\numberline{1.2}Related work} {section.1.2}{1}{t
 oc}
-Package hyperref Info: Reference (cite) `cite.MataricMJ1995' on input line 19.
-Package hyperref Info: Reference (cite) `cite.MataricMJ1995' on input line 19.
-Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 21.
-Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 21.
-Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 23.
-Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 23.
-Package hyperref Info: Anchor `page.15' on input line 24.
+Package hyperref Info: Reference (cite) `cite.MataricMJ1995' on input line 21.
+Package hyperref Info: Reference (cite) `cite.MataricMJ1995' on input line 21.
+Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 23.
+Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 23.
+Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 25.
+Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 25.
+Package hyperref Info: Anchor `page.15' on input line 26.
 [15
-Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 19.
+Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 21.
 
-Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 19.
+Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 21.
 
-Package `hyperref' Info: End of reference (cite) `cite.Burgard2005', line 21.
-Package `hyperref' Info: End of reference (cite) `cite.Burgard2005', line 21.
-Package `hyperref' Info: End of reference (cite) `cite.Sadik2010', line 23.
-Package `hyperref' Info: End of reference (cite) `cite.Sadik2010', line 23.
+Package `hyperref' Info: End of reference (cite) `cite.Burgard2005', line 23.
+Package `hyperref' Info: End of reference (cite) `cite.Burgard2005', line 23.
+Package `hyperref' Info: End of reference (cite) `cite.Sadik2010', line 25.
+Package `hyperref' Info: End of reference (cite) `cite.Sadik2010', line 25.
 ]
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 25.
+ne 27.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 25.
-Package hyperref Info: Reference (cite) `cite.Beisel2014' on input line 27.
-Package hyperref Info: Reference (cite) `cite.Beisel2014' on input line 27.
-Package hyperref Info: Anchor `section.1.3' on input line 29.
+ne 27.
+Package hyperref Info: Reference (cite) `cite.Beisel2014' on input line 29.
+Package hyperref Info: Reference (cite) `cite.Beisel2014' on input line 29.
+Package hyperref Info: Anchor `section.1.3' on input line 31.
 
-pdftex: bookmark at 29: {1.3} {\numberline{1.3}Definitions} {section.1.3}{1}{to
+pdftex: bookmark at 31: {1.3} {\numberline{1.3}Definitions} {section.1.3}{1}{to
 c}
-Package hyperref Info: Anchor `subsection.1.3.1' on input line 33.
-pdftex: bookmark at 33: {1.3.1} {\numberline{1.3.1}Graph} {subsection.1.3.1}{2}
+Package hyperref Info: Anchor `subsection.1.3.1' on input line 35.
+pdftex: bookmark at 35: {1.3.1} {\numberline{1.3.1}Graph} {subsection.1.3.1}{2}
 {toc}
-Package hyperref Info: Reference (link) `section.2.2' on input line 36.
-Package hyperref Info: Anchor `subsection.1.3.2' on input line 39.
-pdftex: bookmark at 39: {1.3.2} {\numberline{1.3.2}Maze} {subsection.1.3.2}{2}{
+Package hyperref Info: Reference (link) `section.2.2' on input line 38.
+Package hyperref Info: Anchor `subsection.1.3.2' on input line 41.
+pdftex: bookmark at 41: {1.3.2} {\numberline{1.3.2}Maze} {subsection.1.3.2}{2}{
 toc}
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 40.
+ne 42.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 40.
-Package hyperref Info: Reference (link) `section.2.1' on input line 40.
-Package hyperref Info: Anchor `page.16' on input line 41.
+ne 42.
+Package hyperref Info: Reference (link) `section.2.1' on input line 42.
+Package hyperref Info: Anchor `page.16' on input line 43.
 [16
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 25.
+ine 27.
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 25.
-Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 27.
-Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 27.
-Package `hyperref' Info: End of reference (link) `section.2.2', line 36.
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 40.
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 40.
+ine 27.
+Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 29.
+Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 29.
+Package `hyperref' Info: End of reference (link) `section.2.2', line 38.
 ]
-Package hyperref Info: Anchor `subsection.1.3.3' on input line 44.
+Package hyperref Info: Anchor `subsection.1.3.3' on input line 48.
 
-pdftex: bookmark at 44: {1.3.3} {\numberline{1.3.3}Agent} {subsection.1.3.3}{2}
+pdftex: bookmark at 48: {1.3.3} {\numberline{1.3.3}Agent} {subsection.1.3.3}{2}
 {toc}
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 45.
+ne 49.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 45.
-Package hyperref Info: Anchor `subsection.1.3.4' on input line 50.
-pdftex: bookmark at 50: {1.3.4} {\numberline{1.3.4}Maze-solving algorithms} {su
+ne 49.
+Package hyperref Info: Anchor `subsection.1.3.4' on input line 54.
+pdftex: bookmark at 54: {1.3.4} {\numberline{1.3.4}Maze-solving algorithms} {su
 bsection.1.3.4}{2}{toc}
-Package hyperref Info: Anchor `subsection.1.3.5' on input line 54.
-pdftex: bookmark at 54: {1.3.5} {\numberline{1.3.5}Mixed Radix} {subsection.1.3
+Package hyperref Info: Anchor `subsection.1.3.5' on input line 58.
+pdftex: bookmark at 58: {1.3.5} {\numberline{1.3.5}Mixed Radix} {subsection.1.3
 .5}{2}{toc}
-Package hyperref Info: Reference (cite) `cite.Arndt2011' on input line 57.
-Package hyperref Info: Reference (cite) `cite.Arndt2011' on input line 57.
-Package hyperref Info: Anchor `equation.1.3.1' on input line 59.
-Package hyperref Info: Anchor `equation.1.3.1' on input line 59.
-Package hyperref Info: Anchor `equation.1.3.1' on input line 59.
-Package hyperref Info: Anchor `equation.1.3.1' on input line 59.
-Package hyperref Info: Anchor `page.17' on input line 64.
+Package hyperref Info: Reference (cite) `cite.Arndt2011' on input line 61.
+Package hyperref Info: Reference (cite) `cite.Arndt2011' on input line 61.
+Package hyperref Info: Anchor `equation.1.3.1' on input line 63.
+Package hyperref Info: Anchor `equation.1.3.1' on input line 63.
+Package hyperref Info: Anchor `equation.1.3.1' on input line 63.
+Package hyperref Info: Anchor `equation.1.3.1' on input line 63.
+Package hyperref Info: Anchor `page.17' on input line 65.
 [17
-Package `hyperref' Info: End of reference (link) `section.2.1', line 40.
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 45.
+ine 42.
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 45.
-Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 57.
-Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 57.
+ine 42.
+Package `hyperref' Info: End of reference (link) `section.2.1', line 42.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 49.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 49.
+Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 61.
+Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 61.
 ]
-Package hyperref Info: Anchor `equation.1.3.2' on input line 64.
-Package hyperref Info: Anchor `equation.1.3.2' on input line 64.
-Package hyperref Info: Anchor `equation.1.3.2' on input line 64.
-Package hyperref Info: Anchor `equation.1.3.2' on input line 64.
-Package hyperref Info: Reference (link) `section.2.3' on input line 68.
+Package hyperref Info: Anchor `equation.1.3.2' on input line 68.
+Package hyperref Info: Anchor `equation.1.3.2' on input line 68.
+Package hyperref Info: Anchor `equation.1.3.2' on input line 68.
+Package hyperref Info: Anchor `equation.1.3.2' on input line 68.
+Package hyperref Info: Reference (link) `section.2.3' on input line 72.
 )
 Package hyperref Info: Anchor `page.18' on input line 178.
  [18
-Package `hyperref' Info: End of reference (link) `section.2.3', line 68.
+Package `hyperref' Info: End of reference (link) `section.2.3', line 72.
 ]
 Package hyperref Info: Anchor `chapter.2' on input line 178.
 
@@ -1048,7 +1048,7 @@ Package hyperref Info: Reference (link) `figure.caption.9' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.9' on input line 11.
-<Cap2/maze_model.png, id=317, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=318, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1101,7 +1101,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (link) `figure.caption.10' on input line 30.
 Package hyperref Info: Anchor `figure.caption.10' on input line 32.
-<Cap2/maze_indices_muhammad.png, id=335, 296.307pt x 296.90926pt>
+<Cap2/maze_indices_muhammad.png, id=337, 296.307pt x 296.90926pt>
 File: Cap2/maze_indices_muhammad.png Graphic file (type png)
 <use Cap2/maze_indices_muhammad.png>
 Package pdftex.def Info: Cap2/maze_indices_muhammad.png  used on input line 34.
@@ -1114,7 +1114,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Anchor `figure.caption.11' on input line 39.
-<Cap2/maze_example.png, id=340, 555.87675pt x 178.266pt>
+<Cap2/maze_example.png, id=342, 555.87675pt x 178.266pt>
 File: Cap2/maze_example.png Graphic file (type png)
 <use Cap2/maze_example.png>
 Package pdftex.def Info: Cap2/maze_example.png  used on input line 41.
@@ -1123,7 +1123,7 @@ pdftex: bookmark at 42: {2.3} {\numberline{2.3}{\ignorespaces Red agent travers
 ing a maze toward the green goal. This maze is not a perfect maze.\relax }} {fi
 gure.caption.11}{0}{lof}
 Package hyperref Info: Anchor `figure.caption.12' on input line 46.
-<Cap2/maze_example_graph.png, id=341, 370.986pt x 353.52075pt>
+<Cap2/maze_example_graph.png, id=343, 370.986pt x 353.52075pt>
 File: Cap2/maze_example_graph.png Graphic file (type png)
 <use Cap2/maze_example_graph.png>
 Package pdftex.def Info: Cap2/maze_example_graph.png  used on input line 48.
@@ -1181,7 +1181,7 @@ If that doesn't work, type  X <return>  to quit.
 Package hyperref Info: Reference (link) `figure.caption.13' on input line 81.
 Package hyperref Info: Reference (link) `figure.caption.11' on input line 81.
 Package hyperref Info: Anchor `figure.caption.13' on input line 83.
-<Cap2/maze_example_graph_intervals.png, id=359, 363.15675pt x 343.88475pt>
+<Cap2/maze_example_graph_intervals.png, id=361, 363.15675pt x 343.88475pt>
 File: Cap2/maze_example_graph_intervals.png Graphic file (type png)
 <use Cap2/maze_example_graph_intervals.png>
 Package pdftex.def Info: Cap2/maze_example_graph_intervals.png  used on input l
@@ -1351,13 +1351,13 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15155 strings out of 476331
- 251414 string characters out of 5787765
+ 15159 strings out of 476331
+ 251446 string characters out of 5787765
  1863660 words of memory out of 5000000
- 35094 multiletter control sequences out of 15000+600000
- 564143 words of font info for 131 fonts, out of 8000000 for 9000
+ 35095 multiletter control sequences out of 15000+600000
+ 566620 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,12n,104p,953b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,104p,915b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0800.pk> <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1375,10 +1375,11 @@ fonts/cm/cmr7.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on tese.pdf (28 pages, 721319 bytes).
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tese.pdf (28 pages, 731054 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
+ 487 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
