@@ -1,10 +1,10 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Blue and red agents traversing a $6\times 6$ maze. The goal is represented by the green entity. This maze is a perfect maze \cite {Muhammad2021}.\relax }}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Maze cell indices. Source: \citeonline {Muhammad2021}.\relax }}{21}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Red agent traversing a maze toward the green goal. This maze is not a perfect maze.\relax }}{21}{figure.caption.11}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out. Furthermore, the visited cells by the red agent are also pointed out.\relax }}{21}{figure.caption.12}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}, with intervals related to the agent's range of action.\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Blue and red agents traversing a $6\times 6$ maze. The goal is represented by the green entity. This maze is a perfect maze \cite {Muhammad2021}.\relax }}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Maze cell indices. Source: \citeonline {Muhammad2021}.\relax }}{22}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Red agent traversing a maze toward the green goal. This maze is not a perfect maze.\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out, and the cells visited by the red agent are also pointed out.\relax }}{22}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}, with intervals related to the agent's range of action.\relax }}{25}{figure.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

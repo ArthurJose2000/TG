@@ -33,9 +33,16 @@ Based around maze-solving algorithms, \citen{KivelevitchCohen2010} proposed a ge
 Mainly considering these previous references, this chapter intends to define common terms about maze-solving algorithms, graph theory, and mathematical tools that were useful to abstract the proposed solution. Furthermore, it intends to clarify the approach domain of this work.
 
 \subsection{Graph}
-In the context of computer science, a graph is a abstract data type that can be represented topologically as a interconnected node network. Several computational problems are discussed in terms of graphs.
+\label{section_definitions_graph}
+Graph theory has been used in various real-life applications, such as in biology, social sciences, engineering, computer science, etc. \citen{Manber1989} establishes that a graph $G=(V,E)$ consists of a set $V$ of vertices (also called nodes), and a set $E$ of edges. Each edge corresponds to a pair of vertices, and represents relationships among the vertices. A graph can be directed or undirected. The adegs in a directed graph are ordered pairs, i.e., the order of the edge connection between two vertices is important. On the other hand, the edges in an undirected graph are unordered pairs, i.e., the order of the edge connection between two vertices is not important. The author gives an example: a graph may represent a set of people, and the edges may connect any two persons who know each other.
 
-It is worth to mention that there is a subdomain of graph data type called tree. A tree is also a abstract data type, which can be represented topologically as a hierarchical structure of nodes. In fact, a tree is a subset of graph theory, therefore a tree is a graph under a different perspective. In Section \ref{section_models_maze_graph}, a perspective of a maze from a tree and a graph topologies will be explored.
+In the context of computer science, a graph is a abstract data type that can be represented topologically as a interconnected node network. Several computational problems are discussed in terms of graphs. \citen{Manber1989} describes famous graph exploration algorithms, such as DFS (Depth First Search) and BFS (Breath First Search). Please check \citen{Manber1989} for more details. 
+
+\citen{Manber1989} works with some representations of graphs in his book. One of representations is the adjacency list of a graph, that is described by an array of lists. In the adjacency list representation, each vertex is associated with a linked list consisting of all the edges adjacent to this vertex. Supposing that $|V|=n$, the adjacency list will have $n$ linked lists. In the case of this work, graphs are always undirected, therefore, if the linked list $i$ of a vertex $v_{i}$ has a vertex $v_{j}$, the linked list $j$ will have the vertex $v_{i}$.
+
+It is worth to mention that there is a subdomain of graph data type called tree. A tree is also an abstract data type, which can be represented topologically as a hierarchical structure of nodes. In fact, a tree is a subset of graph theory, therefore a tree is a graph under a different perspective. \citen{Manber1989} indicates that, in a tree, it is possible to hierarchize all the edges from the root (the head node in terms of tree hierarchy), and hence trees are sometimes called rooted trees.
+
+From Section \ref{section_models_maze_graph}, a perspective of a maze from a tree and a graph topologies will be explored.
 
 
 \subsection{Maze}
