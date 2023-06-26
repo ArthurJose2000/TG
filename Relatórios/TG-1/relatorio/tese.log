@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  23 JUN 2023 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  25 JUN 2023 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1247,45 +1247,46 @@ put line 84.
 pdftex: bookmark at 84: {1} {\numberline{1}{\ignorespaces Traverse of the agent
  through the maze (interpreted as a tree by the agent)\relax }} {algorithm.1}{0
 }{loa}
-Package hyperref Info: Anchor `algorithm.1' on input line 162.
-! Too many }'s.
-l.162 \end{algorithm}}
-                      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-Package hyperref Info: Reference (link) `figure.caption.14' on input line 164.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 164.
-Package hyperref Info: Anchor `page.23' on input line 166.
+Package hyperref Info: Anchor `algorithm.1' on input line 178.
+Package hyperref Info: Anchor `page.23' on input line 178.
 [23
 Package `hyperref' Info: End of reference (link) `subsection.1.3.1', line 81.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 81.
 ]
-Package hyperref Info: Anchor `page.24' on input line 166.
- [24]
-Package hyperref Info: Anchor `figure.caption.14' on input line 170.
-<Cap2/maze_example_graph_intervals.png, id=391, 363.15675pt x 343.88475pt>
+! Too many }'s.
+l.178 \end{algorithm}}
+                      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Package hyperref Info: Reference (link) `figure.caption.14' on input line 180.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 180.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 180.
+Package hyperref Info: Anchor `figure.caption.14' on input line 184.
+<Cap2/maze_example_graph_intervals.png, id=387, 363.15675pt x 343.88475pt>
 File: Cap2/maze_example_graph_intervals.png Graphic file (type png)
 <use Cap2/maze_example_graph_intervals.png>
 Package pdftex.def Info: Cap2/maze_example_graph_intervals.png  used on input l
-ine 172.
+ine 186.
 (pdftex.def)             Requested size: 227.62206pt x 215.54662pt.
-
-pdftex: bookmark at 173: {2.5} {\numberline{2.5}{\ignorespaces Graph representa
+pdftex: bookmark at 187: {2.5} {\numberline{2.5}{\ignorespaces Graph representa
 tion of the maze presented in Figure \ref {maze_example}, with intervals relate
 d to the agent's range of action.\relax }} {figure.caption.14}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 173.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 173.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 187.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 187.
 )
-Package hyperref Info: Anchor `page.25' on input line 186.
- [25
-Package `hyperref' Info: End of reference (link) `figure.caption.14', line 164.
+Package hyperref Info: Anchor `page.24' on input line 186.
+ [24
+Package `hyperref' Info: End of reference (link) `figure.caption.14', line 180.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 164.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 180.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 173.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 180.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 187.
 
  <./Cap2/maze_example_graph_intervals.png>]
+Package hyperref Info: Anchor `page.25' on input line 186.
+ [25]
 Package hyperref Info: Anchor `chapter.3' on input line 186.
 
 Chapter 3.
@@ -1438,11 +1439,11 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 Here is how much of TeX's memory you used:
  15740 strings out of 476331
  261083 string characters out of 5787765
- 1868660 words of memory out of 5000000
+ 1870660 words of memory out of 5000000
  35657 multiletter control sequences out of 15000+600000
  566620 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,12n,104p,915b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,104p,935b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0800.pk> <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1462,9 +1463,9 @@ pe1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (30 pages, 746021 bytes).
+Output written on tese.pdf (30 pages, 748507 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
+ 513 PDF objects out of 1000 (max. 8388607)
  92 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

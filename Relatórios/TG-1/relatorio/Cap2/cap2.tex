@@ -4,7 +4,7 @@ For simulation purposes, this work modeled a maze under a 4-neighbor 2D grid gra
 
 The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm according the current explored path and its programmed initial rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, when there are various posible branches to extend the agent's path, it ignores cells already visited by itself, and, if there is not a candidate to be a possible branch, the agent go back to the previous visited cell. Furthermore, specifically to this research, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in a multi-agent situation to solve the maze.
 
-\citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates randomly mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. The Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
+\citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates randomly mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
 
 \citen{Muhammad2021} software creates by default a ``perfect maze'', which means that there is one and only one path to the goal from any cell. However, it is possible to set the code to generate a imperfect maze.
 
@@ -78,7 +78,7 @@ To establish an decision algorithm to the last statement, this work proposes fir
 \end{equation}
 where $d$ is the size of the partition corresponding to each agent. On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
 
-As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Thus, considering an unknown maze as an adjacency list $A$, where the firstly explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., an agent don't know their convergence intervals before visit them, the Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node. As mentioned previously, there is no communication between agents, therefore each agent needs to explore the maze individually, and calculates by itself the convergence intervals of each node. Furthermore, it is important to emphasize that each agent considers individually the maze as tree, where the root is the agent's starting node.
+As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree, and considering the agent path as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node. As mentioned previously, there is no communication between agents, therefore each agent needs to explore the maze individually, and calculates by itself the convergence intervals of each node. Furthermore, it is important to emphasize that each agent considers individually the maze as tree, where the root is the agent's starting node.
 
 \begin{algorithm}
 \caption{Traverse of the agent through the maze (interpreted as a tree by the agent)}
@@ -87,21 +87,23 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 %\Require $n \geq 0$
 %\Ensure $y = x^n$
 
-\State $current\_node \gets v_{1}$ \hspace{1cm} \slash\slash \hspace{0.1cm} agent starts the exploration at node $v_{1}$
+\State $current\_node \gets v_{1}$ \hspace{1cm} \slash\slash \hspace{0.1cm} Agent starts the exploration at node $v_{1}$
 
-\State $visited\_nodes \gets [$ $]$ \hspace{0.95cm} \slash\slash \hspace{0.1cm} visited nodes by the agent is initially empty
+\State $visited\_nodes \gets [$ $]$ \hspace{0.95cm} \slash\slash \hspace{0.1cm} Array of visited nodes by the agent is initially empty
 
-\State $intervals[v_{1}$] $\gets [0,1]$ \hspace{0.7cm} \slash\slash \hspace{0.1cm} $v_{1}$ is the root
+\State $intervals[v_{1}$] $\gets [0,1]$ \hspace{0.65cm} \slash\slash \hspace{0.1cm} $v_{1}$ is the root
 
-\State $A [0][0] \gets 0$ \hspace{2.35cm} \slash\slash \hspace{0.1cm} adjacency list $A$ is initially $1 \times 1$
+%\State $A [0][0] \gets 0$ \hspace{2.35cm} \slash\slash \hspace{0.1cm} adjacency list $A$ is initially $1 \times 1$
 
-\State $A \gets complete(A, v_{1})$ \hspace{0.75cm} \slash\slash \hspace{0.1cm} check the children of the node $v_{1}$ and complete $A$\\
+\State $complete(A, v_{1})$ \hspace{1.55cm} \slash\slash \hspace{0.1cm} Complete the tree $A$ with the node $v_{1}$\\
 
 \\
 
 \textbf{while} $current\_node$ is not the goal cell \textbf{do}\\
 
-\hspace{0.3cm} \textbf{if} $current\_node$ has not been already visited \textbf{then}\\
+\hspace{0.3cm} \textbf{if} $current\_node$ is not in $visited\_nodes$ \textbf{then}\\
+
+\hspace{0.6cm} $append(visited\_nodes, current\_node)$\\
 
 \hspace{0.6cm} $max \gets \max \{intervals[current\_node]\}$\\
 
@@ -111,23 +113,29 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.6cm} $count \gets 0$\\
 
-\hspace{0.6cm} \textbf{foreach} children $v_{j}$ of $current\_node$ \textbf{do}\\
+\hspace{0.6cm} \textbf{foreach} child $v_{j}$ of $current\_node$ \textbf{do}\\
 
 \hspace{0.9cm} $intervals[v_{j}] \gets [min + count \cdot  partition, min + (count+1) \cdot  partition[$\\
+
+\hspace{0.9cm} $complete(A, v_{j})$\\
 
 \hspace{0.9cm} $count \gets count + 1$\\
 
 \hspace{0.6cm} \textbf{end foreach}\\
 
-\hspace{0.3cm} \textbf{else}\\
+\hspace{0.3cm} \textbf{end if}\\
 
-\hspace{0.6cm} CORRIGIR$current\_node \gets get\_parent(current\_node)$\\
+\hspace{0.3cm} \textbf{if} $current\_node$ has no child \textbf{or} all of $current\_node$'s children were visited \textbf{then}\\
+
+\hspace{0.6cm} $current\_node \gets get\_parent(current\_node)$\\
+
+\hspace{0.6cm} \textbf{continue}\\
 
 \hspace{0.3cm} \textbf{end if}\\
 
-\hspace{0.3cm} \textbf{foreach} children $v_{j}$ of $current\_node$ \textbf{do}\\
+\hspace{0.3cm} \textbf{foreach} child $v_{j}$ of $current\_node$ \textbf{do}\\
 
-\hspace{0.6cm} \textbf{if} $v_{j}$ has been already visited \textbf{then}\\
+\hspace{0.6cm} \textbf{if} $v_{j}$ is in $visited\_nodes$ \textbf{then}\\
 
 \hspace{0.9cm} \textbf{continue} \\
 
@@ -143,13 +151,9 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.9cm} \textbf{if} $min\_agent < max\_node$ \textbf{then}\\
 
-\hspace{1.2cm} $current\_node \gets v_{i}$\\
+\hspace{1.2cm} $current\_node \gets v_{j}$\\
 
 \hspace{1.2cm} \textbf{break} \\
-
-\hspace{0.9cm} \textbf{else}\\
-
-\hspace{1.2cm} \textbf{continue} \\
 
 \hspace{0.9cm} \textbf{end if}\\
 
@@ -157,15 +161,25 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.3cm} \textbf{end foreach}\\
 
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} If \textit{current\_node} remains the same as the beginning of the iteration, it means\\
+
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} that the agent finished its interval, and then it needs to change its behavior \\
+
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} This case has still been studied  \\
+
+\hspace{0.3cm} \textbf{if} $current\_node$ remains the same as the beginning of the iteration \textbf{then}\\
+
+\hspace{0.6cm} $current\_node \gets some\_non\_visited\_child(current\_node)$\\
+
+\hspace{0.3cm} \textbf{end if}\\
+
 \textbf{end while}
 \end{algorithmic}
 \end{algorithm}}
 
-, as presented in Figure \ref{maze_example_graph_intervals}, that represents the maze in Figure \ref{maze_example}.
+Figure \ref{maze_example_graph_intervals} presents the converge intervals of the nodes if at least two agents explored the maze presented in Figure \ref{maze_example} using Pseudocode \ref{pseudocode_1}.
 
-Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the graph intervals. Furthermore, a mixed radix representation to the agent path has been studied.
-
-
+Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the maze node intervals. Furthermore, the authors observed that a mixed radix representation to the agent path is a powerful mathematical tool to relate the path to the interval of the node that the agent is visiting, and it will be present in the next report.
 
 \begin{figure}[ht!]
 \centering

@@ -54,7 +54,7 @@
 %--------------------------------------------------------
 \gdef\itatitletexttgbabel{\nh{Work presented to the Instituto Tecnol\'{o}gico de Aeron\'{a}utica, in partial fulfillment of the requirements for the conclusion of the course in \itaworkcourse.}\vspace{12pt}.}
 	  
-\gdef\itathesisapprovedmemberstgbabel{Bachelor Thesis approved in its non-final version by the signatories below:}
+\gdef\itathesisapprovedmemberstgbabel{Bachelor's Thesis approved in its non-final version by the signatories below:}
 																			% outra possibilidade: Final Work approved in its final version by signatories below:
 \gdef\itacountrytgbabel{Brazil}
 
@@ -132,9 +132,9 @@
 \gdef\bossgendermfbabel{mf}                               					 % masc ou fem
 \gdef\bosscoursegendermfbabel{mf}                         					 % masc ou fem
 
-\gdef\finalpaperbabel{Bachelor Thesis}	
+\gdef\finalpaperbabel{Bachelor's Thesis}	
 %\gdef\finalpaperbabel{Final Paper}															 % Trabalho de Graduação
-\gdef\itatglevelbabel{Bachelor Thesis}
+\gdef\itatglevelbabel{Bachelor's Thesis}
 %\gdef\itatglevelbabel{Final paper (Undergraduation study)}				 % Final paper (Undergraduation study)
 
 %--------------------------------------------------------
@@ -149,7 +149,7 @@
 			\vspace{\baselineskip}
 			\@cipkw\ I. Instituto Tecnol\'{o}gico de Aeron\'{a}utica. II.~Title.\par}
 
-\gdef\itaciptgdata1babel {Bachelor Thesis -- Course of \itaworkcourse -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica,
+\gdef\itaciptgdata1babel {Bachelor's Thesis -- Course of \itaworkcourse -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica,
 	\@publyear. Advisor: \itaadvisortitle\ \itaadvisorname. \@ifundefined{@coadvisor}{}{Co-advisor:
 	\@itacoadvisortitle\ \@itacoadvisorname.}\par
 	\vspace{\baselineskip}
@@ -159,7 +159,7 @@
 
 \gdef\itacip2babel {\itaworklevel\ of \itaauthortitle\ -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, S\~{a}o Jos\'{e} dos Caaaaaampos.}
 
-\gdef\itaciptg2babel {Bachelor Thesis -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, 
+\gdef\itaciptg2babel {Bachelor's Thesis -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, 
         S\~{a}o Jos\'{e} dos Campos.}
 
 \gdef\itacedirnamebabel{CESSION OF RIGHTS}
