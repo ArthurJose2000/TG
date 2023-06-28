@@ -51,7 +51,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \end{figure}	
 
 \section{Multi-agent exploration without communication}
-\label{section_models_mixed_radix}
+\label{section_models_exploration}
 The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
 
 First of all, this research considers a maze as a graph, where each node is a cell representation of the maze. Given a initial node that the agent starts its path through it, the agent checks if the node has children. Supposing that a node of the graph has at least one child, i.e., there are not completely walled cells, important statements are established:
@@ -87,6 +87,8 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 %\Require $n \geq 0$
 %\Ensure $y = x^n$
 
+\State $agent\_interval \gets [a_{min},a_{max}]$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Previously defined interval of the agent
+
 \State $current\_node \gets v_{1}$ \hspace{1cm} \slash\slash \hspace{0.1cm} Agent starts the exploration at node $v_{1}$
 
 \State $visited\_nodes \gets [$ $]$ \hspace{0.95cm} \slash\slash \hspace{0.1cm} Array of visited nodes by the agent is initially empty
@@ -95,7 +97,12 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 %\State $A [0][0] \gets 0$ \hspace{2.35cm} \slash\slash \hspace{0.1cm} adjacency list $A$ is initially $1 \times 1$
 
-\State $complete(A, v_{1})$ \hspace{1.55cm} \slash\slash \hspace{0.1cm} Complete the tree $A$ with the node $v_{1}$\\
+\State $A \gets \oslash$ \hspace{3.1cm} \slash\slash \hspace{0.1cm} Initialize the empty adjacency list of the tree $A$
+
+\State $complete(A, v_{1})$ \hspace{1.55cm} \slash\slash \hspace{0.1cm} In the tree $A$, create a list for $v_{1}$ and complete the list of
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} $v_{1}$ with the children of $v_{1}$. The order of insertion of child
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} must follow some rule. In the case of this work, the inser-
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} tion is clockwise (North, East, South, West)\\
 
 \\
 
@@ -105,15 +112,19 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.6cm} $append(visited\_nodes, current\_node)$\\
 
-\hspace{0.6cm} $max \gets \max \{intervals[current\_node]\}$\\
+%\hspace{0.6cm} $max \gets \max \{intervals[current\_node]\}$\\
 
-\hspace{0.6cm} $min \gets \min \{intervals[current\_node]\}$\\
+\hspace{0.6cm} $max \gets get\_maximum\_value(intervals[current\_node])$\\
+
+%\hspace{0.6cm} $min \gets \min \{intervals[current\_node]\}$\\
+
+\hspace{0.6cm} $min \gets get\_minimum\_value(intervals[current\_node])$\\
 
 \hspace{0.6cm} $partition \gets (max - min) \slash amount\_of\_children$\\
 
 \hspace{0.6cm} $count \gets 0$\\
 
-\hspace{0.6cm} \textbf{foreach} child $v_{j}$ of $current\_node$ \textbf{do}\\
+\hspace{0.6cm} \textbf{foreach} child $v_{j}$ of $current\_node$ in $A$ \textbf{do}\\
 
 \hspace{0.9cm} $intervals[v_{j}] \gets [min + count \cdot  partition, min + (count+1) \cdot  partition[$\\
 
@@ -127,13 +138,13 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.3cm} \textbf{if} $current\_node$ has no child \textbf{or} all of $current\_node$'s children were visited \textbf{then}\\
 
-\hspace{0.6cm} $current\_node \gets get\_parent(current\_node)$\\
+\hspace{0.6cm} $current\_node \gets get\_parent(A, current\_node)$\\
 
 \hspace{0.6cm} \textbf{continue}\\
 
 \hspace{0.3cm} \textbf{end if}\\
 
-\hspace{0.3cm} \textbf{foreach} child $v_{j}$ of $current\_node$ \textbf{do}\\
+\hspace{0.3cm} \textbf{foreach} child $v_{j}$ of $current\_node$ in $A$ \textbf{do}\\
 
 \hspace{0.6cm} \textbf{if} $v_{j}$ is in $visited\_nodes$ \textbf{then}\\
 
@@ -141,16 +152,17 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.6cm} \textbf{else}\\
 
-\hspace{0.9cm} $max\_node \gets \max \{interval[v_{j}]\}$\\
+\hspace{0.9cm} $max\_node \gets get\_maximum\_value(interval[v_{j}])$\\
 
-\hspace{0.9cm} $min\_node \gets \min \{interval[v_{j}]\}$\\
+\hspace{0.9cm} $min\_node \gets get\_minimum\_value(interval[v_{j}])$\\
 
-\hspace{0.9cm} $max\_agent \gets \max \{agent\_interval\}$\\
+\hspace{0.9cm} $max\_agent \gets get\_maximum\_value(agent\_interval)$\\
 
-\hspace{0.9cm} $min\_agent \gets \min \{agent\_interval\}$\\
+\hspace{0.9cm} $min\_agent \gets get\_minimum\_value(agent\_interval)$\\
 
 \hspace{0.9cm} \textbf{if} $min\_agent < max\_node$ \textbf{then}\\
 
+\hspace{1.2cm} \slash\slash \hspace{0.1cm} This condition only works because the order of children is well defined\\
 \hspace{1.2cm} $current\_node \gets v_{j}$\\
 
 \hspace{1.2cm} \textbf{break} \\
@@ -163,13 +175,15 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \hspace{0.3cm} \slash\slash \hspace{0.1cm} If \textit{current\_node} remains the same as the beginning of the iteration, it means\\
 
-\hspace{0.3cm} \slash\slash \hspace{0.1cm} that the agent finished its interval, and then it needs to change its behavior \\
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} that the agent finished its interval, and then it needs to change its behavior. \\
 
-\hspace{0.3cm} \slash\slash \hspace{0.1cm} This case has still been studied  \\
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} Then its behavior is domain dependent. It will continue the DFS under some\\
 
-\hspace{0.3cm} \textbf{if} $current\_node$ remains the same as the beginning of the iteration \textbf{then}\\
+\hspace{0.3cm} \slash\slash \hspace{0.1cm} criteria  \\
 
-\hspace{0.6cm} $current\_node \gets some\_non\_visited\_child(current\_node)$\\
+\hspace{0.3cm} \textbf{if} $current\_node$ remains the same as the beginning of the \textit{while} iteration \textbf{then}\\
+
+\hspace{0.6cm} $current\_node \gets continue\_DFS\_under\_some\_criteria(A, current\_node)$\\
 
 \hspace{0.3cm} \textbf{end if}\\
 
@@ -187,3 +201,9 @@ Thus, the goal of this work aims to establish an efficient algorithm that interr
 \caption{Graph representation of the maze presented in Figure \ref{maze_example}, with intervals related to the agent's range of action.}
 \label{maze_example_graph_intervals}
 \end{figure}	
+
+\section{Mixed radix representation to the agent path}
+\label{section_models_mixed_radix}
+In Section \ref{section_models_exploration}, this work presented a method to an agent traverse the maze by defining ranges of action, despite it needs some improvements. Pseudocode \ref{pseudocode_1} explain this method, and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save the tree, because it only needs to know the current node interval to make a decision.
+
+This work establish a method to 
