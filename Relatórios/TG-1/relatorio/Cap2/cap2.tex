@@ -211,7 +211,7 @@ This work establishes a method to calculate the node intervals without the agent
 \begin{itemize}
 \item if the current node has only one child, append $I_{1}$ to the mixed radix numerical representation of the path, and go to the child;
 
-\item if the current node has $n$ children, and $n > 1$, then calculate the value of the mixed radix numerical representation of the path and, from this value, the related value to each child, and then make the decision according to the agent interval, as approached in Pseudocode \ref{pseudocode_1}. Pseudocode \ref{pseudocode_2} presents a way to calculate computationally the value of the mixed radix numerical representation of the path;
+\item if the current node has $n$ children, and $n > 1$, then calculate the value of the mixed radix numerical representation of the path and, from this value, the related value to each child, and then make the decision according to the agent interval, as approached in Pseudocode \ref{pseudocode_1}. If the decision takes the \textit{i}th child, then append $(i-1)_{n}$ in the end of the agent path. Pseudocode \ref{pseudocode_2} presents a way to calculate computationally the value of the mixed radix numerical representation of the path;
 
 \item if the current node has no child, go back to the parent, and remove the last appended value from the mixed radix numerical representation of the path.
 \end{itemize}
