@@ -6,5 +6,6 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Red agent traversing a maze toward the green goal. This maze is not a perfect maze.\relax }}{22}{figure.caption.12}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out, and the cells visited by the red agent are also pointed out.\relax }}{22}{figure.caption.13}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}, with intervals related to the agent's range of action.\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }}{26}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

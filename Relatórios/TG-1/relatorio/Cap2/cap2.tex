@@ -81,13 +81,13 @@ where $d$ is the size of the partition corresponding to each agent. On the other
 As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree, and considering the agent path as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node. As mentioned previously, there is no communication between agents, therefore each agent needs to explore the maze individually, and calculates by itself the convergence intervals of each node. Furthermore, it is important to emphasize that each agent considers individually the maze as tree, where the root is the agent's starting node.
 
 \begin{algorithm}
-\caption{Traverse of the agent through the maze (interpreted as a tree by the agent)}
+\caption{Traverse of the agent through the maze (interpreted as a tree by the agent).}
 \label{pseudocode_1}
 \begin{algorithmic}
 %\Require $n \geq 0$
 %\Ensure $y = x^n$
 
-\State $agent\_interval \gets [a_{min},a_{max}]$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Previously defined interval of the agent
+\State $agent\_interval \gets [a_{min},a_{max}[$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Previously defined interval of the agent
 
 \State $current\_node \gets v_{1}$ \hspace{1cm} \slash\slash \hspace{0.1cm} Agent starts the exploration at node $v_{1}$
 
@@ -204,6 +204,96 @@ Thus, the goal of this work aims to establish an efficient algorithm that interr
 
 \section{Mixed radix representation to the agent path}
 \label{section_models_mixed_radix}
-In Section \ref{section_models_exploration}, this work presented a method to an agent traverse the maze by defining ranges of action, despite it needs some improvements. Pseudocode \ref{pseudocode_1} explain this method, and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save the tree, because it only needs to know the current node interval to make a decision.
+In Section \ref{section_models_exploration}, this work presented a method for an agent to traverse the maze by defining ranges of action, despite it needs some improvements. Pseudocode \ref{pseudocode_1} explains this method, and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save the tree, because it only needs to know the current node interval to make a decision.
 
-This work establish a method to 
+This work establishes a method to calculate the node intervals without the agent having necessarily to save the tree. In order to traverse the maze while the agent autonomously makes a decision node by node, it saves its path in a mixed radix numerical representation, where the starting representation is ``$0.$'' and it is limited to 1, i.e., $[0,1]$. According to the order of analysis of the children and the mathematical tools to calculate node intervals presented in Pseudocode \ref{pseudocode_1}, the items below present the agent behavior while it doesn't find the goal cell. It is important to emphasize that the value of the mixed radix numerical representation is the same as the minimum value of the node interval.
+
+\begin{itemize}
+\item if the current node has only one child, append $I_{1}$ to the mixed radix numerical representation of the path, and go to the child;
+
+\item if the current node has $n$ children, and $n > 1$, then calculate the value of the mixed radix numerical representation of the path and, from this value, the related value to each child, and then make the decision according to the agent interval, as approached in Pseudocode \ref{pseudocode_1}. Pseudocode \ref{pseudocode_2} presents a way to calculate computationally the value of the mixed radix numerical representation of the path;
+
+\item if the current node has no child, go back to the parent, and remove the last appended value from the mixed radix numerical representation of the path.
+\end{itemize}
+
+Figure \ref{mixed_radix_path_example} presents an example for the mixed radix numerical representation approach. A blue agent with an interval $[1/3,2/3[$ is traversing a maze, and its current path is $0.0_{2}2_{3}$. The minimum value for each interval is also presented.
+
+\begin{algorithm}
+\caption{Methods related to mixed radix numerical representation approach.}
+\label{pseudocode_2}
+\begin{algorithmic}
+
+\State \textbf{struct} $mr\_element$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Structure of mixed radix element
+
+\State $\{$
+
+\State \hspace{0.3cm} \textbf{type} $numeral$
+
+\State \hspace{0.3cm} \textbf{type} $radix$
+
+\State $\}$
+
+\State $path \gets [$ $]$ \hspace{2.05cm} \slash\slash \hspace{0.1cm} Initialize the agent path. The agent is at the root of the tree.
+
+\State \hspace{3.95cm} \slash\slash \hspace{0.1cm} Numerically it means zero (or ``0.'')\\
+
+\\
+
+\textbf{function} $append(path, numeral, radix)$:\\
+
+\hspace{0.3cm} \textbf{struct} $mr\_element$ $element$\\
+
+\hspace{0.3cm} $element.numeral \gets numeral$\\
+
+\hspace{0.3cm} $element.radix \gets radix$\\
+
+\hspace{0.3cm} $add(path, mr\_element)$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Append the element to the end of the \textit{path} array\\
+
+\\
+
+\textbf{function} $remove(path)$:\\
+
+\hspace{0.3cm} $subtract(path)$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Remove the last element of the \textit{path} array\\
+
+\\
+
+\textbf{function} $get\_mixed\_radix\_value(path)$:\\
+
+\hspace{0.3cm} $value \gets 0$\\
+
+\hspace{0.3cm} $factor \gets 1$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} It is necessary to take into account if the numeral of the element\\
+\hspace{3.05cm} \slash\slash \hspace{0.1cm} is 0\\
+
+\hspace{0.3cm} \textbf{foreach} element in $path$ \textbf{do}\\
+
+\hspace{0.6cm} \textbf{if} $element.numeral == I$ \textbf{then}\\
+
+\hspace{0.9cm} \textbf{continue}\\
+
+\hspace{0.6cm} \textbf{end if}\\
+
+\hspace{0.6cm} $value \gets value + (1 - value) \cdot factor \cdot element.numeral / element.radix $\\
+
+\hspace{0.6cm} \textbf{if} $element.numeral == 0$ \textbf{then}\\
+
+\hspace{0.9cm} $factor \gets factor \cdot element.radix$\\
+
+\hspace{0.6cm} \textbf{else}\\
+
+\hspace{0.9cm} $factor \gets 1$\\
+
+\hspace{0.6cm} \textbf{end if}\\
+
+\hspace{0.3cm} \textbf{end foreach}\\
+
+\hspace{0.3cm} \textbf{return} $value$\\
+
+\end{algorithmic}
+\end{algorithm}}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{Cap2/mixed_radix_path_example.png}
+\caption{Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref{maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.}
+\label{mixed_radix_path_example}
+\end{figure}	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  27 JUN 2023 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  28 JUN 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,6 +795,8 @@ Package hyperref Info: Reference (link) `figure.caption.13' on input line 7.
 Package hyperref Info: Reference (link) `figure.caption.12' on input line 7.
 Package hyperref Info: Reference (link) `figure.caption.14' on input line 8.
 Package hyperref Info: Reference (link) `figure.caption.12' on input line 8.
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 9.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 9.
 )
 \tf@lof=\write5
 \openout5 = `tese.lof'.
@@ -813,6 +815,8 @@ Package `hyperref' Info: End of reference (link) `figure.caption.12', line 7.
 Package `hyperref' Info: End of reference (link) `figure.caption.13', line 7.
 Package `hyperref' Info: End of reference (link) `figure.caption.12', line 8.
 Package `hyperref' Info: End of reference (link) `figure.caption.14', line 8.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 9.
+Package `hyperref' Info: End of reference (link) `figure.caption.15', line 9.
 ]
 Package hyperref Info: Anchor `chapter*.5' on input line 161.
 Package hyperref Info: Anchor `listatabelas.0' on input line 161.
@@ -828,6 +832,7 @@ Package hyperref Info: Anchor `page.x' on input line 164.
 Package hyperref Info: Anchor `chapter*.6' on input line 164.
  (tese.loa
 Package hyperref Info: Reference (link) `algorithm.1' on input line 1.
+Package hyperref Info: Reference (link) `algorithm.2' on input line 2.
 )
 \tf@loa=\write7
 \openout7 = `tese.loa'.
@@ -836,6 +841,7 @@ Package hyperref Info: Anchor `page.xi' on input line 167.
  [11
 
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 1.
+Package `hyperref' Info: End of reference (link) `algorithm.2', line 2.
 ]
 Package hyperref Info: Anchor `chapter*.7' on input line 167.
 Package hyperref Info: Anchor `listaabreviaturas.0' on input line 167.
@@ -1108,7 +1114,7 @@ Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.10' on input line 11.
-<Cap2/maze_model.png, id=339, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=345, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1161,7 +1167,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (link) `figure.caption.11' on input line 30.
 Package hyperref Info: Anchor `figure.caption.11' on input line 32.
-<Cap2/maze_indices_muhammad.png, id=358, 296.307pt x 296.90926pt>
+<Cap2/maze_indices_muhammad.png, id=364, 296.307pt x 296.90926pt>
 File: Cap2/maze_indices_muhammad.png Graphic file (type png)
 <use Cap2/maze_indices_muhammad.png>
 Package pdftex.def Info: Cap2/maze_indices_muhammad.png  used on input line 34.
@@ -1174,7 +1180,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Anchor `figure.caption.12' on input line 39.
-<Cap2/maze_example.png, id=363, 555.87675pt x 178.266pt>
+<Cap2/maze_example.png, id=369, 555.87675pt x 178.266pt>
 File: Cap2/maze_example.png Graphic file (type png)
 <use Cap2/maze_example.png>
 Package pdftex.def Info: Cap2/maze_example.png  used on input line 41.
@@ -1183,7 +1189,7 @@ pdftex: bookmark at 42: {2.3} {\numberline{2.3}{\ignorespaces Red agent travers
 ing a maze toward the green goal. This maze is not a perfect maze.\relax }} {fi
 gure.caption.12}{0}{lof}
 Package hyperref Info: Anchor `figure.caption.13' on input line 46.
-<Cap2/maze_example_graph.png, id=364, 370.986pt x 353.52075pt>
+<Cap2/maze_example_graph.png, id=370, 370.986pt x 353.52075pt>
 File: Cap2/maze_example_graph.png Graphic file (type png)
 <use Cap2/maze_example_graph.png>
 Package pdftex.def Info: Cap2/maze_example_graph.png  used on input line 48.
@@ -1243,8 +1249,8 @@ Package hyperref Info: Reference (link) `algorithm.1' on input line 81.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 84.
 pdftex: bookmark at 84: {1} {\numberline{1}{\ignorespaces Traverse of the agent
- through the maze (interpreted as a tree by the agent)\relax }} {algorithm.1}{0
-}{loa}
+ through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}{
+0}{loa}
 Package hyperref Info: Anchor `algorithm.1' on input line 192.
 
 LaTeX Warning: Float too large for page by 42.90195pt on input line 192.
@@ -1264,7 +1270,7 @@ Package hyperref Info: Reference (link) `figure.caption.14' on input line 194.
 Package hyperref Info: Reference (link) `figure.caption.12' on input line 194.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 194.
 Package hyperref Info: Anchor `figure.caption.14' on input line 198.
-<Cap2/maze_example_graph_intervals.png, id=390, 363.15675pt x 343.88475pt>
+<Cap2/maze_example_graph_intervals.png, id=396, 363.15675pt x 343.88475pt>
 File: Cap2/maze_example_graph_intervals.png Graphic file (type png)
 <use Cap2/maze_example_graph_intervals.png>
 Package pdftex.def Info: Cap2/maze_example_graph_intervals.png  used on input l
@@ -1280,9 +1286,9 @@ pdftex: bookmark at 205: {2.4} {\numberline{2.4}Mixed radix representation to t
 he agent path} {section.2.4}{1}{toc}
 Package hyperref Info: Reference (link) `section.2.3' on input line 207.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 207.
-)
-Package hyperref Info: Anchor `page.24' on input line 186.
- [24
+Package hyperref Info: Reference (link) `algorithm.1' on input line 209.
+Package hyperref Info: Anchor `page.24' on input line 210.
+[24
 Package `hyperref' Info: End of reference (link) `figure.caption.14', line 194.
 
 Package `hyperref' Info: End of reference (link) `figure.caption.12', line 194.
@@ -1293,15 +1299,54 @@ Package `hyperref' Info: End of reference (link) `figure.caption.12', line 201.
 Package `hyperref' Info: End of reference (link) `section.2.3', line 207.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 207.
  <./Cap2/maze_example_graph_intervals.png>]
-Package hyperref Info: Anchor `page.25' on input line 186.
+Package hyperref Info: Anchor `page.25' on input line 210.
  [25]
+Package hyperref Info: Reference (link) `algorithm.1' on input line 214.
+Package hyperref Info: Reference (link) `algorithm.2' on input line 214.
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 219.
+
+pdftex: bookmark at 222: {2} {\numberline{2}{\ignorespaces Methods related to m
+ixed radix numerical representation approach.\relax }} {algorithm.2}{0}{loa}
+Package hyperref Info: Anchor `algorithm.2' on input line 292.
+! Too many }'s.
+l.292 \end{algorithm}}
+                      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Package hyperref Info: Anchor `figure.caption.15' on input line 294.
+<Cap2/mixed_radix_path_example.png, id=415, 323.40825pt x 272.217pt>
+File: Cap2/mixed_radix_path_example.png Graphic file (type png)
+<use Cap2/mixed_radix_path_example.png>
+Package pdftex.def Info: Cap2/mixed_radix_path_example.png  used on input line 
+296.
+(pdftex.def)             Requested size: 227.62206pt x 191.59315pt.
+pdftex: bookmark at 297: {2.6} {\numberline{2.6}{\ignorespaces Blue agent with 
+an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_exam
+ple}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }} {fig
+ure.caption.15}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 297.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 297.
+)
+Package hyperref Info: Anchor `page.26' on input line 186.
+ [26
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 209.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 214.
+Package `hyperref' Info: End of reference (link) `algorithm.2', line 214.
+Package `hyperref' Info: End of reference (link) `figure.caption.15', line 219.
+
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 297.
+
+ <./Cap2/mixed_radix_path_example.png>]
+Package hyperref Info: Anchor `page.27' on input line 186.
+ [27]
 Package hyperref Info: Anchor `chapter.3' on input line 186.
 
 Chapter 3.
 pdftex: bookmark at 186: {3} {\numberline{3}Results} {chapter.3}{0}{toc}
 (Cap3/cap3.tex)
-Package hyperref Info: Anchor `page.26' on input line 189.
- [26
+Package hyperref Info: Anchor `page.28' on input line 189.
+ [28
 
 ]
 Package hyperref Info: Anchor `chapter.4' on input line 189.
@@ -1312,11 +1357,11 @@ pdftex: bookmark at 189: {4} {\numberline{4}Next steps} {chapter.4}{0}{toc}
 \tf@brf=\write11
 \openout11 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.27' on input line 3.
- [27
+Package hyperref Info: Anchor `page.29' on input line 3.
+ [29
 
 ]
-Package hyperref Info: Anchor `chapter*.15' on input line 3.
+Package hyperref Info: Anchor `chapter*.16' on input line 3.
 Package hyperref Info: Anchor `chapter.5' on input line 3.
 
 pdftex: bookmark at 3: {5} {Bibliography} {chapter.5}{0}{toc}
@@ -1415,8 +1460,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-Package hyperref Info: Anchor `page.28' on input line 227.
- [28
+Package hyperref Info: Anchor `page.30' on input line 227.
+ [30
 
 ]
 \bottommargin=\skip86
@@ -1427,8 +1472,8 @@ Overfull \hbox (74.53033pt too wide) in paragraph at lines 227--227
 [][] 
  []
 
-Package hyperref Info: Anchor `page.29' on input line 229.
-[29
+Package hyperref Info: Anchor `page.31' on input line 229.
+[31
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1445,10 +1490,10 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15743 strings out of 476331
- 261135 string characters out of 5787765
+ 15756 strings out of 476331
+ 261474 string characters out of 5787765
  1872660 words of memory out of 5000000
- 35659 multiletter control sequences out of 15000+600000
+ 35667 multiletter control sequences out of 15000+600000
  566620 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,104p,1097b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1471,9 +1516,9 @@ pe1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (30 pages, 752453 bytes).
+Output written on tese.pdf (32 pages, 784266 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 

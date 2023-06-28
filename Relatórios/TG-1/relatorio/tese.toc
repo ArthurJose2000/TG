@@ -13,6 +13,6 @@
 \contentsline {section}{\numberline {2.2}Maze from a graph topology perspective}{21}{section.2.2}
 \contentsline {section}{\numberline {2.3}Multi-agent exploration without communication}{21}{section.2.3}
 \contentsline {section}{\numberline {2.4}Mixed radix representation to the agent path}{24}{section.2.4}
-\contentsline {chapter}{\numberline {3}Results}{26}{chapter.3}
-\contentsline {chapter}{\numberline {4}Next steps}{27}{chapter.4}
-\contentsline {chapter}{Bibliography}{28}{chapter.5}
+\contentsline {chapter}{\numberline {3}Results}{28}{chapter.3}
+\contentsline {chapter}{\numberline {4}Next steps}{29}{chapter.4}
+\contentsline {chapter}{Bibliography}{30}{chapter.5}
