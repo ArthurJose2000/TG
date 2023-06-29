@@ -99,10 +99,10 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \State $A \gets \oslash$ \hspace{3.1cm} \slash\slash \hspace{0.1cm} Initialize the empty adjacency list of the tree $A$
 
-\State $complete(A, v_{1})$ \hspace{1.55cm} \slash\slash \hspace{0.1cm} In the tree $A$, create a list for $v_{1}$ and complete the list of
-\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} $v_{1}$ with the children of $v_{1}$. The order of insertion of child
-\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} must follow some rule. In the case of this work, the inser-
-\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} tion is clockwise (North, East, South, West)\\
+\State $complete(A, v_{1})$ \hspace{1.55cm} \slash\slash \hspace{0.1cm} In the tree $A$, create a node for $v_{1}$, and fill its children list
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} with the neighboring cells of $v_{1}$. The children insertion
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} order must follow some immutable rule. In the case of this
+\State \hspace{4.45cm} \slash\slash \hspace{0.1cm} work, the insertion is clockwise (North, East, South, West)\\
 
 \\
 
@@ -261,8 +261,7 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 
 \hspace{0.3cm} $value \gets 0$\\
 
-\hspace{0.3cm} $factor \gets 1$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} It is necessary to take into account if the numeral of the element\\
-\hspace{3.05cm} \slash\slash \hspace{0.1cm} is 0\\
+\hspace{0.3cm} $interval\_size \gets 1$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} To calculate the interval size step by step\\
 
 \hspace{0.3cm} \textbf{foreach} element in $path$ \textbf{do}\\
 
@@ -272,17 +271,9 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 
 \hspace{0.6cm} \textbf{end if}\\
 
-\hspace{0.6cm} $value \gets value + (1 - value) \cdot factor \cdot element.numeral / element.radix $\\
+\hspace{0.6cm} $value \gets value + interval\_size \cdot (element.numeral / element.radix)$\\
 
-\hspace{0.6cm} \textbf{if} $element.numeral == 0$ \textbf{then}\\
-
-\hspace{0.9cm} $factor \gets factor \cdot element.radix$\\
-
-\hspace{0.6cm} \textbf{else}\\
-
-\hspace{0.9cm} $factor \gets 1$\\
-
-\hspace{0.6cm} \textbf{end if}\\
+\hspace{0.6cm} $interval\_size \gets interval\_size / element.radix$\\
 
 \hspace{0.3cm} \textbf{end foreach}\\
 

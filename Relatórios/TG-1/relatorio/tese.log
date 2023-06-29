@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  28 JUN 2023 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  28 JUN 2023 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,26 +1307,26 @@ Package hyperref Info: Reference (link) `figure.caption.15' on input line 219.
 
 pdftex: bookmark at 222: {2} {\numberline{2}{\ignorespaces Methods related to m
 ixed radix numerical representation approach.\relax }} {algorithm.2}{0}{loa}
-Package hyperref Info: Anchor `algorithm.2' on input line 292.
+Package hyperref Info: Anchor `algorithm.2' on input line 283.
 ! Too many }'s.
-l.292 \end{algorithm}}
+l.283 \end{algorithm}}
                       
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-Package hyperref Info: Anchor `figure.caption.15' on input line 294.
+Package hyperref Info: Anchor `figure.caption.15' on input line 285.
 <Cap2/mixed_radix_path_example.png, id=415, 323.40825pt x 272.217pt>
 File: Cap2/mixed_radix_path_example.png Graphic file (type png)
 <use Cap2/mixed_radix_path_example.png>
 Package pdftex.def Info: Cap2/mixed_radix_path_example.png  used on input line 
-296.
+287.
 (pdftex.def)             Requested size: 227.62206pt x 191.59315pt.
-pdftex: bookmark at 297: {2.6} {\numberline{2.6}{\ignorespaces Blue agent with 
+pdftex: bookmark at 288: {2.6} {\numberline{2.6}{\ignorespaces Blue agent with 
 an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_exam
 ple}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }} {fig
 ure.caption.15}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 297.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 297.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 288.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 288.
 )
 Package hyperref Info: Anchor `page.26' on input line 186.
  [26
@@ -1335,7 +1335,7 @@ Package `hyperref' Info: End of reference (link) `algorithm.1', line 214.
 Package `hyperref' Info: End of reference (link) `algorithm.2', line 214.
 Package `hyperref' Info: End of reference (link) `figure.caption.15', line 219.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 297.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 288.
 
  <./Cap2/mixed_radix_path_example.png>]
 Package hyperref Info: Anchor `page.27' on input line 186.
@@ -1516,7 +1516,7 @@ pe1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (32 pages, 784442 bytes).
+Output written on tese.pdf (32 pages, 784737 bytes).
 PDF statistics:
  542 PDF objects out of 1000 (max. 8388607)
  97 named destinations out of 1000 (max. 500000)
