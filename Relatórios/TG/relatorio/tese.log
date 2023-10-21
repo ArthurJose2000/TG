@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  20 OCT 2023 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  21 OCT 2023 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,6 +550,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks31
 \@floatcapt=\box61
 )
+(C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
+y
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks32
+\c@algorithm=\count312
+)
 (C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudoc
 ode.sty
 Package: algpseudocode 
@@ -559,25 +566,18 @@ cx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count312
-\c@ALG@rem=\count313
-\c@ALG@nested=\count314
+\c@ALG@line=\count313
+\c@ALG@rem=\count314
+\c@ALG@nested=\count315
 \ALG@tlm=\skip83
 \ALG@thistlm=\skip84
-\c@ALG@Lnr=\count315
-\c@ALG@blocknr=\count316
-\c@ALG@storecount=\count317
-\c@ALG@tmpcounter=\count318
+\c@ALG@Lnr=\count316
+\c@ALG@blocknr=\count317
+\c@ALG@storecount=\count318
+\c@ALG@tmpcounter=\count319
 \ALG@tmplength=\skip85
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-(C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
-y
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-\@float@every@algorithm=\toks32
-\c@algorithm=\count319
 )
 \@glossaryfile=\write3
 \openout3 = `tese.glo'.
@@ -585,7 +585,7 @@ nment
 
 Writing glossary file tese.glo 
 LaTeX Font Info:    Trying to load font information for T1+aer on input line 11
-9.
+8.
 (C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )
@@ -597,24 +597,24 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 ) (tese.aux)
 \openout1 = `tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -651,12 +651,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 119.
+Package hyperref Info: Link coloring ON on input line 118.
  (tese.out) (tese.out)
 \@outlinefile=\write4
 \openout4 = `tese.out'.
 
-Package hyperref Info: Anchor `Doc-Start' on input line 119.
+Package hyperref Info: Anchor `Doc-Start' on input line 118.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -692,97 +692,97 @@ Package hyperref Info: Anchor `Doc-Start' on input line 119.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@butlastpage=\count327
-Package hyperref Info: Anchor `cover.0' on input line 121.
+Package hyperref Info: Anchor `cover.0' on input line 120.
 <Cap0/ita_logo.jpg, id=131, 612.3678pt x 234.8775pt>
 File: Cap0/ita_logo.jpg Graphic file (type jpg)
 <use Cap0/ita_logo.jpg>
-Package pdftex.def Info: Cap0/ita_logo.jpg  used on input line 121.
+Package pdftex.def Info: Cap0/ita_logo.jpg  used on input line 120.
 (pdftex.def)             Requested size: 227.62206pt x 87.3047pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121
+LaTeX Font Info:    Trying to load font information for U+msa on input line 120
 .
 (C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121
+LaTeX Font Info:    Trying to load font information for U+msb on input line 120
 .
 
 (C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.57451pt too wide) in paragraph at lines 121--121
+Overfull \hbox (5.57451pt too wide) in paragraph at lines 120--120
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 
  []
 
-Package hyperref Info: Anchor `titulo.0' on input line 121.
-Package hyperref Info: Anchor `page.i' on input line 121.
+Package hyperref Info: Anchor `titulo.0' on input line 120.
+Package hyperref Info: Anchor `page.i' on input line 120.
 [1
 
 
 
 {C:/Users/arthu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Cap0/ita_l
 ogo.jpg>]
-Package hyperref Info: Anchor `page.ii' on input line 121.
+Package hyperref Info: Anchor `page.ii' on input line 120.
  [2]
-Package hyperref Info: Anchor `cip.0' on input line 121.
+Package hyperref Info: Anchor `cip.0' on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 
  []
 
-Package hyperref Info: Anchor `page.iii' on input line 121.
+Package hyperref Info: Anchor `page.iii' on input line 120.
 [3]
-Package hyperref Info: Anchor `aprovacao.0' on input line 121.
-Package hyperref Info: Anchor `page.iv' on input line 121.
+Package hyperref Info: Anchor `aprovacao.0' on input line 120.
+Package hyperref Info: Anchor `page.iv' on input line 120.
  [4]
-Package hyperref Info: Anchor `dedication.0' on input line 124.
-Package hyperref Info: Anchor `page.iv' on input line 126.
+Package hyperref Info: Anchor `dedication.0' on input line 123.
+Package hyperref Info: Anchor `page.iv' on input line 125.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \end{itadedication}
+l.125 \end{itadedication}
                           [4]
-Package hyperref Info: Anchor `chapter*.1' on input line 130.
-Package hyperref Info: Anchor `acknowledgment.0' on input line 130.
+Package hyperref Info: Anchor `chapter*.1' on input line 129.
+Package hyperref Info: Anchor `acknowledgment.0' on input line 129.
  (Cap0/agradecimentos.tex)
-Package hyperref Info: Anchor `page.v' on input line 131.
+Package hyperref Info: Anchor `page.v' on input line 130.
  [5
 
 ]
-Package hyperref Info: Anchor `epigrafe.0' on input line 135.
+Package hyperref Info: Anchor `epigrafe.0' on input line 134.
 LaTeX Font Info:    Trying to load font information for T1+aess on input line 1
-39.
+38.
 
 (C:\Users\arthu\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 139.
-Package hyperref Info: Anchor `page.vi' on input line 146.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 138.
+Package hyperref Info: Anchor `page.vi' on input line 145.
  [6]
-Package hyperref Info: Anchor `chapter*.2' on input line 146.
-Package hyperref Info: Anchor `resumo.0' on input line 146.
+Package hyperref Info: Anchor `chapter*.2' on input line 145.
+Package hyperref Info: Anchor `resumo.0' on input line 145.
 
 (Cap0/resumo.tex)
-Package hyperref Info: Anchor `page.vii' on input line 152.
+Package hyperref Info: Anchor `page.vii' on input line 151.
  [7
 
 ]
-Package hyperref Info: Anchor `chapter*.3' on input line 152.
-Package hyperref Info: Anchor `abstract.0' on input line 152.
+Package hyperref Info: Anchor `chapter*.3' on input line 151.
+Package hyperref Info: Anchor `abstract.0' on input line 151.
  (Cap0/abstract.tex)
-Package hyperref Info: Anchor `page.viii' on input line 158.
+Package hyperref Info: Anchor `page.viii' on input line 157.
  [8
 
 ]
-Package hyperref Info: Anchor `chapter*.4' on input line 158.
-Package hyperref Info: Anchor `listafiguras.0' on input line 158.
+Package hyperref Info: Anchor `chapter*.4' on input line 157.
+Package hyperref Info: Anchor `listafiguras.0' on input line 157.
  (tese.lof
 Package hyperref Info: Reference (link) `figure.caption.10' on input line 4.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 4.
@@ -801,7 +801,7 @@ Package hyperref Info: Reference (link) `figure.caption.12' on input line 9.
 \tf@lof=\write5
 \openout5 = `tese.lof'.
 
-Package hyperref Info: Anchor `page.ix' on input line 161.
+Package hyperref Info: Anchor `page.ix' on input line 160.
  [9
 
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 4.
@@ -818,33 +818,35 @@ Package `hyperref' Info: End of reference (link) `figure.caption.14', line 8.
 Package `hyperref' Info: End of reference (link) `figure.caption.12', line 9.
 Package `hyperref' Info: End of reference (link) `figure.caption.15', line 9.
 ]
-Package hyperref Info: Anchor `chapter*.5' on input line 161.
-Package hyperref Info: Anchor `listatabelas.0' on input line 161.
+Package hyperref Info: Anchor `chapter*.5' on input line 160.
+Package hyperref Info: Anchor `listatabelas.0' on input line 160.
  (tese.lot)
 \tf@lot=\write6
 \openout6 = `tese.lot'.
 
-Package hyperref Info: Anchor `page.x' on input line 164.
+Package hyperref Info: Anchor `page.x' on input line 163.
 
 [10
 
 ]
-Package hyperref Info: Anchor `chapter*.6' on input line 164.
+Package hyperref Info: Anchor `chapter*.6' on input line 163.
  (tese.loa
 Package hyperref Info: Reference (link) `algorithm.1' on input line 1.
-Package hyperref Info: Reference (link) `algorithm.2' on input line 2.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 2.
+Package hyperref Info: Reference (link) `algorithm.2' on input line 3.
 )
 \tf@loa=\write7
 \openout7 = `tese.loa'.
 
-Package hyperref Info: Anchor `page.xi' on input line 167.
+Package hyperref Info: Anchor `page.xi' on input line 166.
  [11
 
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 1.
-Package `hyperref' Info: End of reference (link) `algorithm.2', line 2.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 2.
+Package `hyperref' Info: End of reference (link) `algorithm.2', line 3.
 ]
-Package hyperref Info: Anchor `chapter*.7' on input line 167.
-Package hyperref Info: Anchor `listaabreviaturas.0' on input line 167.
+Package hyperref Info: Anchor `chapter*.7' on input line 166.
+Package hyperref Info: Anchor `listaabreviaturas.0' on input line 166.
  (tese.lof)
 \tf@lof=\write8
 \openout8 = `tese.lof'.
@@ -852,12 +854,12 @@ Package hyperref Info: Anchor `listaabreviaturas.0' on input line 167.
  (Cap0/listaabreviaturas.tex
 Package hyperref Info: Anchor `table.0.1' on input line 4.
 )
-Package hyperref Info: Anchor `page.xii' on input line 171.
+Package hyperref Info: Anchor `page.xii' on input line 170.
  [12
 
 ]
-Package hyperref Info: Anchor `chapter*.8' on input line 171.
-Package hyperref Info: Anchor `listasimbolos.0' on input line 171.
+Package hyperref Info: Anchor `chapter*.8' on input line 170.
+Package hyperref Info: Anchor `listasimbolos.0' on input line 170.
  (tese.lof)
 \tf@lof=\write9
 \openout9 = `tese.lof'.
@@ -866,12 +868,12 @@ Package hyperref Info: Anchor `listasimbolos.0' on input line 171.
 (Cap0/listasimbolos.tex
 Package hyperref Info: Anchor `table.0.2' on input line 4.
 )
-Package hyperref Info: Anchor `page.xiii' on input line 175.
+Package hyperref Info: Anchor `page.xiii' on input line 174.
  [13
 
 ]
-Package hyperref Info: Anchor `chapter*.9' on input line 175.
-Package hyperref Info: Anchor `contents.0' on input line 175.
+Package hyperref Info: Anchor `chapter*.9' on input line 174.
+Package hyperref Info: Anchor `contents.0' on input line 174.
  (tese.toc
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
  []  
@@ -918,7 +920,7 @@ Package hyperref Info: Reference (link) `chapter.5' on input line 18.
 \tf@toc=\write10
 \openout10 = `tese.toc'.
 
-Package hyperref Info: Anchor `page.xiv' on input line 177.
+Package hyperref Info: Anchor `page.xiv' on input line 176.
  [14
 
 Package `hyperref' Info: End of reference (link) `chapter.1', line 2.
@@ -939,10 +941,10 @@ Package `hyperref' Info: End of reference (link) `chapter.3', line 16.
 Package `hyperref' Info: End of reference (link) `chapter.4', line 17.
 Package `hyperref' Info: End of reference (link) `chapter.5', line 18.
 ]
-Package hyperref Info: Anchor `chapter.1' on input line 180.
+Package hyperref Info: Anchor `chapter.1' on input line 179.
 
 Chapter 1.
-pdftex: bookmark at 180: {1} {\numberline{1}Introduction} {chapter.1}{0}{toc}
+pdftex: bookmark at 179: {1} {\numberline{1}Introduction} {chapter.1}{0}{toc}
 (Cap1/cap1.tex
 Package hyperref Info: Reference (link) `section.1.1' on input line 3.
 Package hyperref Info: Reference (link) `section.1.2' on input line 3.
@@ -1083,16 +1085,16 @@ Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
 Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
 Package hyperref Info: Reference (link) `section.2.4' on input line 77.
 )
-Package hyperref Info: Anchor `page.19' on input line 183.
+Package hyperref Info: Anchor `page.19' on input line 182.
  [19
 Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 66.
 Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 66.
 Package `hyperref' Info: End of reference (link) `section.2.4', line 77.
 ]
-Package hyperref Info: Anchor `chapter.2' on input line 183.
+Package hyperref Info: Anchor `chapter.2' on input line 182.
 
 Chapter 2.
-pdftex: bookmark at 183: {2} {\numberline{2}Models} {chapter.2}{0}{toc}
+pdftex: bookmark at 182: {2} {\numberline{2}Models} {chapter.2}{0}{toc}
 (Cap2/cap2.tex
 Package hyperref Info: Anchor `section.2.1' on input line 1.
 
@@ -1114,7 +1116,7 @@ Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.10' on input line 11.
-<Cap2/maze_model.png, id=345, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=346, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1167,7 +1169,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (link) `figure.caption.11' on input line 30.
 Package hyperref Info: Anchor `figure.caption.11' on input line 32.
-<Cap2/maze_indices_muhammad.png, id=364, 296.307pt x 296.90926pt>
+<Cap2/maze_indices_muhammad.png, id=365, 296.307pt x 296.90926pt>
 File: Cap2/maze_indices_muhammad.png Graphic file (type png)
 <use Cap2/maze_indices_muhammad.png>
 Package pdftex.def Info: Cap2/maze_indices_muhammad.png  used on input line 34.
@@ -1180,7 +1182,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Anchor `figure.caption.12' on input line 39.
-<Cap2/maze_example.png, id=369, 555.87675pt x 178.266pt>
+<Cap2/maze_example.png, id=370, 555.87675pt x 178.266pt>
 File: Cap2/maze_example.png Graphic file (type png)
 <use Cap2/maze_example.png>
 Package pdftex.def Info: Cap2/maze_example.png  used on input line 41.
@@ -1189,7 +1191,7 @@ pdftex: bookmark at 42: {2.3} {\numberline{2.3}{\ignorespaces Red agent travers
 ing a maze toward the green goal. This maze is not a perfect maze.\relax }} {fi
 gure.caption.12}{0}{lof}
 Package hyperref Info: Anchor `figure.caption.13' on input line 46.
-<Cap2/maze_example_graph.png, id=370, 370.986pt x 353.52075pt>
+<Cap2/maze_example_graph.png, id=371, 370.986pt x 353.52075pt>
 File: Cap2/maze_example_graph.png Graphic file (type png)
 <use Cap2/maze_example_graph.png>
 Package pdftex.def Info: Cap2/maze_example_graph.png  used on input line 48.
@@ -1251,114 +1253,271 @@ put line 84.
 pdftex: bookmark at 84: {1} {\numberline{1}{\ignorespaces Traverse of the agent
  through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}{
 0}{loa}
-Package hyperref Info: Anchor `algorithm.1' on input line 194.
 
-LaTeX Warning: Float too large for page by 86.28792pt on input line 194.
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
 
-Package hyperref Info: Anchor `page.23' on input line 194.
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \State COLOCAR A CONDIÇ
+                              ÃO CURRENTNODE == V1
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \State COLOCAR A CONDIÇÃ
+                                O CURRENTNODE == V1
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Anchor `algorithm.1' on input line 181.
+
+LaTeX Warning: Float too large for page by 2.28792pt on input line 181.
+
+Package hyperref Info: Anchor `page.23' on input line 181.
 [23
 Package `hyperref' Info: End of reference (link) `subsection.1.3.1', line 81.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 81.
 ]
-! Too many }'s.
-l.194 \end{algorithm}}
-                      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+pdftex: bookmark at 185: {1} {\numberline{1}{\ignorespaces Traverse of the agen
+t through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}
+{0}{loa}
 
-Package hyperref Info: Reference (link) `figure.caption.14' on input line 196.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 196.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 196.
-Package hyperref Info: Anchor `figure.caption.14' on input line 200.
-<Cap2/maze_example_graph_intervals.png, id=396, 363.15675pt x 343.88475pt>
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \State COLOCAR A CONDIÇ
+                              ÃO DE RETORNO PARA O PAI (MESMO NÓ E NÃO FI...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \State COLOCAR A CONDIÇÃ
+                                O DE RETORNO PARA O PAI (MESMO NÓ E NÃO FI...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...NDIÇÃO DE RETORNO PARA O PAI (MESMO NÓ
+                                                   E NÃO FINALIZOU O INTERV...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...�O DE RETORNO PARA O PAI (MESMO NÓ E NÃ
+                                                  O FINALIZOU O INTERVALO). ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...�O FINALIZOU O INTERVALO). COLOCAR TAMBÉ
+                                                  M A CONDIÇÃO DE FINALIZA...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...U O INTERVALO). COLOCAR TAMBÉM A CONDIÇ
+                                                  ÃO DE FINALIZAÇÃO DE IN...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...O INTERVALO). COLOCAR TAMBÉM A CONDIÇÃ
+                                                  O DE FINALIZAÇÃO DE INTE...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...OLOCAR TAMBÉM A CONDIÇÃO DE FINALIZAÇ
+                                                  ÃO DE INTERVALO
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...OCAR TAMBÉM A CONDIÇÃO DE FINALIZAÇÃ
+                                                  O DE INTERVALO
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Anchor `algorithm.1' on input line 218.
+Package hyperref Info: Reference (link) `figure.caption.14' on input line 221.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 221.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 221.
+Package hyperref Info: Anchor `figure.caption.14' on input line 225.
+<Cap2/maze_example_graph_intervals.png, id=397, 363.15675pt x 343.88475pt>
 File: Cap2/maze_example_graph_intervals.png Graphic file (type png)
 <use Cap2/maze_example_graph_intervals.png>
 Package pdftex.def Info: Cap2/maze_example_graph_intervals.png  used on input l
-ine 202.
+ine 227.
 (pdftex.def)             Requested size: 227.62206pt x 215.54662pt.
-pdftex: bookmark at 203: {2.5} {\numberline{2.5}{\ignorespaces Graph representa
+pdftex: bookmark at 228: {2.5} {\numberline{2.5}{\ignorespaces Graph representa
 tion of the maze presented in Figure \ref {maze_example}, with intervals relate
 d to the agent's range of action.\relax }} {figure.caption.14}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 203.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 203.
-Package hyperref Info: Anchor `section.2.4' on input line 207.
-pdftex: bookmark at 207: {2.4} {\numberline{2.4}Mixed radix representation to t
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 228.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 228.
+Package hyperref Info: Anchor `section.2.4' on input line 232.
+pdftex: bookmark at 232: {2.4} {\numberline{2.4}Mixed radix representation to t
 he agent path} {section.2.4}{1}{toc}
-Package hyperref Info: Reference (link) `section.2.3' on input line 209.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 209.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 211.
-Package hyperref Info: Anchor `page.24' on input line 212.
+Package hyperref Info: Reference (link) `section.2.3' on input line 234.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 234.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 236.
+Package hyperref Info: Anchor `page.24' on input line 237.
 [24
-Package `hyperref' Info: End of reference (link) `figure.caption.14', line 196.
+Package `hyperref' Info: End of reference (link) `figure.caption.14', line 221.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 196.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 221.
 
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 196.
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 203.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 221.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 228.
 
-Package `hyperref' Info: End of reference (link) `section.2.3', line 209.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 209.
+Package `hyperref' Info: End of reference (link) `section.2.3', line 234.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 234.
  <./Cap2/maze_example_graph_intervals.png>]
-Package hyperref Info: Anchor `page.25' on input line 212.
+Package hyperref Info: Anchor `page.25' on input line 237.
  [25]
-Package hyperref Info: Reference (link) `algorithm.1' on input line 216.
-Package hyperref Info: Reference (link) `algorithm.2' on input line 216.
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 221.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 241.
+Package hyperref Info: Reference (link) `algorithm.2' on input line 241.
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 246.
 
-pdftex: bookmark at 224: {2} {\numberline{2}{\ignorespaces Methods related to m
+pdftex: bookmark at 249: {2} {\numberline{2}{\ignorespaces Methods related to m
 ixed radix numerical representation approach.\relax }} {algorithm.2}{0}{loa}
-Package hyperref Info: Anchor `algorithm.2' on input line 285.
+Package hyperref Info: Anchor `algorithm.2' on input line 310.
 ! Too many }'s.
-l.285 \end{algorithm}}
+l.310 \end{algorithm}}
                       
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-Package hyperref Info: Anchor `figure.caption.15' on input line 287.
-<Cap2/mixed_radix_path_example.png, id=415, 323.40825pt x 272.217pt>
+Package hyperref Info: Anchor `figure.caption.15' on input line 312.
+<Cap2/mixed_radix_path_example.png, id=416, 323.40825pt x 272.217pt>
 File: Cap2/mixed_radix_path_example.png Graphic file (type png)
 <use Cap2/mixed_radix_path_example.png>
 Package pdftex.def Info: Cap2/mixed_radix_path_example.png  used on input line 
-289.
+314.
 (pdftex.def)             Requested size: 227.62206pt x 191.59315pt.
-pdftex: bookmark at 290: {2.6} {\numberline{2.6}{\ignorespaces Blue agent with 
+pdftex: bookmark at 315: {2.6} {\numberline{2.6}{\ignorespaces Blue agent with 
 an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_exam
 ple}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }} {fig
 ure.caption.15}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 290.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 290.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 315.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 315.
 )
-Package hyperref Info: Anchor `page.26' on input line 186.
+Package hyperref Info: Anchor `page.26' on input line 185.
  [26
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 211.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 216.
-Package `hyperref' Info: End of reference (link) `algorithm.2', line 216.
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 221.
-
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 290.
-
- <./Cap2/mixed_radix_path_example.png>]
-Package hyperref Info: Anchor `page.27' on input line 186.
- [27]
-Package hyperref Info: Anchor `chapter.3' on input line 186.
-
-Chapter 3.
-pdftex: bookmark at 186: {3} {\numberline{3}Results} {chapter.3}{0}{toc}
-(Cap3/cap3.tex)
-Package hyperref Info: Anchor `page.28' on input line 189.
- [28
+pdfTeX warning (ext4): destination with the same identifier (name{algorithm.1})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.185 \chapter
+              {Results}
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 236.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 241.
+Package `hyperref' Info: End of reference (link) `algorithm.2', line 241.
+Package `hyperref' Info: End of reference (link) `figure.caption.15', line 246.
 
 ]
-Package hyperref Info: Anchor `chapter.4' on input line 189.
+Package hyperref Info: Anchor `page.27' on input line 185.
+ [27]
+Package hyperref Info: Anchor `page.28' on input line 185.
+ [28
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 315.
+
+ <./Cap2/mixed_radix_path_example.png>]
+Package hyperref Info: Anchor `chapter.3' on input line 185.
+
+Chapter 3.
+pdftex: bookmark at 185: {3} {\numberline{3}Results} {chapter.3}{0}{toc}
+(Cap3/cap3.tex)
+Package hyperref Info: Anchor `page.29' on input line 188.
+ [29
+
+]
+Package hyperref Info: Anchor `chapter.4' on input line 188.
 
 Chapter 4.
-pdftex: bookmark at 189: {4} {\numberline{4}Next steps} {chapter.4}{0}{toc}
+pdftex: bookmark at 188: {4} {\numberline{4}Next steps} {chapter.4}{0}{toc}
 (Cap4/cap4.tex) (tese.bbl (tese.brf)
 \tf@brf=\write11
 \openout11 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.29' on input line 3.
- [29
+Package hyperref Info: Anchor `page.30' on input line 3.
+ [30
 
 ]
 Package hyperref Info: Anchor `chapter*.16' on input line 3.
@@ -1460,20 +1619,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-Package hyperref Info: Anchor `page.30' on input line 227.
- [30
+Package hyperref Info: Anchor `page.31' on input line 226.
+ [31
 
 ]
 \bottommargin=\skip86
 \rightmarginn=\skip87
-Package hyperref Info: Anchor `bla.0' on input line 227.
+Package hyperref Info: Anchor `bla.0' on input line 226.
  (Cap0/resumo.tex) (Cap0/resumo.tex) (Cap0/resumo.tex)
-Overfull \hbox (74.53033pt too wide) in paragraph at lines 227--227
+Overfull \hbox (74.53033pt too wide) in paragraph at lines 226--226
 [][] 
  []
 
-Package hyperref Info: Anchor `page.31' on input line 229.
-[31
+Package hyperref Info: Anchor `page.32' on input line 228.
+[32
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1490,10 +1649,10 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15756 strings out of 476331
- 261382 string characters out of 5787765
- 1873660 words of memory out of 5000000
- 35667 multiletter control sequences out of 15000+600000
+ 15808 strings out of 476331
+ 262359 string characters out of 5787765
+ 1872660 words of memory out of 5000000
+ 35718 multiletter control sequences out of 15000+600000
  566620 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,104p,1097b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1516,9 +1675,9 @@ pe1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (32 pages, 787105 bytes).
+Output written on tese.pdf (33 pages, 792467 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
