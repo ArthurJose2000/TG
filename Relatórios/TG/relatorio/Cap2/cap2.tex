@@ -1,8 +1,8 @@
 \section{Maze and multi-agent exploration}
 \label{section_models_maze}
-For simulation purposes, this work modeled a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze across the related edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall.
+For simulation purposes, this work used an open-source tool that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze across the related edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall. Likewise, if an edge has not a wall, the edge of the adjacent corresponding cell doesn't have a wall.
 
-The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm according the current explored path and its programmed initial rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, when there are various posible branches to extend the agent's path, it ignores cells already visited by itself, and, if there is not a candidate to be a possible branch, the agent go back to the previous visited cell. Furthermore, specifically to this research, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in a multi-agent situation to solve the maze.
+The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm and previously programmed rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, when there are various posible branches to extend the agent's path, it ignores cells already visited by itself, and, if there is not a candidate to be a possible branch, the agent go back to the previous visited cell. Furthermore, if more than one agent traverses the maze in order to find the goal, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in the approach of this research, i.e., an agent knows nothing about another agent's search.
 
 \citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates randomly mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
 
@@ -24,7 +24,7 @@ As pointed out in Section \ref{section_models_maze}, given that an agent ignores
 
 \item if there is more than one path to the goal from any cell, the maze cannot be considered as a tree, but it might be considered as a general 2D grid;
 
-\item despite the last statement, and also considering that an agent ignores visited cells, an agent path always might be individually interpreted as a tree.
+\item regarding the last statement, despite the maze cannot be considered as tree, an agent path might be individually interpreted as a tree if such agent ignores visited cells.
 \end{itemize}
 
 Figure \ref{maze_example_graph} gives an example of the graph representation of the maze presented in Figure \ref{maze_example}, where a red agent is traversing the maze toward the green goal. As established by \citen{Muhammad2021}, the maze cells are programmatically addressed as indices of a matrix, such as represented in Figure \ref{maze_indices_muhammad}.
@@ -36,12 +36,20 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \label{maze_indices_muhammad}
 \end{figure}
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.7\textwidth]{Cap2/maze_example.png}
-\caption{Red agent traversing a maze toward the green goal. This maze is not a perfect maze.}
-\label{maze_example}
+\begin{figure}
+    \centering
+    \subfloat[\centering Agent at starting cell]
+    {{\includegraphics[width=3cm]{Cap2/maze_perfect_3x3_1agent_1.png} }}
+    \qquad
+    \subfloat[\centering Agent's 2nd step]
+    {{\includegraphics[width=3cm]{Cap2/maze_perfect_3x3_1agent_2.png} }}
+    \qquad
+    \subfloat[\centering Agent's 10th step]
+    {{\includegraphics[width=3cm]{Cap2/maze_perfect_3x3_1agent_3.png} }}
+    \caption{Red agent traversing a maze toward the green goal. This maze is not a perfect maze.}
+    \label{maze_example}
 \end{figure}
+
 
 \begin{figure}[ht!]
 \centering
@@ -49,6 +57,41 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \caption{Graph representation of the maze presented in Figure \ref{maze_example}. The cell indices are pointed out, and the cells visited by the red agent are also pointed out.}
 \label{maze_example_graph}
 \end{figure}	
+
+
+
+\begin{forest}
+for tree={delay={where content={}{content={\phantom{00}}}{}},s sep+=5mm,l+=5mm}
+[1
+  [00
+     [00]
+     []
+     [10]
+     []  
+  ]
+  []
+  [10,edge={dashed,red,thick} 
+     [00,edge={dashed,red,thick}
+        [00]
+        [01]
+        [10]
+        [11,edge={dashed,red,thick}]     
+     ]
+     []
+     []
+     [11]  
+  ]
+  [\phantom{00}]
+]
+\end{forest}
+
+\begin{forest}
+ [VP,circle,draw
+ [DP][V’[V][DP]]
+ ]
+\end{forest}
+
+
 
 \section{Multi-agent exploration without communication}
 \label{section_models_exploration}
@@ -120,9 +163,31 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \State
 
+\State /* \textit{Create a flag to know if the agent filled its interval passing by all the correspondent nodes in the tree} */
+
+\State finished\_interval $\gets$ FALSE
+
+\State
+
 \State
 
 \While{current\_node \textit{is not the goal cell}}
+
+\If{current\_node \textit{has no child} \textbf{or} \textit{all of} current\_node'\textit{s children were visited}}
+
+\If{current\_node == $v_{1}$} \Comment{\textit{Unsuccessful search}}
+
+\State \textbf{break} 
+
+\Else
+
+\State current\_node $\gets$ get\_parent(A, current\_node)
+
+\State \textbf{continue}
+
+\EndIf
+
+\EndIf
 
 \If{current\_node \textit{is not in} visited\_nodes}
 
@@ -148,30 +213,6 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \EndIf
 
-\If{current\_node \textit{has no child} \textbf{or} \textit{all of} current\_node'\textit{s children were visited}}
-
-\State current\_node $\gets$ get\_parent(A, current\_node)
-
-\State \textbf{continue}
-
-\EndIf
-
-\ForAll{\textit{child} $v_{j}$ \textit{of} current\_node \textit{in} $A$}
-
-\If{$v_{j}$ \textit{is in} visited\_nodes}
-
-\State \textbf{continue}
-
-\Else
-
-\State max\_node $\gets$ get\_max\_value(interval[$v_{j}$])
-
-\State min\_node $\gets$ get\_min\_value(interval[$v_{j}$])
-
-\State max\_agent $\gets$ get\_max\_value(agent\_interval)
-
-\State min\_agent $\gets$ get\_min\_value(agent\_interval)
-
 \algstore{alg1}
 
 \end{algorithmic}
@@ -183,11 +224,35 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 \begin{algorithmic}%[1]
 \algrestore{alg1}
 
+\ForAll{\textit{child} $v_{j}$ \textit{of} current\_node \textit{in} $A$}
+
+\State max\_node $\gets$ get\_max\_value(interval[$v_{j}$])
+
+\State min\_node $\gets$ get\_min\_value(interval[$v_{j}$])
+
+\State max\_agent $\gets$ get\_max\_value(agent\_interval)
+
+\State min\_agent $\gets$ get\_min\_value(agent\_interval)
+
+\If{$v_{j}$ \textit{is in} visited\_nodes}
+
+\State \textbf{continue}
+
+\ElsIf{max\_agent < min\_node}
+
+\State /* \textit{If the node's interval is on the right of the agent's interval, surely the}
+\State \textit{agent has finished its interval. Since the order of the nodes are well defined,}
+\State \textit{and in increasing order of intervals, the following condition improve the}
+\State \textit{algorithm's performance. It is optional} */
+
+\State finished\_interval $\gets$ TRUE
+
+\State \textbf{break}
+
+\ElsIf{min\_agent < max\_node \textbf{and} max\_agent > min\_node}
+
 \State /* \textit{This condition verifies if there is intersection between the agent's interval}
-
 \State \textit{and the node's interval. The order of children must be well defined} */
-
-\If{min\_agent < max\_node \textbf{and} max\_agent > min\_node}
 
 \State current\_node $\gets v_{j}$
 
@@ -195,17 +260,34 @@ As pointed out in Section \ref{section_definitions_graph}, a graph may be repres
 
 \EndIf
 
-\EndIf
-
 \EndFor
 
-\State /* \textit{If} current\_node \textit{remains the same as it was at the beginning of the iteration, it means that the agent completely filled its interval, and then it needs to change its behavior, since its behavior is domain dependent. It will continue the DFS under some criteria}
+\State
 
-\State COLOCAR A CONDIÇÃO DE RETORNO PARA O PAI (MESMO NÓ E NÃO FINALIZOU O INTERVALO). COLOCAR TAMBÉM A CONDIÇÃO DE FINALIZAÇÃO DE INTERVALO
+\State /* \textit{If} current\_node \textit{remains the same as it was at the beginning of the iteration,}
 
-\If{current\_node \textit{remains the same}}
+\State \textit{and it is the root, the agent has finished its interval} */
 
-\State current\_node $\gets$ continue\_DFS\_under\_some\_criteria(A,current\_node)
+\If{current\_node == $v_{1}$ \textbf{and} finished\_interval == FALSE}
+
+\State finished\_interval $\gets$ TRUE
+
+\EndIf
+
+\State
+
+\State /* \textit{If the agent completely filled its interval, it needs to change its behavior, since its}
+\State \textit{behavior is domain dependent. It will continue the DFS under some criteria.}
+\State \textit{Otherwise, it must come back to parent in order to check if there are more nodes to}
+\State \textit{visit} */
+
+\If{finished\_interval == TRUE}
+
+\State current\_node $\gets$ continue\_DFS\_under\_some\_criteria(A, current\_node)
+
+\Else
+
+\State current\_node $\gets$ get\_parent(A, current\_node)
 
 \EndIf
 
@@ -247,61 +329,71 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 \label{pseudocode_2}
 \begin{algorithmic}
 
-\State \textbf{struct} $mr\_element$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Structure of mixed radix element
+\State /* \textit{Structure of mixed radix element} */
+
+\State \textbf{struct} mr\_element
 
 \State $\{$
 
-\State \hspace{0.3cm} \textbf{type} $numeral$
+\State \hspace{0.3cm} \textbf{type} numeral
 
-\State \hspace{0.3cm} \textbf{type} $radix$
+\State \hspace{0.3cm} \textbf{type} radix
 
 \State $\}$
 
-\State $path \gets [$ $]$ \hspace{2.05cm} \slash\slash \hspace{0.1cm} Initialize the agent path. The agent is at the root of the tree.
+\State
 
-\State \hspace{3.95cm} \slash\slash \hspace{0.1cm} Numerically it means zero (or ``0.'')\\
+\State /* \textit{Initialize the agent's path. The agent is at the tree's root. Numerically it means zero in the mixed radix representation} */
 
-\\
+\State $path \gets [$ $]$
 
-\textbf{function} $append(path, numeral, radix)$:\\
+\State
 
-\hspace{0.3cm} \textbf{struct} $mr\_element$ $element$\\
+\Procedure{append}{path, numeral, radix}:
 
-\hspace{0.3cm} $element.numeral \gets numeral$\\
+\State \textbf{struct} mr\_element element
 
-\hspace{0.3cm} $element.radix \gets radix$\\
+\State element.numeral $\gets$ numeral
 
-\hspace{0.3cm} $add(path, mr\_element)$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Append the element to the end of the \textit{path} array\\
+\State element.radix $\gets$ radix
 
-\\
+\State add(path, element) \Comment{\textit{Append the element to the end of the} \textit{array} path}
 
-\textbf{function} $remove(path)$:\\
+\EndProcedure
 
-\hspace{0.3cm} $subtract(path)$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} Remove the last element of the \textit{path} array\\
+\State
 
-\\
+\Procedure{remove}{path}:
 
-\textbf{function} $get\_mixed\_radix\_value(path)$:\\
+\State subtract(path)\Comment{\textit{Remove the last element of the} \textit{array} path}
 
-\hspace{0.3cm} $value \gets 0$\\
+\EndProcedure
 
-\hspace{0.3cm} $interval\_size \gets 1$ \hspace{0.5cm} \slash\slash \hspace{0.1cm} To calculate the interval size step by step\\
+\State
 
-\hspace{0.3cm} \textbf{foreach} element in $path$ \textbf{do}\\
+\Procedure{get\_mixed\_radix\_value}{path}:
 
-\hspace{0.6cm} \textbf{if} $element.numeral == I$ \textbf{then}\\
+\State value $\gets$ 0
 
-\hspace{0.9cm} \textbf{continue}\\
+\State interval\_size $\gets$ 1 \Comment{\textit{In order to calculate the interval size step by step}}
 
-\hspace{0.6cm} \textbf{end if}\\
+\ForAll {\textit{element in} path}
 
-\hspace{0.6cm} $value \gets value + interval\_size \cdot (element.numeral / element.radix)$\\
+\If{element.numeral == I} \Comment{``I'' \textit{represents a node with only one child}}
 
-\hspace{0.6cm} $interval\_size \gets interval\_size / element.radix$\\
+\State \textbf{continue}
 
-\hspace{0.3cm} \textbf{end foreach}\\
+\EndIf
 
-\hspace{0.3cm} \textbf{return} $value$\\
+\State value $\gets$ value + interval\_size $\cdot$ (element.numeral / element.radix)
+
+\State interval\_size $\gets$ interval\_size / element.radix
+
+\EndFor
+
+\State \textbf{return} value
+
+\EndProcedure
 
 \end{algorithmic}
 \end{algorithm}}
@@ -311,4 +403,7 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 \includegraphics[width=0.5\textwidth]{Cap2/mixed_radix_path_example.png}
 \caption{Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref{maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.}
 \label{mixed_radix_path_example}
-\end{figure}	
+\end{figure}
+
+\section{Extended Tarry's algorithm}
+\label{section_models_tarry_algorithm}
