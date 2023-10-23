@@ -24,7 +24,7 @@ As pointed out in Section \ref{section_models_maze}, given that an agent ignores
 
 \item if there is more than one path to the goal from any cell, the maze cannot be considered as a tree, but it might be considered as a general 2D grid;
 
-\item regarding the last statement, even though not every maze can be considered as a tree, an agent path might be individually interpreted as a tree if such agent does not go through already visited cells.
+\item regarding the last statement, even though not every maze can be considered as a tree, an agent path might be individually interpreted as a tree if such agent does not go through already visited cells, except in backtracking situations.
 \end{itemize}
 
 Figure \ref{maze_example_graph} gives an example of the graph representation of the maze presented in Figure \ref{maze_example}, where a red agent is traversing the maze toward the green goal. As established by \citen{Muhammad2021}, the maze cells are programmatically addressed as indices of a matrix, such as represented in Figure \ref{maze_indices_muhammad}.
@@ -53,15 +53,15 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \begin{figure}[ht!]
 \centering
 \begin{forest}
- [3 3,s sep=12mm,circle,draw,fill=red!100
- 	[2 3,circle,draw
- 		[2 2,circle,draw
- 			[1 2,circle,draw
- 				[1 3,circle,draw]]]]
- 	[3 2,circle,draw
- 		[3 1,circle,draw
- 			[2 1,circle,draw
- 				[1 1,circle,draw,fill=green!100]]]]]
+ [3 3,for tree={circle,draw},s sep=12mm,fill=red!100
+ 	[2 3
+ 		[2 2
+ 			[1 2
+ 				[1 3]]]]
+ 	[3 2
+ 		[3 1
+ 			[2 1
+ 				[1 1,fill=green!100]]]]]
 \end{forest}
 \caption{Graph representation of the maze presented in Figure \ref{maze_example}. The cell indices are pointed out. The agent starts at index (3,3), and achieves the goal at index (1,1).}
 \label{maze_example_graph}
@@ -71,17 +71,17 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 
 \section{Multi-agent exploration without communication}
 \label{section_models_exploration}
-\subsection{Pseudocode for our algorithm}
+\subsection{Our algorithm's key concepts}
 The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
 
 First of all, this research considers a maze as a graph, where each node is a cell representing the maze. Given an initial node from which the agent starts its path, the agent checks if the node has children. Since the graph is undirected, i.e., there are no completely walled cells, this work establishes some statements:
 
 \begin{itemize}
-\item if an agent finds the node where the goal is, the agent finishes its path;
+\item if an agent finds the cell where the goal is, the agent finishes its path;
 
-\item if an agent is not in the node where the goal is and the node has only one unwalled edge, the agent necessarily goes through such edge;
+\item if an agent is not in the cell where the goal is and the cell has only one unwalled edge, the agent necessarily goes through such edge;
 
-\item if an agent is not in the node where the goal is and the node has more than one unwalled edge, the agent needs to decide which edge it will go through.
+\item if an agent is not in the cell where the goal is and the cell has more than one unwalled edge, the agent needs to decide which edge it will go through.
 \end{itemize}
 
 To establish a decision algorithm to the last statement, this work proposes firstly an interval division related to the agents and the nodes around them. Supposing that there are $k$ agents $a_{1}, a_{2},...,a_{k}$ to explore the maze, each agent will have a corresponding and proportional range of action related to the graph, as presented below:
@@ -97,6 +97,113 @@ To establish a decision algorithm to the last statement, this work proposes firs
 	\end{align}
 \end{equation}
 where $d$ is the size of the partition corresponding to each agent. On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node's convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
+
+To disperse the agents through the maze, this work establishes some steps in order to guide the agent, that knows nothing about another agent's search. The following steps base the reasoning expressed in the proposed pseudocode in Section \ref{section_models_exploration_pseudocode}:
+
+\begin{itemize}
+\item every agent $a_{i}$ has an previously programmed interval;
+
+\item every agent starts its search at the same cell, i.e., the root of an agent's tree is the same for any agent. The root's converge interval is $[0,1]$;
+
+\item every agent explores the maze calculating dynamically the converge intervals of the children of the current node where the agent is. These converge intervals are calculated based on the following steps:
+
+	\begin{itemize}
+
+	\item if there is only one child, the child's convergence interval is the same of the current node's convergence interval;
+	
+	\item if there is more than one child, the current node's convergence interval is uniformly split between its children;
+	
+	\end{itemize}
+	
+\item every agent must go to the first child that its convergence interval intersects the agent's interval. The order of children must be well defined so that every agent gets the same calculation result of some node's convergence interval. Then, in the context of perfect mazes, it ensures that every cell (node) has the same convergence interval regardless of the agent. This research established a clockwise order for the cells - North, East, South, West -, from left to right regarding the insertion of children;
+
+\item an agent doesn't visit an already visited node, except in backtracking situations, where there are no children to visit, i.e., the node in fact has no children, the children has already been visited, or there are no more children that match its convergence intervals to the agent's interval;
+
+\item every agent must fill its interval going through the correspondent nodes until find the goal. If it doesn't find the goal, but it filled its interval, surely the convergence interval of the goal node is outside from agent's interval. In this context, the agent stops the search or changes its decision algorithm. For the case that it changes its behavior, this work proposes two optional secondary conducts:
+
+	\begin{itemize}
+
+	\item the agent modifies its interval and the order of exploration from left-right to right-left. Section \ref{section_results} discusses broader about this point;
+	
+	\item the agent explores the maze doing some DFS algorithm, but ignoring already visited nodes.
+	
+	\end{itemize}
+\end{itemize}
+
+The following pictures exposes key concepts of our algorithms:
+
+\begin{itemize}
+
+\item DISPERSÃO
+	
+\item Figure \ref{maze_example_graph_intervals} presents the convergence intervals of the cells (nodes) of a fictional maze when a given agent explores it based on the aforementioned steps.
+
+\item o agente pode ignorar grandes árvores por priorizar seu intervalo
+
+\item o agente não visita o labirinto inteiro
+	
+\end{itemize}
+
+\begin{figure}[ht!]
+\label{maze_example_graph_dispersion}
+\centering
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt,s sep=12mm}
+
+ [root,for tree={circle,draw,minimum size=2em}
+ 	[,for tree={fill=red!100}
+ 		[
+ 			[]
+ 			[]]
+ 		[
+ 			[]
+ 			[]]]
+ 	[,for tree={fill=blue!100}
+ 		[
+ 			[]
+ 			[]]
+ 		[
+ 			[]
+ 			[]]]
+ 	[,for tree={fill=yellow!100}
+ 		[
+ 			[]
+ 			[]]
+ 		[
+ 			[]
+ 			[]]]]
+
+\end{forest}
+\caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
+\end{figure}
+
+\begin{figure}[ht!]
+\label{maze_example_graph_intervals}
+\centering
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt}
+
+ [,for tree={circle,draw,s sep=12mm,minimum size=2em},label=below:{$[0,1]$}
+ 	[,label=below:{$[0,\frac{1}{2}[$}
+ 		[,label=below:{$[0,\frac{1}{4}[$}
+ 			[,label=below:{$[0,\frac{1}{8}[$}]
+ 			[,label=below:{$[\frac{1}{8},\frac{1}{4}[$}]]
+ 		[,label=below:{$[\frac{1}{4},\frac{1}{2}[$}]]
+ 	[,label=right:{$[\frac{1}{2},1[$}
+ 		[,label=below:{$[\frac{1}{2},1]$}
+ 		[,label=below:{$[\frac{1}{2},\frac{3}{4}[$}]
+ 		[,fill=green!100,label=below:{$[\frac{3}{4},1]$}]]]]
+
+\end{forest}
+\caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
+\end{figure}
+
+
+
+\subsection{Pseudocode for our algorithm}
+\label{section_models_exploration_pseudocode}
 
 As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree in the situation approached in Section \ref{section_models_maze_graph}, where an agent does not go through already visited cells, and considering the agent path as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node specifically in the context of perfect mazes \cite{Muhammad2021}, despite being a starting point to solve similar problems in the context of imperfect mazes, i.e., the graph of the maze cannot be considered as tree in a macro view.
 
@@ -256,8 +363,8 @@ As mentioned previously, there is no communication between agents. Therefore, Ps
 \State
 
 \State /* \textit{If the agent completely filled its interval, it needs to change its behavior, since its}
-\State \textit{behavior is domain dependent. It will continue the DFS under some criteria.}
-\State \textit{Otherwise, it must come back to parent in order to check if there are more nodes to}
+\State \textit{behavior is domain dependent. It might continue the DFS under some criteria.}
+\State \textit{Otherwise, it must come back to parent in order to verify if there are more nodes to}
 \State \textit{visit} */
 
 \If{finished\_interval == TRUE}
@@ -275,32 +382,7 @@ As mentioned previously, there is no communication between agents. Therefore, Ps
 \end{algorithmic}
 \end{algorithm}
 
-
-Figure \ref{maze_example_graph_intervals} presents the convergence intervals of the cells (nodes) of a fictional maze when a given agent with an interval $a_{1}=[0,\frac{1}{4}[$ explores it based on Pseudocode \ref{pseudocode_1}. The letters in the tree indicate the visit order, from $a$ to $j$.
-
-Thus, the goal of this work aims to establish an efficient algorithm that interrelates agent intervals to node intervals. Furthermore, the authors observed that a mixed radix representation to the agents' path is a powerful mathematical tool for relating the path to the interval of the node that the agent is visiting. Section \ref{section_models_mixed_radix} discusses the mixed radix representation.
-
-\begin{figure}[ht!]
-\centering
-\begin{forest}
-
- [a,s sep=12mm,circle,draw,label=below:{$[0,1]$}
- 	[b,s sep=12mm,circle,draw,label=below:{$[0,\frac{1}{2}[$}
- 		[c,s sep=12mm,circle,draw,label=below:{$[0,\frac{1}{4}[$}
- 			[d,circle,draw,label=below:{$[0,\frac{1}{8}[$}]
- 			[e,circle,draw,label=below:{$[\frac{1}{8},\frac{1}{4}[$}]]
- 		[f,circle,draw,label=below:{$[\frac{1}{4},\frac{1}{2}[$}]]
- 	[g,circle,draw,label=right:{$[\frac{1}{2},1[$}
- 		[h,s sep=12mm,circle,draw,label=below:{$[\frac{1}{2},1]$}
- 		[i,circle,draw,label=below:{$[\frac{1}{2},\frac{3}{4}[$}]
- 		[j,circle,draw,fill=green!100,label=below:{$[\frac{3}{4},1]$}]]]]
-
-\end{forest}
-\caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
-\label{maze_example_graph_intervals}
-\end{figure}
-
-\subsection{Our algorithm's key concepts}
+Thus, the goal of this work aims to establish an efficient algorithm that interrelates agent intervals to node convergence intervals. Furthermore, the authors observed that a mixed radix representation to the agents' path is a powerful mathematical tool for relating such path to the node's convergence interval that the agent is visiting. Section \ref{section_models_mixed_radix} discusses the mixed radix representation.
 
 \section{Mixed radix representation to the agent path}
 \label{section_models_mixed_radix}
@@ -339,7 +421,7 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 
 \State /* \textit{Initialize the agent's path. The agent is at the tree's root. Numerically it means zero in the mixed radix representation} */
 
-\State $path \gets [$ $]$
+\State path $\gets$ [ ]
 
 \State
 
