@@ -8,7 +8,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Agent's 2nd step}}}{22}{subfigure.3.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Agent's 10th step}}}{22}{subfigure.3.3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out. The agent starts at index (3,3), and achieves the goal at index (1,1).\relax }}{22}{figure.caption.13}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}, with intervals related to the agent's range of action.\relax }}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref {pseudocode_1}. The green node represents the goal.\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }}{29}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

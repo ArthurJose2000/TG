@@ -53,7 +53,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \begin{figure}[ht!]
 \centering
 \begin{forest}
- [3 3,circle,draw,fill=red!100
+ [3 3,s sep=12mm,circle,draw,fill=red!100
  	[2 3,circle,draw
  		[2 2,circle,draw
  			[1 2,circle,draw
@@ -71,6 +71,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 
 \section{Multi-agent exploration without communication}
 \label{section_models_exploration}
+\subsection{Pseudocode for our algorithm}
 The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
 
 First of all, this research considers a maze as a graph, where each node is a cell representing the maze. Given an initial node from which the agent starts its path, the agent checks if the node has children. Since the graph is undirected, i.e., there are no completely walled cells, this work establishes some statements:
@@ -275,16 +276,31 @@ As mentioned previously, there is no communication between agents. Therefore, Ps
 \end{algorithm}
 
 
-Figure \ref{maze_example_graph_intervals} presents the converge intervals of the nodes if at least two agents explored the maze presented in Figure \ref{maze_example} using Pseudocode \ref{pseudocode_1}.
+Figure \ref{maze_example_graph_intervals} presents the convergence intervals of the cells (nodes) of a fictional maze when a given agent with an interval $a_{1}=[0,\frac{1}{4}[$ explores it based on Pseudocode \ref{pseudocode_1}. The letters in the tree indicate the visit order, from $a$ to $j$.
 
-Thus, the goal of this work aims to establish an efficient algorithm that interrelates the agent intervals to the maze node intervals. Furthermore, the authors observed that a mixed radix representation to the agent path is a powerful mathematical tool to relate the path to the interval of the node that the agent is visiting, and it will be present in the next report.
+Thus, the goal of this work aims to establish an efficient algorithm that interrelates agent intervals to node intervals. Furthermore, the authors observed that a mixed radix representation to the agents' path is a powerful mathematical tool for relating the path to the interval of the node that the agent is visiting. Section \ref{section_models_mixed_radix} discusses the mixed radix representation.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=0.5\textwidth]{Cap2/maze_example_graph_intervals.png}
-\caption{Graph representation of the maze presented in Figure \ref{maze_example}, with intervals related to the agent's range of action.}
+\begin{forest}
+
+ [a,s sep=12mm,circle,draw,label=below:{$[0,1]$}
+ 	[b,s sep=12mm,circle,draw,label=below:{$[0,\frac{1}{2}[$}
+ 		[c,s sep=12mm,circle,draw,label=below:{$[0,\frac{1}{4}[$}
+ 			[d,circle,draw,label=below:{$[0,\frac{1}{8}[$}]
+ 			[e,circle,draw,label=below:{$[\frac{1}{8},\frac{1}{4}[$}]]
+ 		[f,circle,draw,label=below:{$[\frac{1}{4},\frac{1}{2}[$}]]
+ 	[g,circle,draw,label=right:{$[\frac{1}{2},1[$}
+ 		[h,s sep=12mm,circle,draw,label=below:{$[\frac{1}{2},1]$}
+ 		[i,circle,draw,label=below:{$[\frac{1}{2},\frac{3}{4}[$}]
+ 		[j,circle,draw,fill=green!100,label=below:{$[\frac{3}{4},1]$}]]]]
+
+\end{forest}
+\caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
 \label{maze_example_graph_intervals}
-\end{figure}	
+\end{figure}
+
+\subsection{Our algorithm's key concepts}
 
 \section{Mixed radix representation to the agent path}
 \label{section_models_mixed_radix}
