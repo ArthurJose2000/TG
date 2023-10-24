@@ -140,7 +140,7 @@ The following pictures exposes key concepts of our algorithms:
 
 \item Figure \ref{maze_example_graph_ignoring_big_trees} exposes an agent with an interval $[0,\frac{1}{2}[$ prioritizing to fill completely its interval, despite there is a bigger subtree on the right of the root. In fact, our algorithm is an exploration algorithm, so an agent have no information about the structure of the maze. It is worth to emphasize that when an agent finishes its interval, it needs to change its behavior or simply stop the search;
 
-\item o agente não visita o labirinto inteiro
+\item Figure \ref{maze_example_graph_mandatory_stop} exposes the visit order of an agent with interval $[\frac{1}{3},\frac{2}{3}[$. Due to the fact that the agent finishes its interval in the 7th visited node, and it doesn't go through already visited nodes, except in backtracking situations, it never finds the green goal, regardless of the behavior that it assumes after finishing its interval. Therefore, an agent might be unsuccessful in the search because it doesn't repeat a crossing - from a node to another node in the same direction - more than one time.
 	
 \end{itemize}
 
@@ -229,6 +229,31 @@ The following pictures exposes key concepts of our algorithms:
 \end{forest}
 \caption{A red agent with an interval $[0,\frac{1}{2}[$ prioritizing to fill completely its interval in a fictional maze.}
 \label{maze_example_graph_ignoring_big_trees}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt,s sep=12mm}
+
+ [1,label=above:{\textit{Starting point}},for tree={circle,draw,minimum size=2em,s sep=12mm},label=below:{$[0,1]$},fill=red!100
+ 	[2,label=below:{$[0,\frac{1}{2}[$},fill=red!100
+ 		[,label=left:{$[0,\frac{1}{4}[$}
+ 			[$\vdots$,draw=black!0
+ 				[,fill=green!100]]]
+ 		[3,label=below:{$[\frac{1}{4},\frac{1}{2}[$},fill=red!100
+ 			[4,label=below:{$[\frac{1}{4},\frac{3}{8}[$},fill=red!100]
+ 			[5,label=below:{$[\frac{3}{8},\frac{1}{2}[$},fill=red!100]]]
+ 	[6,label=below:{$[\frac{1}{2},1]$},fill=red!100
+ 		[7,label=below:{$[\frac{1}{2},\frac{3}{4}[$},fill=red!100]
+ 		[,label=below:{$[\frac{3}{4},1]$}
+ 			[,label=below:{$[\frac{3}{4},\frac{7}{8}[$}]
+ 			[,label=below:{$[\frac{7}{8},1]$}]]]]
+
+\end{forest}
+\caption{An agent with interval $[\frac{1}{3},\frac{2}{3}[$ finishes its interval in the visit order indicated. Regardless of the behavior that it assumes after finishing its interval, it never finds the green goal since it doesn't go through already visited nodes, except in backtracking situations.}
+\label{maze_example_graph_mandatory_stop}
 \end{figure}
 
 
