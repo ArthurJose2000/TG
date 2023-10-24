@@ -98,7 +98,7 @@ To establish a decision algorithm to the last statement, this work proposes firs
 \end{equation}
 where $d$ is the size of the partition corresponding to each agent. On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node's convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
 
-To disperse the agents through the maze, this work establishes some steps in order to guide the agent, that knows nothing about another agent's search. The following steps base the reasoning expressed in the proposed pseudocode in Section \ref{section_models_exploration_pseudocode}:
+To disperse the agents through the maze, this work establishes some steps in order to guide the agent, that knows nothing about another agent's search. As a starting point for graph exploration, our algorithm works specifically in the context of perfect mazes \cite{Muhammad2021}. The following steps base the reasoning expressed in the proposed pseudocode in Section \ref{section_models_exploration_pseudocode}:
 
 \begin{itemize}
 \item every agent $a_{i}$ has an previously programmed interval;
@@ -134,24 +134,23 @@ The following pictures exposes key concepts of our algorithms:
 
 \begin{itemize}
 
-\item DISPERSÃO
+\item Figure \ref{maze_example_graph_dispersion} is related to the dispersion concept, in which every agent explores the maze as dispersed as possible from another agent;
 	
-\item Figure \ref{maze_example_graph_intervals} presents the convergence intervals of the cells (nodes) of a fictional maze when a given agent explores it based on the aforementioned steps.
+\item Figure \ref{maze_example_graph_intervals} presents the convergence intervals of the cells (nodes) of a fictional maze when a given agent explores it based on the aforementioned steps;
 
-\item o agente pode ignorar grandes árvores por priorizar seu intervalo
+\item Figure \ref{maze_example_graph_ignoring_big_trees} exposes an agent with an interval $[0,\frac{1}{2}[$ prioritizing to fill completely its interval, despite there is a bigger subtree on the right of the root. In fact, our algorithm is an exploration algorithm, so an agent have no information about the structure of the maze. It is worth to emphasize that when an agent finishes its interval, it needs to change its behavior or simply stop the search;
 
 \item o agente não visita o labirinto inteiro
 	
 \end{itemize}
 
 \begin{figure}[ht!]
-\label{maze_example_graph_dispersion}
 \centering
 \begin{forest}
 
 %for tree={circle,draw,minimum size=3em,inner sep=1pt,s sep=12mm}
 
- [root,for tree={circle,draw,minimum size=2em}
+ [root,label=above:{\textit{Starting point}},for tree={circle,draw,minimum size=2em}
  	[,for tree={fill=red!100}
  		[
  			[]
@@ -175,17 +174,17 @@ The following pictures exposes key concepts of our algorithms:
  			[]]]]
 
 \end{forest}
-\caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
+\caption{Three agents (Red, Blue, and Yellow) disperse from each other in a fictional and perfect maze.}
+\label{maze_example_graph_dispersion}
 \end{figure}
 
 \begin{figure}[ht!]
-\label{maze_example_graph_intervals}
 \centering
 \begin{forest}
 
 %for tree={circle,draw,minimum size=3em,inner sep=1pt}
 
- [,for tree={circle,draw,s sep=12mm,minimum size=2em},label=below:{$[0,1]$}
+ [root,label=above:{\textit{Starting point}},for tree={circle,draw,s sep=12mm,minimum size=2em},label=below:{$[0,1]$}
  	[,label=below:{$[0,\frac{1}{2}[$}
  		[,label=below:{$[0,\frac{1}{4}[$}
  			[,label=below:{$[0,\frac{1}{8}[$}]
@@ -198,6 +197,38 @@ The following pictures exposes key concepts of our algorithms:
 
 \end{forest}
 \caption{Fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref{pseudocode_1}. The green node represents the goal.}
+\label{maze_example_graph_intervals}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt,s sep=12mm}
+
+ [root,label=above:{\textit{Starting point}},for tree={circle,draw,minimum size=2em}
+ 	[,for tree={fill=red!100}
+ 		[]
+ 		[]]
+ 	[,for tree={fill=black!0}
+ 		[
+ 			[$\vdots$,for tree={draw=black!0}]
+ 			[
+ 				[$\vdots$,for tree={draw=black!0}]]]
+ 		[
+ 			[
+ 				[$\vdots$,for tree={draw=black!0}]
+ 				[$\vdots$,for tree={draw=black!0}]
+ 				[$\vdots$,for tree={draw=black!0}]]]
+ 		[
+ 			[$\vdots$,for tree={draw=black!0}]
+ 			[
+ 				[$\vdots$,for tree={draw=black!0}]
+ 				[$\vdots$,for tree={draw=black!0}]]]]]
+
+\end{forest}
+\caption{A red agent with an interval $[0,\frac{1}{2}[$ prioritizing to fill completely its interval in a fictional maze.}
+\label{maze_example_graph_ignoring_big_trees}
 \end{figure}
 
 

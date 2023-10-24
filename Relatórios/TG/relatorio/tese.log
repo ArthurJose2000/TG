@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  23 OCT 2023 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  23 OCT 2023 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,11 +1277,11 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 6.
 Package hyperref Info: Reference (link) `figure.caption.13' on input line 10.
 Package hyperref Info: Reference (link) `figure.caption.12' on input line 10.
 Package hyperref Info: Reference (link) `figure.caption.14' on input line 11.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 11.
 Package hyperref Info: Reference (link) `figure.caption.15' on input line 12.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 12.
 Package hyperref Info: Reference (link) `figure.caption.16' on input line 13.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 13.
+Package hyperref Info: Reference (link) `figure.caption.17' on input line 14.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 14.
 )
 \tf@lof=\write7
 \openout7 = `tese.lof'.
@@ -1300,12 +1300,12 @@ Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 6.
 Package `hyperref' Info: End of reference (link) `figure.caption.12', line 6.
 Package `hyperref' Info: End of reference (link) `figure.caption.12', line 10.
 Package `hyperref' Info: End of reference (link) `figure.caption.13', line 10.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 11.
 Package `hyperref' Info: End of reference (link) `figure.caption.14', line 11.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 12.
 Package `hyperref' Info: End of reference (link) `figure.caption.15', line 12.
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 13.
 Package `hyperref' Info: End of reference (link) `figure.caption.16', line 13.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 14.
+Package `hyperref' Info: End of reference (link) `figure.caption.17', line 14.
 ]
 Package hyperref Info: Anchor `chapter*.5' on input line 162.
 Package hyperref Info: Anchor `listatabelas.0' on input line 162.
@@ -1613,7 +1613,7 @@ Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.10' on input line 11.
-<Cap2/maze_model.png, id=377, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=378, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1666,7 +1666,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (link) `figure.caption.11' on input line 30.
 Package hyperref Info: Anchor `figure.caption.11' on input line 32.
-<Cap2/maze_indices_muhammad.png, id=395, 296.307pt x 296.90926pt>
+<Cap2/maze_indices_muhammad.png, id=396, 296.307pt x 296.90926pt>
 File: Cap2/maze_indices_muhammad.png Graphic file (type png)
 <use Cap2/maze_indices_muhammad.png>
 Package pdftex.def Info: Cap2/maze_indices_muhammad.png  used on input line 34.
@@ -1680,21 +1680,21 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Anchor `figure.caption.12' on input line 40.
 Package hyperref Info: Anchor `subfigure.2.3.1' on input line 41.
-<Cap2/maze_perfect_3x3_1agent_1.png, id=400, 207.02344pt x 207.02344pt>
+<Cap2/maze_perfect_3x3_1agent_1.png, id=401, 207.02344pt x 207.02344pt>
 File: Cap2/maze_perfect_3x3_1agent_1.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_1.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_1.png  used on input line
  42.
 (pdftex.def)             Requested size: 85.35826pt x 85.3603pt.
 Package hyperref Info: Anchor `subfigure.2.3.2' on input line 44.
-<Cap2/maze_perfect_3x3_1agent_2.png, id=401, 207.02344pt x 205.5178pt>
+<Cap2/maze_perfect_3x3_1agent_2.png, id=402, 207.02344pt x 205.5178pt>
 File: Cap2/maze_perfect_3x3_1agent_2.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_2.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_2.png  used on input line
  45.
 (pdftex.def)             Requested size: 85.35826pt x 84.7395pt.
 Package hyperref Info: Anchor `subfigure.2.3.3' on input line 47.
-<Cap2/maze_perfect_3x3_1agent_3.png, id=402, 207.02344pt x 207.02344pt>
+<Cap2/maze_perfect_3x3_1agent_3.png, id=403, 207.02344pt x 207.02344pt>
 File: Cap2/maze_perfect_3x3_1agent_3.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_3.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_3.png  used on input line
@@ -1769,39 +1769,24 @@ l.97 	\end{align}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 101.
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 101.
 Package hyperref Info: Reference (link) `subsection.2.3.2' on input line 101.
-Package hyperref Info: Anchor `page.23' on input line 106.
-[23
-Package `hyperref' Info: End of reference (link) `subsection.2.3.2', line 101.
-]
+Package hyperref Info: Anchor `page.23' on input line 102.
+[23]
 Package hyperref Info: Reference (link) `chapter.3' on input line 126.
+Package hyperref Info: Reference (link) `figure.caption.14' on input line 137.
+Package hyperref Info: Anchor `page.24' on input line 138.
+ [24
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 101.
 
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 101.
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 \item DISPERSÃ
-                     O
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 139.
-
-Package caption Warning: \label without proper reference on input line 182.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `maze_example_graph_intervals' on page 24 undefined on
- input line 139.
-
-Package hyperref Info: Anchor `page.24' on input line 143.
-[24
+Package `hyperref' Info: End of reference (link) `subsection.2.3.2', line 101.
 Package `hyperref' Info: End of reference (link) `chapter.3', line 126.
 ]
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 139.
+Package hyperref Info: Reference (link) `figure.caption.16' on input line 141.
 Package hyperref Info: Anchor `figure.caption.14' on input line 147.
 
 Runaway argument?
@@ -1809,7 +1794,7 @@ Runaway argument?
 ! Paragraph ended before \forestrset was complete.
 <to be read again> 
                    \par 
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1818,7 +1803,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> \forestrset {preamble}{\par \par }
                                              
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1831,7 +1816,7 @@ Runaway argument?
 ! Paragraph ended before \forestOeappto was complete.
 <to be read again> 
                    \par 
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1840,7 +1825,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> ...{,afterthought={\unexpanded { \par }
                                                   }}
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1851,7 +1836,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...,afterthought={\unexpanded { \par }}
                                                   }
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1862,7 +1847,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...afterthought={\unexpanded { \par }}}
                                                   
-l.177 \end{forest}
+l.176 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1870,19 +1855,16 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-pdftex: bookmark at 178: {2.5} {\numberline{2.5}{\ignorespaces Fictional maze r
-epresented as a tree where each node has an established interval according to a
-n agent's traverse guided by Pseudocode \ref {pseudocode_1}. The green node rep
-resents the goal.\relax }} {figure.caption.14}{0}{lof}
-Package hyperref Info: Reference (link) `algorithm.1' on input line 178.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 178.
+pdftex: bookmark at 177: {2.5} {\numberline{2.5}{\ignorespaces Three agents (Re
+d, Blue, and Yellow) disperse from each other in a fictional and perfect maze.\
+relax }} {figure.caption.14}{0}{lof}
 Package hyperref Info: Anchor `figure.caption.15' on input line 181.
 Runaway argument?
 {
 ! Paragraph ended before \forestrset was complete.
 <to be read again> 
                    \par 
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1891,7 +1873,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> \forestrset {preamble}{\par \par }
                                              
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1904,7 +1886,7 @@ Runaway argument?
 ! Paragraph ended before \forestOeappto was complete.
 <to be read again> 
                    \par 
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1913,7 +1895,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> ...{,afterthought={\unexpanded { \par }
                                                   }}
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1924,7 +1906,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...,afterthought={\unexpanded { \par }}
                                                   }
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1935,7 +1917,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...afterthought={\unexpanded { \par }}}
                                                   
-l.199 \end{forest}
+l.198 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1943,111 +1925,186 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-pdftex: bookmark at 200: {2.6} {\numberline{2.6}{\ignorespaces Fictional maze r
+pdftex: bookmark at 199: {2.6} {\numberline{2.6}{\ignorespaces Fictional maze r
 epresented as a tree where each node has an established interval according to a
 n agent's traverse guided by Pseudocode \ref {pseudocode_1}. The green node rep
 resents the goal.\relax }} {figure.caption.15}{0}{lof}
-Package hyperref Info: Reference (link) `algorithm.1' on input line 200.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 200.
-Package hyperref Info: Anchor `subsection.2.3.2' on input line 205.
-pdftex: bookmark at 205: {2.3.2} {\numberline{2.3.2}Pseudocode for our algorith
+Package hyperref Info: Reference (link) `algorithm.1' on input line 199.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 199.
+Package hyperref Info: Anchor `figure.caption.16' on input line 203.
+Runaway argument?
+{
+! Paragraph ended before \forestrset was complete.
+<to be read again> 
+                   \par 
+l.229 \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<argument> \forestrset {preamble}{\par \par }
+                                             
+l.229 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{,afterthought={\unexpanded { 
+! Paragraph ended before \forestOeappto was complete.
+<to be read again> 
+                   \par 
+l.229 \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...{,afterthought={\unexpanded { \par }
+                                                  }}
+l.229 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...,afterthought={\unexpanded { \par }}
+                                                  }
+l.229 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...afterthought={\unexpanded { \par }}}
+                                                  
+l.229 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+pdftex: bookmark at 230: {2.7} {\numberline{2.7}{\ignorespaces A red agent with
+ an interval $[0,\frac {1}{2}[$ prioritizing to fill completely its interval in
+ a fictional maze.\relax }} {figure.caption.16}{0}{lof}
+Package hyperref Info: Anchor `subsection.2.3.2' on input line 236.
+pdftex: bookmark at 236: {2.3.2} {\numberline{2.3.2}Pseudocode for our algorith
 m} {subsection.2.3.2}{2}{toc}
-Package hyperref Info: Reference (link) `subsection.1.3.1' on input line 208.
-Package hyperref Info: Reference (link) `section.2.2' on input line 208.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 208.
-Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 208.
-Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 208.
-Package hyperref Info: Anchor `page.25' on input line 209.
+Package hyperref Info: Reference (link) `subsection.1.3.1' on input line 239.
+Package hyperref Info: Reference (link) `section.2.2' on input line 239.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 239.
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 239.
+Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 239.
+Package hyperref Info: Anchor `page.25' on input line 240.
 [25
+Package `hyperref' Info: End of reference (link) `figure.caption.14', line 137.
+
 Package `hyperref' Info: End of reference (link) `figure.caption.15', line 139.
 
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 178.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 200.
-Package `hyperref' Info: End of reference (link) `subsection.1.3.1', line 208.
-Package `hyperref' Info: End of reference (link) `section.2.2', line 208.
+Package `hyperref' Info: End of reference (link) `figure.caption.16', line 141.
+
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 199.
 ]
-Package hyperref Info: Reference (link) `algorithm.1' on input line 210.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 241.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 213.
+put line 244.
 
-pdftex: bookmark at 213: {1} {\numberline{1}{\ignorespaces Traverse of the agen
+pdftex: bookmark at 244: {1} {\numberline{1}{\ignorespaces Traverse of the agen
 t through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}
 {0}{loa}
-Package hyperref Info: Anchor `algorithm.1' on input line 305.
-pdftex: bookmark at 309: {1} {\numberline{1}{\ignorespaces Traverse of the agen
+Package hyperref Info: Anchor `algorithm.1' on input line 336.
+pdftex: bookmark at 340: {1} {\numberline{1}{\ignorespaces Traverse of the agen
 t through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}
 {0}{loa}
-Package hyperref Info: Anchor `algorithm.1' on input line 383.
-Package hyperref Info: Reference (link) `section.2.4' on input line 385.
-Package hyperref Info: Anchor `section.2.4' on input line 387.
-pdftex: bookmark at 387: {2.4} {\numberline{2.4}Mixed radix representation to t
+Package hyperref Info: Anchor `algorithm.1' on input line 414.
+Package hyperref Info: Reference (link) `section.2.4' on input line 416.
+Package hyperref Info: Anchor `section.2.4' on input line 418.
+pdftex: bookmark at 418: {2.4} {\numberline{2.4}Mixed radix representation to t
 he agent path} {section.2.4}{1}{toc}
-Package hyperref Info: Reference (link) `section.2.3' on input line 389.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 389.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 391.
-Package hyperref Info: Reference (link) `algorithm.1' on input line 396.
-Package hyperref Info: Reference (link) `algorithm.2' on input line 396.
-Package hyperref Info: Anchor `page.26' on input line 397.
+Package hyperref Info: Reference (link) `section.2.3' on input line 420.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 420.
+Package hyperref Info: Anchor `page.26' on input line 421.
 [26
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 208.
-Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 208.
+Package `hyperref' Info: End of reference (link) `subsection.1.3.1', line 239.
+Package `hyperref' Info: End of reference (link) `section.2.2', line 239.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 239.
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 239.
 
-Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 208.
+Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 239.
 
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 210.
-Package `hyperref' Info: End of reference (link) `section.2.4', line 385.
-Package `hyperref' Info: End of reference (link) `section.2.3', line 389.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 389.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 391.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 241.
+Package `hyperref' Info: End of reference (link) `section.2.4', line 416.
 ]
-Package hyperref Info: Anchor `page.27' on input line 397.
+Package hyperref Info: Anchor `page.27' on input line 421.
  [27]
-Package hyperref Info: Anchor `page.28' on input line 397.
+Package hyperref Info: Anchor `page.28' on input line 421.
  [28
 pdfTeX warning (ext4): destination with the same identifier (name{algorithm.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.397 
+l.421 
       ]
-Package hyperref Info: Reference (link) `figure.caption.16' on input line 401.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 422.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 427.
+Package hyperref Info: Reference (link) `algorithm.2' on input line 427.
+Package hyperref Info: Reference (link) `figure.caption.17' on input line 432.
 
-pdftex: bookmark at 404: {2} {\numberline{2}{\ignorespaces Methods related to m
+pdftex: bookmark at 435: {2} {\numberline{2}{\ignorespaces Methods related to m
 ixed radix numerical representation approach.\relax }} {algorithm.2}{0}{loa}
-Package hyperref Info: Anchor `algorithm.2' on input line 475.
+Package hyperref Info: Anchor `algorithm.2' on input line 506.
 ! Too many }'s.
-l.475 \end{algorithm}}
+l.506 \end{algorithm}}
                       
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-Package hyperref Info: Anchor `figure.caption.16' on input line 477.
-<Cap2/mixed_radix_path_example.png, id=473, 323.40825pt x 272.217pt>
+Package hyperref Info: Anchor `figure.caption.17' on input line 508.
+<Cap2/mixed_radix_path_example.png, id=476, 323.40825pt x 272.217pt>
 File: Cap2/mixed_radix_path_example.png Graphic file (type png)
 <use Cap2/mixed_radix_path_example.png>
 Package pdftex.def Info: Cap2/mixed_radix_path_example.png  used on input line 
-479.
+510.
 (pdftex.def)             Requested size: 227.62206pt x 191.59315pt.
-pdftex: bookmark at 480: {2.7} {\numberline{2.7}{\ignorespaces Blue agent with 
+pdftex: bookmark at 511: {2.8} {\numberline{2.8}{\ignorespaces Blue agent with 
 an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_exam
 ple}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }} {fig
-ure.caption.16}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 480.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 480.
-Package hyperref Info: Anchor `section.2.5' on input line 484.
-pdftex: bookmark at 484: {2.5} {\numberline{2.5}Extended Tarry's algorithm} {se
+ure.caption.17}{0}{lof}
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 511.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 511.
+Package hyperref Info: Anchor `section.2.5' on input line 515.
+pdftex: bookmark at 515: {2.5} {\numberline{2.5}Extended Tarry's algorithm} {se
 ction.2.5}{1}{toc}
 )
 Package hyperref Info: Anchor `page.29' on input line 187.
  [29
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 396.
-Package `hyperref' Info: End of reference (link) `algorithm.2', line 396.
-Package `hyperref' Info: End of reference (link) `figure.caption.16', line 401.
+Package `hyperref' Info: End of reference (link) `section.2.3', line 420.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 420.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 422.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 427.
+Package `hyperref' Info: End of reference (link) `algorithm.2', line 427.
+Package `hyperref' Info: End of reference (link) `figure.caption.17', line 432.
 
 ]
 Package hyperref Info: Anchor `page.30' on input line 187.
- [30
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 480.
+ [30]
+Package hyperref Info: Anchor `page.31' on input line 187.
+ [31
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 511.
 
  <./Cap2/mixed_radix_path_example.png>]
 Package hyperref Info: Anchor `chapter.3' on input line 187.
@@ -2060,8 +2117,8 @@ Package hyperref Info: Anchor `section.3.1' on input line 4.
 pdftex: bookmark at 4: {3.1} {\numberline{3.1}Developed code} {section.3.1}{1}{
 toc}
 )
-Package hyperref Info: Anchor `page.31' on input line 190.
- [31
+Package hyperref Info: Anchor `page.32' on input line 190.
+ [32
 
 ]
 Package hyperref Info: Anchor `chapter.4' on input line 190.
@@ -2072,11 +2129,11 @@ pdftex: bookmark at 190: {4} {\numberline{4}Next steps} {chapter.4}{0}{toc}
 \tf@brf=\write13
 \openout13 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.32' on input line 3.
- [32
+Package hyperref Info: Anchor `page.33' on input line 3.
+ [33
 
 ]
-Package hyperref Info: Anchor `chapter*.17' on input line 3.
+Package hyperref Info: Anchor `chapter*.18' on input line 3.
 Package hyperref Info: Anchor `chapter.5' on input line 3.
 
 pdftex: bookmark at 3: {5} {Bibliography} {chapter.5}{0}{toc}
@@ -2175,8 +2232,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-Package hyperref Info: Anchor `page.33' on input line 228.
- [33
+Package hyperref Info: Anchor `page.34' on input line 228.
+ [34
 
 ]
 \bottommargin=\skip86
@@ -2187,17 +2244,14 @@ Overfull \hbox (74.53033pt too wide) in paragraph at lines 228--228
 [][] 
  []
 
-Package hyperref Info: Anchor `page.34' on input line 230.
-[34
+Package hyperref Info: Anchor `page.35' on input line 230.
+[35
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (tese.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2208,13 +2262,13 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40469 strings out of 476331
- 854122 string characters out of 5787765
- 1880660 words of memory out of 5000000
- 60072 multiletter control sequences out of 15000+600000
+ 40811 strings out of 476331
+ 860199 string characters out of 5787765
+ 1888660 words of memory out of 5000000
+ 60412 multiletter control sequences out of 15000+600000
  566620 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 143i,11n,141p,1600b,3087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,11n,141p,1600b,2978s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0800.pk> <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -2235,9 +2289,9 @@ X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/arthu/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on tese.pdf (35 pages, 759425 bytes).
+Output written on tese.pdf (36 pages, 762368 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 
