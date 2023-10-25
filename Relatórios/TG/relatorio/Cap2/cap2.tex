@@ -444,19 +444,34 @@ Thus, the goal of this work aims to establish an efficient algorithm that interr
 \label{section_models_mixed_radix}
 In Section \ref{section_models_exploration}, this work presented a method for an agent to traverse the maze by defining ranges of action. Pseudocode \ref{pseudocode_1} exposes this method, and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save all the structure of the tree, because it only needs to know the current node's convergence interval and the current node's edges to make a decision.
 
-This work establishes a method to calculate the node's convergence intervals without the agent having necessarily to save all the structure of the tree. In order to traverse the maze while the agent autonomously makes a decision node by node, it saves its path in a mixed radix numerical representation, where the starting representation is ``$0.$'', and it is limited to 1, i.e., $[0,1]$. AS EXPOSED IN EXAMPLE EQUATION XXX, It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the node's convergence interval. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval.
+This work establishes a method to calculate the node's convergence intervals without the agent having necessarily to save all the structure of the tree. In order to traverse the maze while the agent autonomously makes a decision node by node, it saves its path in a mixed radix numerical representation, where the starting representation is ``$0.$'', and it is limited to 1, i.e., $[0,1]$. Pseudocode \ref{pseudocode_2} proposes a computational method to get the value of mixed radix numerical representation. Equation \ref{equation_mixed_radix_value_examples} shows examples of numbers under a mixed radix representation.
 
-MELHORAR-FALAR SOBRE O PSEUDOCODE 2According to the order of analysis of the children and the mathematical tools to calculate node convergence intervals that are presented in Pseudocode \ref{pseudocode_1}, the items below present the agent behavior while it doesn't find the goal cell.
+\begin{equation}
+\begin{flalign}
+& 0.0_{2}1_{2} = 0.25\\
+& 0.0_{2}2_{3} = 0.333...\\ %1/3
+& 0.0_{2}2_{3}1_{2} = 0.41666...\\ %5/12
+& 0.1_{5}1_{3}0_{2}1_{2} = 0.28333...\\ %17/60
+& 0.8_{9}2_{7}2_{3}2_{3}5_{8} \approx 0.93584656 %4245/4536
+\end{flalign}
+\label{equation_mixed_radix_value_examples}
+\end{equation}
+
+According to the order of analysis of the children and the mathematical tools to calculate node convergence intervals that are presented in Pseudocode \ref{pseudocode_1}, the items below present how the agent saves its path based on a mixed radix representation. These points guide the reasoning in Pseudocode \ref{pseudocode_2}.
 
 \begin{itemize}
-\item if the current node has only one child, append $I_{1}$ to the mixed radix numerical representation of the path, and go to the child;
+\item If the current node has only one child and the agent goes through this child, it appends $I_{1}$ to the mixed radix numerical representation of the path;
 
-\item if the current node has $n$ children, and $n > 1$, then calculate the value of the mixed radix numerical representation of the path and, from this value, the related value to each child, and then make the decision according to the agent interval, as approached in Pseudocode \ref{pseudocode_1}. If the decision takes the \textit{i}th child, then append $(i-1)_{n}$ in the end of the agent path. Pseudocode \ref{pseudocode_2} presents a way to calculate computationally the value of the mixed radix numerical representation of the path;
+\item If the current node has $n$ children, where $n > 1$, and the agent decides to go through the \textit{i}th child, it appends $(i-1)_{n}$ in the end of the mixed radix numerical representation of the path.
 
-\item if the current node has no child, go back to the parent, and remove the last appended value from the mixed radix numerical representation of the path.
+\item If the agent must go back to the parent, it removes the last appended value from the mixed radix numerical representation of the path.
 \end{itemize}
 
-Figure \ref{mixed_radix_path_example} presents an example for the mixed radix numerical representation approach. A blue agent with an interval $[1/3,2/3[$ is traversing a maze, and its current path is $0.0_{2}2_{3}$. The minimum value for each interval is also presented.
+It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the convergence interval of the node that the agent is visiting. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval.
+
+
+
+SUBIR COM ESTA PARTEFigure \ref{mixed_radix_path_example} presents an example for the mixed radix numerical representation approach. A blue agent with an interval $[1/3,2/3[$ is traversing a maze, and its current path is $0.0_{2}2_{3}$. The minimum value for each interval is also presented.
 
 \begin{algorithm}
 \caption{Methods related to mixed radix numerical representation.}
@@ -536,6 +551,30 @@ Figure \ref{mixed_radix_path_example} presents an example for the mixed radix nu
 \centering
 \includegraphics[width=0.5\textwidth]{Cap2/mixed_radix_path_example.png}
 \caption{Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref{maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt}
+
+ [0,label=above:{\textit{Starting point}},for tree={circle,draw,s sep=12mm,minimum size=2em},label=below:{$[0,1]$}
+ 	[,label=below:{$[0,\frac{1}{2}[$}
+ 		[,label=below:{$[0,\frac{1}{4}[$}]
+ 		[,label=below:{$[0,\frac{1}{8}[$}]
+ 		[,label=below:{$[\frac{1}{8},\frac{1}{4}[$}]]
+ 	[,label=right:{$[\frac{1}{2},1[$}
+ 		[,label=below:{$[\frac{1}{2},1]$}]
+ 		[,label=below:{$[\frac{1}{2},\frac{3}{4}[$}]]
+ 	[$0.2_{3}$,label=below:{$[0,\frac{1}{4}[$}
+ 		[n
+ 			[n1]
+ 			[n2]]]]
+ 		
+
+\end{forest}
+\caption{...}
 \label{mixed_radix_path_example}
 \end{figure}
 

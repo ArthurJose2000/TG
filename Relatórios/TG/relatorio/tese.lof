@@ -12,6 +12,7 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces A fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref {pseudocode_1}. The green node represents the goal.\relax }}{26}{figure.caption.15}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces A red agent with an interval $[0,\frac {1}{2}[$ prioritizing to fill completely its interval in a fictional maze.\relax }}{26}{figure.caption.16}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces An agent with interval $[\frac {1}{3},\frac {2}{3}[$ finishes its interval in the visit order indicated. Regardless of the behavior that it assumes after finishing its interval, it never finds the green goal since it doesn't go through already visited nodes, except in backtracking situations. It is a fictional maze.\relax }}{29}{figure.caption.17}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref {maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.\relax }}{32}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces ...\relax }}{32}{figure.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

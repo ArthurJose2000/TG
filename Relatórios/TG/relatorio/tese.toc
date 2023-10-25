@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Pseudocode for our algorithm}{25}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Mixed radix representation to the agent path}{29}{section.2.4}
 \contentsline {section}{\numberline {2.5}Extended Tarry's algorithm}{30}{section.2.5}
-\contentsline {chapter}{\numberline {3}Results}{32}{chapter.3}
-\contentsline {section}{\numberline {3.1}Developed code}{32}{section.3.1}
-\contentsline {chapter}{\numberline {4}Next steps}{33}{chapter.4}
-\contentsline {chapter}{Bibliography}{34}{chapter.5}
+\contentsline {chapter}{\numberline {3}Results}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Developed code}{33}{section.3.1}
+\contentsline {chapter}{\numberline {4}Next steps}{34}{chapter.4}
+\contentsline {chapter}{Bibliography}{35}{chapter.5}
