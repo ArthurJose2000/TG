@@ -467,11 +467,7 @@ According to the order of analysis of the children and the mathematical tools to
 \item If the agent must go back to the parent, it removes the last appended value from the mixed radix numerical representation of the path.
 \end{itemize}
 
-It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the convergence interval of the node that the agent is visiting. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval.
-
-
-
-SUBIR COM ESTA PARTEFigure \ref{mixed_radix_path_example} presents an example for the mixed radix numerical representation approach. A blue agent with an interval $[1/3,2/3[$ is traversing a maze, and its current path is $0.0_{2}2_{3}$. The minimum value for each interval is also presented.
+It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the convergence interval of the node that the agent is visiting. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval, since it is the sum of the minimum value with the lowest possible value of the current mixed radix representation. For instance, if the agent's current path is $0.1_{3}0_{2}2_{4}$, the minimum value of the current node's convergence interval is $0.1_{3}0_{2}2_{4}$, and the maximum is $0.1_{3}0_{2}3_{4}$ ($0.1_{3}0_{2}2_{4} + 0.0_{3}0_{2}1_{4}$). Figure \ref{mixed_radix_path_example} presents an example for the approach of a mixed radix numerical representation, where the agent's path carries information about the current node's convergence interval.
 
 \begin{algorithm}
 \caption{Methods related to mixed radix numerical representation.}
@@ -547,34 +543,55 @@ SUBIR COM ESTA PARTEFigure \ref{mixed_radix_path_example} presents an example fo
 \end{algorithmic}
 \end{algorithm}}
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.5\textwidth]{Cap2/mixed_radix_path_example.png}
-\caption{Blue agent with an interval $[1/3,2/6[$ traversing the maze presented in Figure \ref{maze_example}. Its current path is $0.0_{2}2_{3}$, that is equal to $2/6$.}
-\end{figure}
+
 
 \begin{figure}[ht!]
 \centering
+
+{\scriptsize
 \begin{forest}
 
 %for tree={circle,draw,minimum size=3em,inner sep=1pt}
 
- [0,label=above:{\textit{Starting point}},for tree={circle,draw,s sep=12mm,minimum size=2em},label=below:{$[0,1]$}
- 	[,label=below:{$[0,\frac{1}{2}[$}
- 		[,label=below:{$[0,\frac{1}{4}[$}]
- 		[,label=below:{$[0,\frac{1}{8}[$}]
- 		[,label=below:{$[\frac{1}{8},\frac{1}{4}[$}]]
- 	[,label=right:{$[\frac{1}{2},1[$}
- 		[,label=below:{$[\frac{1}{2},1]$}]
- 		[,label=below:{$[\frac{1}{2},\frac{3}{4}[$}]]
- 	[$0.2_{3}$,label=below:{$[0,\frac{1}{4}[$}
- 		[n
- 			[n1]
- 			[n2]]]]
+ [root,label=above:{\textit{Starting point}},for tree={circle,draw,s sep=16mm,minimum size=2em,l sep+=3em},label=below:{$[0,1]$}
+ 	[,label=above:{$[0,\frac{1}{3}[$}
+ 		[,label=below:{$[0,\frac{1}{9}[$}]
+ 		[,label=below:{$[\frac{1}{9},\frac{2}{9}[$}]
+ 		[,label=below:{$[\frac{2}{9},\frac{1}{3}[$}]]
+ 	[,label=left:{$[\frac{1}{3},\frac{2}{3}[$}
+ 		[,label=below:{$[\frac{1}{3},\frac{1}{2}[$}]
+ 		[,label=below:{$[\frac{1}{2},\frac{2}{3}[$}]]
+ 	[,label=above:{$[\frac{2}{3},1[$}
+ 		[,label=right:{$[\frac{2}{3},1[$}
+ 			[,label=below:{$[\frac{1}{3},\frac{5}{6}[$}]
+ 			[,label=below:{$[\frac{5}{6},1]$}]]]]
  		
 
 \end{forest}
-\caption{...}
+}
+
+{\scriptsize
+\begin{forest}
+
+%for tree={circle,draw,minimum size=3em,inner sep=1pt}
+
+ [root,label=above:{\textit{Starting point}},for tree={circle,draw,s sep=16mm,minimum size=2em,l sep+=3em},label=below:{$[0,1]$}
+ 	[,label=above:{$[0.0_{3},0.1_{3}[$},label=right:{$0.0_{3}$}
+ 		[,label=right:{$0.0_{3}0_{3}$},label=below:{$[0.0_{3}0_{3},0.0_{3}1_{3}[$}]
+ 		[,label=right:{$0.0_{3}1_{3}$},label=below:{$[0.0_{3}1_{3},0.0_{3}2_{3}[$}]
+ 		[,label=right:{$0.0_{3}2_{3}$},label=below:{$[0.0_{3}2_{3},0.1_{3}[$}]]
+ 	[,label=right:{$0.1_{3}$},label=left:{$[0.1_{3},0.2_{3}[$}
+ 		[,label=right:{$0.1_{3}0_{2}$},label=below:{$[0.1_{3}0_{2},0.1_{3}1_{2}[$}]
+ 		[,label=right:{$0.1_{3}1_{2}$},label=below:{$[0.1_{3}1_{2},0.2_{3}[$}]]
+ 	[,label=right:{$0.2_{3}$},label=above:{$[0.2_{3},1[$}
+ 		[,label=below:{$0.2_{3}I_{1}$},label=right:{$[0.2_{3},1[$}
+ 			[,label=right:{$0.2_{3}I_{1}0_{2}$},label=below:{$[0.2_{3}0_{2},0.2_{3}1_{2}[$}]
+ 			[,label=right:{$0.2_{3}I_{1}1_{2}$},label=below:{$[0.2_{3}1_{2},1[$}]]]]
+ 		
+
+\end{forest}
+}
+\caption{Both trees have the same format, but the first one has its node convergence intervals represented in a fractional representation, and the second one has its node convergence intervals represented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.}
 \label{mixed_radix_path_example}
 \end{figure}
 
