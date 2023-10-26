@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  25 OCT 2023 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  26 OCT 2023 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,7 +1174,7 @@ Package hyperref Info: Anchor `Doc-Start' on input line 120.
 
 \c@butlastpage=\count377
 Package hyperref Info: Anchor `cover.0' on input line 122.
-<Cap0/ita_logo.jpg, id=150, 612.3678pt x 234.8775pt>
+<Cap0/ita_logo.jpg, id=154, 612.3678pt x 234.8775pt>
 File: Cap0/ita_logo.jpg Graphic file (type jpg)
 <use Cap0/ita_logo.jpg>
 Package pdftex.def Info: Cap0/ita_logo.jpg  used on input line 122.
@@ -1400,24 +1400,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 
 Package hyperref Info: Reference (link) `chapter.3' on input line 19.
 Package hyperref Info: Reference (link) `section.3.1' on input line 20.
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.4' on input line 21.
+Package hyperref Info: Reference (link) `section.3.2' on input line 21.
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
  []  
  []
 
-Package hyperref Info: Reference (link) `chapter.5' on input line 22.
-)
-\tf@toc=\write12
-\openout12 = `tese.toc'.
+Package hyperref Info: Reference (link) `chapter.4' on input line 22.
 
-Package hyperref Info: Anchor `page.xv' on input line 178.
- [15
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+ []  
+ []
+
+Package hyperref Info: Reference (link) `chapter.5' on input line 23.
+Package hyperref Info: Anchor `page.xv' on input line 23.
+[15
 
 Package `hyperref' Info: End of reference (link) `chapter.1', line 2.
 Package `hyperref' Info: End of reference (link) `section.1.1', line 3.
@@ -1438,8 +1435,15 @@ Package `hyperref' Info: End of reference (link) `section.2.4', line 17.
 Package `hyperref' Info: End of reference (link) `section.2.5', line 18.
 Package `hyperref' Info: End of reference (link) `chapter.3', line 19.
 Package `hyperref' Info: End of reference (link) `section.3.1', line 20.
-Package `hyperref' Info: End of reference (link) `chapter.4', line 21.
-Package `hyperref' Info: End of reference (link) `chapter.5', line 22.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 21.
+Package `hyperref' Info: End of reference (link) `chapter.4', line 22.
+])
+\tf@toc=\write12
+\openout12 = `tese.toc'.
+
+Package hyperref Info: Anchor `page.xvi' on input line 178.
+ [16
+Package `hyperref' Info: End of reference (link) `chapter.5', line 23.
 ]
 Package hyperref Info: Anchor `chapter.1' on input line 181.
 
@@ -1461,8 +1465,8 @@ Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 9.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 9.
-Package hyperref Info: Anchor `page.16' on input line 13.
-[16
+Package hyperref Info: Anchor `page.17' on input line 13.
+[17
 
 
 Package `hyperref' Info: End of reference (link) `section.1.1', line 3.
@@ -1487,8 +1491,8 @@ Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 23.
 Package hyperref Info: Reference (cite) `cite.Burgard2005' on input line 23.
 Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 25.
 Package hyperref Info: Reference (cite) `cite.Sadik2010' on input line 25.
-Package hyperref Info: Anchor `page.17' on input line 26.
-[17
+Package hyperref Info: Anchor `page.18' on input line 26.
+[18
 Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 21.
 
 Package `hyperref' Info: End of reference (cite) `cite.MataricMJ1995', line 21.
@@ -1515,8 +1519,8 @@ Package hyperref Info: Reference (cite) `cite.Manber1989' on input line 37.
 Package hyperref Info: Reference (cite) `cite.Manber1989' on input line 37.
 Package hyperref Info: Reference (cite) `cite.Manber1989' on input line 37.
 Package hyperref Info: Reference (cite) `cite.Manber1989' on input line 37.
-Package hyperref Info: Anchor `page.18' on input line 38.
-[18
+Package hyperref Info: Anchor `page.19' on input line 38.
+[19
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
 ine 27.
 Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
@@ -1550,8 +1554,8 @@ ne 54.
 Package hyperref Info: Anchor `subsection.1.3.4' on input line 59.
 pdftex: bookmark at 59: {1.3.4} {\numberline{1.3.4}Maze-solving algorithms} {su
 bsection.1.3.4}{2}{toc}
-Package hyperref Info: Anchor `page.19' on input line 61.
-[19
+Package hyperref Info: Anchor `page.20' on input line 61.
+[20
 Package `hyperref' Info: End of reference (cite) `cite.Manber1989', line 37.
 Package `hyperref' Info: End of reference (cite) `cite.Manber1989', line 37.
 Package `hyperref' Info: End of reference (cite) `cite.Manber1989', line 39.
@@ -1583,13 +1587,32 @@ Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
 Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
 Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
 Package hyperref Info: Anchor `equation.1.3.2' on input line 73.
-Package hyperref Info: Reference (link) `section.2.4' on input line 77.
-)
-Package hyperref Info: Anchor `page.20' on input line 184.
- [20
+Package hyperref Info: Anchor `equation.1.3.3' on input line 79.
+Package hyperref Info: Anchor `equation.1.3.3' on input line 79.
+Package hyperref Info: Anchor `equation.1.3.3' on input line 79.
+Package hyperref Info: Anchor `equation.1.3.3' on input line 79.
+
+! Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \end{flalign}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package hyperref Info: Reference (link) `section.2.4' on input line 89.
+Package hyperref Info: Anchor `page.21' on input line 90.
+[21
 Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 66.
 Package `hyperref' Info: End of reference (cite) `cite.Arndt2011', line 66.
-Package `hyperref' Info: End of reference (link) `section.2.4', line 77.
+])
+Package hyperref Info: Anchor `page.22' on input line 184.
+ [22
+Package `hyperref' Info: End of reference (link) `section.2.4', line 89.
 ]
 Package hyperref Info: Anchor `chapter.2' on input line 184.
 
@@ -1616,7 +1639,7 @@ Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 9.
 Package hyperref Info: Anchor `figure.caption.10' on input line 11.
-<Cap2/maze_model.png, id=394, 410.13225pt x 409.53pt>
+<Cap2/maze_model.png, id=408, 410.13225pt x 409.53pt>
 File: Cap2/maze_model.png Graphic file (type png)
 <use Cap2/maze_model.png>
 Package pdftex.def Info: Cap2/maze_model.png  used on input line 13.
@@ -1633,8 +1656,8 @@ Package hyperref Info: Anchor `section.2.2' on input line 18.
 pdftex: bookmark at 18: {2.2} {\numberline{2.2}Maze from a graph topology persp
 ective} {section.2.2}{1}{toc}
 Package hyperref Info: Reference (link) `section.2.1' on input line 20.
-Package hyperref Info: Anchor `page.21' on input line 23.
-[21
+Package hyperref Info: Anchor `page.23' on input line 23.
+[23
 
 Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 5.
 Package `hyperref' Info: End of reference (cite) `cite.Beisel2014', line 5.
@@ -1669,7 +1692,7 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 30.
 Package hyperref Info: Reference (link) `figure.caption.11' on input line 30.
 Package hyperref Info: Anchor `figure.caption.11' on input line 32.
-<Cap2/maze_indices_muhammad.png, id=412, 296.307pt x 296.90926pt>
+<Cap2/maze_indices_muhammad.png, id=426, 296.307pt x 296.90926pt>
 File: Cap2/maze_indices_muhammad.png Graphic file (type png)
 <use Cap2/maze_indices_muhammad.png>
 Package pdftex.def Info: Cap2/maze_indices_muhammad.png  used on input line 34.
@@ -1683,21 +1706,21 @@ Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 35.
 Package hyperref Info: Anchor `figure.caption.12' on input line 40.
 Package hyperref Info: Anchor `subfigure.2.3.1' on input line 41.
-<Cap2/maze_perfect_3x3_1agent_1.png, id=417, 207.02344pt x 207.02344pt>
+<Cap2/maze_perfect_3x3_1agent_1.png, id=431, 207.02344pt x 207.02344pt>
 File: Cap2/maze_perfect_3x3_1agent_1.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_1.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_1.png  used on input line
  42.
 (pdftex.def)             Requested size: 85.35826pt x 85.3603pt.
 Package hyperref Info: Anchor `subfigure.2.3.2' on input line 44.
-<Cap2/maze_perfect_3x3_1agent_2.png, id=418, 207.02344pt x 205.5178pt>
+<Cap2/maze_perfect_3x3_1agent_2.png, id=432, 207.02344pt x 205.5178pt>
 File: Cap2/maze_perfect_3x3_1agent_2.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_2.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_2.png  used on input line
  45.
 (pdftex.def)             Requested size: 85.35826pt x 84.7395pt.
 Package hyperref Info: Anchor `subfigure.2.3.3' on input line 47.
-<Cap2/maze_perfect_3x3_1agent_3.png, id=419, 207.02344pt x 207.02344pt>
+<Cap2/maze_perfect_3x3_1agent_3.png, id=433, 207.02344pt x 207.02344pt>
 File: Cap2/maze_perfect_3x3_1agent_3.png Graphic file (type png)
 <use Cap2/maze_perfect_3x3_1agent_3.png>
 Package pdftex.def Info: Cap2/maze_perfect_3x3_1agent_3.png  used on input line
@@ -1729,8 +1752,8 @@ communication} {section.2.3}{1}{toc}
 Package hyperref Info: Anchor `subsection.2.3.1' on input line 74.
 pdftex: bookmark at 74: {2.3.1} {\numberline{2.3.1}Our algorithm's key concepts
 } {subsection.2.3.1}{2}{toc}
-Package hyperref Info: Anchor `page.22' on input line 76.
-[22
+Package hyperref Info: Anchor `page.24' on input line 76.
+[24
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 14.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 14.
 Package `hyperref' Info: End of reference (link) `section.2.1', line 20.
@@ -1743,10 +1766,10 @@ Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 30.
 Package `hyperref' Info: End of reference (link) `figure.caption.11', line 30.
  <./Cap2/maze_model.png>]
 
-LaTeX Warning: Text page 23 contains only floats.
+LaTeX Warning: Text page 25 contains only floats.
 
-Package hyperref Info: Anchor `page.23' on input line 76.
-[23
+Package hyperref Info: Anchor `page.25' on input line 76.
+[25
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 35.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 35.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 49.
@@ -1775,12 +1798,12 @@ If that doesn't work, type  X <return>  to quit.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 101.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 101.
 Package hyperref Info: Reference (link) `subsection.2.3.2' on input line 101.
-Package hyperref Info: Anchor `page.24' on input line 102.
-[24]
+Package hyperref Info: Anchor `page.26' on input line 102.
+[26]
 Package hyperref Info: Reference (link) `chapter.3' on input line 126.
 Package hyperref Info: Reference (link) `figure.caption.14' on input line 137.
-Package hyperref Info: Anchor `page.25' on input line 138.
- [25
+Package hyperref Info: Anchor `page.27' on input line 138.
+ [27
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 101.
 
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 101.
@@ -2086,8 +2109,8 @@ Package hyperref Info: Reference (link) `section.2.2' on input line 264.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 264.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 264.
 Package hyperref Info: Reference (cite) `cite.Muhammad2021' on input line 264.
-Package hyperref Info: Anchor `page.26' on input line 265.
-[26
+Package hyperref Info: Anchor `page.28' on input line 265.
+[28
 Package `hyperref' Info: End of reference (link) `figure.caption.14', line 137.
 
 Package `hyperref' Info: End of reference (link) `figure.caption.15', line 139.
@@ -2112,8 +2135,8 @@ t through the maze (interpreted as a tree by the agent).\relax }} {algorithm.1}
 {0}{loa}
 Package hyperref Info: Anchor `algorithm.1' on input line 439.
 Package hyperref Info: Reference (link) `section.2.4' on input line 441.
-Package hyperref Info: Anchor `page.27' on input line 442.
-[27
+Package hyperref Info: Anchor `page.29' on input line 442.
+[29
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 199.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 264.
 Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 264.
@@ -2122,10 +2145,10 @@ Package `hyperref' Info: End of reference (cite) `cite.Muhammad2021', line 264.
 
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 266.
 ]
-Package hyperref Info: Anchor `page.28' on input line 442.
- [28]
-Package hyperref Info: Anchor `page.29' on input line 442.
- [29
+Package hyperref Info: Anchor `page.30' on input line 442.
+ [30]
+Package hyperref Info: Anchor `page.31' on input line 442.
+ [31
 pdfTeX warning (ext4): destination with the same identifier (name{algorithm.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2157,8 +2180,8 @@ l.456 \end{flalign}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Package hyperref Info: Anchor `page.30' on input line 458.
-[30
+Package hyperref Info: Anchor `page.32' on input line 458.
+[32
 Package `hyperref' Info: End of reference (link) `section.2.4', line 441.
 Package `hyperref' Info: End of reference (link) `section.2.3', line 445.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 445.
@@ -2312,29 +2335,75 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 pdftex: bookmark at 594: {2.9} {\numberline{2.9}{\ignorespaces Both trees have 
-the same format, but the first one has its node convergence intervals represent
-ed in a fractional representation, and the second one has its node convergence 
-intervals represented in a mixed radix representation. As the agent's path carr
-ies information about the nodes' convergence intervals when the path is structu
-red in a mixed radix representation, it is possible to save, with only one nume
-rical representation, information about the tree explored by the agent and the 
-convergence intervals of the tree's nodes. It is a fictional maze.\relax }} {fi
-gure.caption.18}{0}{lof}
+the same format, but the first one has its node convergence intervals presented
+ in a fractional representation, and the second one has its node convergence in
+tervals presented in a mixed radix representation. As the agent's path carries 
+information about the nodes' convergence intervals when the path is structured 
+in a mixed radix representation, it is possible to save, with only one numerica
+l representation, information about the tree explored by the agent and the conv
+ergence intervals of the tree's nodes. It is a fictional maze.\relax }} {figure
+.caption.18}{0}{lof}
 Package hyperref Info: Anchor `section.2.5' on input line 598.
 pdftex: bookmark at 598: {2.5} {\numberline{2.5}Extended Tarry's algorithm} {se
 ction.2.5}{1}{toc}
-)
-Package hyperref Info: Anchor `page.31' on input line 187.
- [31
+Package hyperref Info: Reference (cite) `cite.Rao1999' on input line 600.
+Package hyperref Info: Reference (cite) `cite.Rao1999' on input line 600.
+Package hyperref Info: Reference (cite) `cite.Rao1999' on input line 600.
+Package hyperref Info: Reference (cite) `cite.Rao1999' on input line 600.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 602.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 602.
+Package hyperref Info: Anchor `page.33' on input line 603.
+[33
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 460.
 Package `hyperref' Info: End of reference (link) `algorithm.2', line 460.
 Package `hyperref' Info: End of reference (link) `figure.caption.18', line 470.
 
+Package `hyperref' Info: End of reference (cite) `cite.Rao1999', line 600.
+Package `hyperref' Info: End of reference (cite) `cite.Rao1999', line 600.
+Package `hyperref' Info: End of reference (cite) `cite.Rao1999', line 600.
+Package `hyperref' Info: End of reference (cite) `cite.Rao1999', line 600.
 ]
-Package hyperref Info: Anchor `page.32' on input line 187.
- [32]
-Package hyperref Info: Anchor `page.33' on input line 187.
- [33]
+Package hyperref Info: Anchor `page.34' on input line 603.
+ [34]
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 604.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 604.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 604.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 604.
+Package hyperref Info: Anchor `page.35' on input line 605.
+ [35
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 602.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 602.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 604.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 604.
+]
+Package hyperref Info: Reference (link) `section.3.2' on input line 622.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 622.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 622.
+)
+Package hyperref Info: Anchor `page.36' on input line 187.
+ [36
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 604.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 604.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 622.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 622.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 622.
+]
 Package hyperref Info: Anchor `chapter.3' on input line 187.
 
 Chapter 3.
@@ -2344,9 +2413,12 @@ Package hyperref Info: Anchor `section.3.1' on input line 4.
 
 pdftex: bookmark at 4: {3.1} {\numberline{3.1}Developed code} {section.3.1}{1}{
 toc}
+Package hyperref Info: Anchor `section.3.2' on input line 8.
+pdftex: bookmark at 8: {3.2} {\numberline{3.2}Tarry's algorithm vs. our algorit
+hm} {section.3.2}{1}{toc}
 )
-Package hyperref Info: Anchor `page.34' on input line 190.
- [34
+Package hyperref Info: Anchor `page.37' on input line 190.
+ [37
 
 ]
 Package hyperref Info: Anchor `chapter.4' on input line 190.
@@ -2357,8 +2429,8 @@ pdftex: bookmark at 190: {4} {\numberline{4}Next steps} {chapter.4}{0}{toc}
 \tf@brf=\write13
 \openout13 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.35' on input line 3.
- [35
+Package hyperref Info: Anchor `page.38' on input line 3.
+ [38
 
 ]
 Package hyperref Info: Anchor `chapter*.19' on input line 3.
@@ -2434,11 +2506,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package hyperref Info: Anchor `cite.Sadik2010' on input line 47.
+Package hyperref Info: Anchor `cite.Rao1999' on input line 47.
+Package hyperref Info: Anchor `cite.Sadik2010' on input line 51.
 ! Misplaced alignment tab character &.
 <argument> ...Farid, H. M. A. B., Rashid, T. U., &
                                                    Syeed, A. (2010). \textbf...
-l.47 
+l.51 
      
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2447,11 +2520,11 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-Package hyperref Info: Anchor `cite.ShieldsR2012' on input line 51.
+Package hyperref Info: Anchor `cite.ShieldsR2012' on input line 55.
 ! Undefined control sequence.
 <argument> ...l Topology: The Seven Bridges of K\¨
                                                   {o}nigsburg, 1736.
-l.51 
+l.55 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2460,8 +2533,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-Package hyperref Info: Anchor `page.36' on input line 228.
- [36
+Package hyperref Info: Anchor `page.39' on input line 228.
+ [39
 
 ]
 \bottommargin=\skip86
@@ -2472,8 +2545,8 @@ Overfull \hbox (74.53033pt too wide) in paragraph at lines 228--228
 [][] 
  []
 
-Package hyperref Info: Anchor `page.37' on input line 230.
-[37
+Package hyperref Info: Anchor `page.40' on input line 230.
+[40
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -2485,15 +2558,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 6F86C0C251220C555BC871A6AC993AF9;5494.
+(rerunfilecheck)             Checksum: 5D217D1076935745033671D9A56A5B3F;5758.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41060 strings out of 476331
- 865562 string characters out of 5787765
+ 41075 strings out of 476331
+ 865751 string characters out of 5787765
  1907660 words of memory out of 5000000
- 60655 multiletter control sequences out of 15000+600000
+ 60664 multiletter control sequences out of 15000+600000
  569110 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  143i,12n,141p,1600b,2978s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2518,9 +2591,9 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/a
 rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (38 pages, 762942 bytes).
+Output written on tese.pdf (41 pages, 772861 bytes).
 PDF statistics:
- 641 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -442,9 +442,9 @@ Thus, the goal of this work aims to establish an efficient algorithm that interr
 
 \section{Mixed radix representation to the agent path}
 \label{section_models_mixed_radix}
-In Section \ref{section_models_exploration}, this work presented a method for an agent to traverse the maze by defining ranges of action. Pseudocode \ref{pseudocode_1} exposes this method, and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save all the structure of the tree, because it only needs to know the current node's convergence interval and the current node's edges to make a decision.
+In Section \ref{section_models_exploration}, this work presented a method for an agent to traverse the maze by defining ranges of action. Pseudocode \ref{pseudocode_1} exposes this method and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save all the structure of the tree, because it only needs to know the current node's convergence interval and the current node's edges to make a decision.
 
-This work establishes a method to calculate the node's convergence intervals without the agent having necessarily to save all the structure of the tree. In order to traverse the maze while the agent autonomously makes a decision node by node, it saves its path in a mixed radix numerical representation, where the starting representation is ``$0.$'', and it is limited to 1, i.e., $[0,1]$. Pseudocode \ref{pseudocode_2} proposes a computational method to get the value of mixed radix numerical representation. Equation \ref{equation_mixed_radix_value_examples} shows examples of numbers under a mixed radix representation.
+This work establishes a method to calculate the node's convergence intervals without the agent having to save necessarily all the structure of the tree. In order to traverse the maze while the agent autonomously makes a decision node by node, it saves its path in a mixed radix numerical representation, where the starting representation is ``$0.$'', and it is limited to 1, i.e., $[0,1]$. Pseudocode \ref{pseudocode_2} proposes a computational method to get the value of mixed radix numerical representation. Equation \ref{equation_mixed_radix_value_examples} shows examples of numbers under a mixed radix representation.
 
 \begin{equation}
 \begin{flalign}
@@ -462,12 +462,12 @@ According to the order of analysis of the children and the mathematical tools to
 \begin{itemize}
 \item If the current node has only one child and the agent goes through this child, it appends $I_{1}$ to the mixed radix numerical representation of the path;
 
-\item If the current node has $n$ children, where $n > 1$, and the agent decides to go through the \textit{i}th child, it appends $(i-1)_{n}$ in the end of the mixed radix numerical representation of the path.
+\item If the current node has $n$ children, where $n > 1$, and the agent decides to go through the \textit{i}th child, it appends $(i-1)_{n}$ at the end of the mixed radix numerical representation of the path;
 
 \item If the agent must go back to the parent, it removes the last appended value from the mixed radix numerical representation of the path.
 \end{itemize}
 
-It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the convergence interval of the node that the agent is visiting. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval, since it is the sum of the minimum value with the lowest possible value of the current mixed radix representation. For instance, if the agent's current path is $0.1_{3}0_{2}2_{4}$, the minimum value of the current node's convergence interval is $0.1_{3}0_{2}2_{4}$, and the maximum is $0.1_{3}0_{2}3_{4}$ ($0.1_{3}0_{2}2_{4} + 0.0_{3}0_{2}1_{4}$). Figure \ref{mixed_radix_path_example} presents an example for the approach of a mixed radix numerical representation, where the agent's path carries information about the current node's convergence interval.
+It is important to note that the value of the mixed radix numerical representation is the same as the minimum value of the convergence interval of the node that the agent is visiting. Moreover, the mixed radix numerical representation carries information about the maximum value of the node's convergence interval, since it is the sum of the minimum value with the lowest possible value of the current mixed radix representation. For instance, if the agent's current path is $0.1_{3}0_{2}2_{4}$, the minimum value of the current node's convergence interval is $0.1_{3}0_{2}2_{4}$, and the maximum is $0.1_{3}0_{2}3_{4}$ ($0.1_{3}0_{2}2_{4} + 0.0_{3}0_{2}1_{4}$). Figure \ref{mixed_radix_path_example} presents an example of the approach of a mixed radix numerical representation, where the agent's path carries information about the current node's convergence interval.
 
 \begin{algorithm}
 \caption{Methods related to mixed radix numerical representation.}
@@ -591,9 +591,41 @@ It is important to note that the value of the mixed radix numerical representati
 
 \end{forest}
 }
-\caption{Both trees have the same format, but the first one has its node convergence intervals represented in a fractional representation, and the second one has its node convergence intervals represented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.}
+\caption{Both trees have the same format, but the first one has its node convergence intervals presented in a fractional representation, and the second one has its node convergence intervals presented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.}
 \label{mixed_radix_path_example}
 \end{figure}
 
 \section{Extended Tarry's algorithm}
 \label{section_models_tarry_algorithm}
+\citen{Rao1999} explain that Tarry's algorithm is a graph search algorithm where a single agent passes through each edge of a graph in order to visit all of its vertex, going through each edge once and only once in each direction. As \citen{Rao1999} state, it is similar to the common depth-first search algorithm used in graphs. Thus, if a maze is structured as a graph, Tarry's algorithm might be a tool to solve such maze.
+
+\citen{KivelevitchCohen2010} propose an extended version of Tarry's algorithm to solve a maze where a set of agents tries to find the goal cooperatively. Such agents have no \textit{a priori} knowledge about the maze's structure, but they can share information dynamically about the cells explored by each agent. Therefore, the authors present a multi-agent maze-solving algorithm with communication, whose performance was compared to our algorithm's performance, even though the agents cannot share information in the scope of this work.
+
+Basically, to solve a maze in a multi-agent context, \citen{KivelevitchCohen2010} program each agent to follow a generalization of Tarry's algorithm. However, all the visited nodes are shared with each agent since the agents communicate with each other. Thus, the following steps guide the reasoning of the proposed algorithm \cite{KivelevitchCohen2010}:
+
+\begin{itemize}
+\item The agent should move to cells that have not been traveled by any agent.
+
+\item If there are several such cells, the agent should choose one arbitrarily.
+
+\item If there is no cell that has not been traveled by an agent, the agent should prefer to move to a cell that has not been traveled by it.
+
+\item If all the possible directions have already been traveled by the agent, or if the agent has reached a dead-end, the agent should retreat until a cell that meets one of the previous conditions.
+
+\item All the steps should be logged by the agent in its history.
+
+\item When retreating, mark the cells retreated from as ``dead end''.
+\end{itemize}
+
+Furthermore, the algorithm has a second phase: given the path of the pioneer agent that first finds the goal, the other agents must backtrack to the last location that matches a location on the pioneer's path in order to achieve the goal as the pioneer did. So, when the pioneer finds the goal, no more cells are explored, since the other agents come back to the ``Last Common Location (LCL)'' relating to the pioneer and finally follow the pioneer's path until the goal.
+
+This work used this maze-solving method for comparison to our algorithm, as exposed in Section \ref{section_results_tarry_vs_our}. To know more about the aforementioned generalization of Tarry's algorithm, please see \citen{KivelevitchCohen2010}.
+
+
+
+
+
+
+
+
+

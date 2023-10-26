@@ -74,7 +74,19 @@ where $0 \le a_{j} < m_{j}$ (and $0 \le x < \prod_{j=0}^{n-1} m_j$, so that n di
 	x = \sum_{k=0}^{n-1} a_{k} r^{k}
 \end{equation}
 
-Despite the aforementioned representation, this work presents a slightly different approach in Section \ref{section_models_mixed_radix}.
+For instance, if $x$ is represented by $1_{2}3_{9}5_{6}$, $x$ might be transformed to decimal base by the following steps:
+
+\begin{equation}
+\begin{flalign}
+& x=1_{2}3_{9}5_{6}\\
+& A=[5,3,1]\\
+& M=[6,9,2]\\
+& n=3\\
+& x = \sum_{k=0}^{2} a_{k} \prod_{j=0}^{k-1} m_j=77\\
+\end{flalign}
+\end{equation}
+
+Despite the aforementioned perspective, this work presents a slightly different approach in Section \ref{section_models_mixed_radix}, since it uses a mixed radix representation for numbers contained in the real range $[0,1]$.
 
 
 %\section{Exemplo}

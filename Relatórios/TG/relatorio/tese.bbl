@@ -41,6 +41,10 @@
 \abntrefinfo{Naeem}{NAEEM}{2021}
 {Naeem, M. A. \textbf{pyamaze}. GitHub, 2021. Available at: \htmladdnormallink{$<$https:\-/\-/www\-.github\-.com\-/MAN1986\-/pyamaze$>$}{}. Accessed on: June 6, 2023.}
 
+\bibitem[Rao et al. 1999]{Rao1999}
+\abntrefinfo{Rao et al.}{RAO et al.}{1999}
+{Rao, Nageswara \& Kareti, Srikumar \& Shi, Weimin \& Iyengar, Sundararaj. (1999). \textbf{Robot Navigation in Unknown Terrains: Introductory Survey of Non-Heuristic Algorithms.} 10.2172/10180101. }
+
 \bibitem[Sadik et al. 2010]{Sadik2010}
 \abntrefinfo{Sadik et al.}{SADIK et al.}{2010}
 {Sadik, A. M. J., Dhali, M. A., Farid, H. M. A. B., Rashid, T. U., & Syeed, A. (2010). \textbf{A Comprehensive and Comparative Study of Maze-Solving Techniques by Implementing Graph Theory.} 2010 International Conference on Artificial Intelligence and Computational Intelligence. doi:10.1109/aici.2010.18.}
