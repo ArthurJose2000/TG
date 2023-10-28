@@ -72,6 +72,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \section{Multi-agent exploration without communication}
 \label{section_models_exploration}
 \subsection{Our algorithm's key concepts}
+\label{section_models_exploration_key_concepts}
 The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
 
 First of all, this research considers a maze as a graph, where each node is a cell representing the maze. Given an initial node from which the agent starts its path, the agent checks if the node has children. Since the graph is undirected, i.e., there are no completely walled cells, this work establishes some statements:
@@ -87,6 +88,7 @@ First of all, this research considers a maze as a graph, where each node is a ce
 To establish a decision algorithm to the last statement, this work proposes firstly an interval division related to the agents and the nodes around them. Supposing that there are $k$ agents $a_{1}, a_{2},...,a_{k}$ to explore the maze, each agent will have a corresponding and proportional range of action related to the graph, as presented below:
 
 \begin{equation}
+\label{equation_agent_intervals}
 	\begin{align}
 			d = 1/k\\
 		a_{1} \textnormal{: } [0, d[\\
