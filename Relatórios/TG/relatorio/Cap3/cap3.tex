@@ -11,53 +11,39 @@ In order to assess our algotihm's performance, this work generates, using the co
 For each maze size, the code ran 1 single agent until 40 cooperative agents going through 250 different mazes, since this work generated 250 random perfect mazes for each type of size.....
 
 \begin{figure}
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Cap3/our_algorithm/our_algorithm_10x10_steps.pdf}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-first}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Cap3/our_algorithm/our_algorithm_20x20_steps.pdf}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-second}
-\end{subfigure}
-
-\newline
-
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Cap3/our_algorithm/our_algorithm_30x30_steps.pdf}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-third}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Cap3/our_algorithm/our_algorithm_40x40_steps.pdf}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-fourth}
-\end{subfigure}
-\caption{Put your caption here}
-\label{fig:fig}
+    \centering
+    \subfloat[\centering $10 \times 10$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_10x10_steps.pdf} }}
+    \qquad
+    \subfloat[\centering $20 \times 20$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_20x20_steps.pdf} }}
+    \qquad
+    \newline
+    \subfloat[\centering $30 \times 30$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_30x30_steps.pdf} }}
+    \qquad
+    \subfloat[\centering $40 \times 40$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_40x40_steps.pdf} }}
+    \caption{...}
+    \label{our_algorithm_steps}
 \end{figure}
 
 \begin{figure}
     \centering
-    \subfloat[\centering Agent at starting cell]
-    {{\includegraphics[width=3cm]{Cap3/our_algorithm/our_algorithm_10x10_steps.pdf} }}
+    \subfloat[\centering $10 \times 10$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf} }}
     \qquad
-    \subfloat[\centering Agent's 2nd step]
-    {{\includegraphics[width=3cm]{Cap3/our_algorithm/our_algorithm_20x20_steps.pdf} }}
+    \subfloat[\centering $20 \times 20$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf} }}
     \qquad
-    \subfloat[\centering Agent's 10th step]
-    {{\includegraphics[width=3cm]{Cap3/our_algorithm/our_algorithm_30x30_steps.pdf} }}
     \newline
-    \subfloat[\centering Agent's 10th step]
-    {{\includegraphics[width=3cm]{Cap3/our_algorithm/our_algorithm_40x40_steps.pdf} }}
+    \subfloat[\centering $30 \times 30$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf} }}
+    \qquad
+    \subfloat[\centering $40 \times 40$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf} }}
     \caption{...}
-    \label{maze_example}
+    \label{our_algorithm_fraction}
 \end{figure}
 
 
@@ -66,6 +52,48 @@ falar sobre a condição de parada
 
 \section{Incremental policy for the agents}
 \label{section_results_incremental_policy}
+
+\begin{figure}
+    \centering
+    \subfloat[\centering LEEEEEEEGEEEENDDAAA]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/legend_steps.pdf} }}
+    \newline
+    \subfloat[\centering $10 \times 10$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.pdf} }}
+    \qquad
+    \subfloat[\centering $20 \times 20$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.pdf} }}
+    \qquad
+    \newline
+    \subfloat[\centering $30 \times 30$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.pdf} }}
+    \qquad
+    \subfloat[\centering $40 \times 40$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.pdf} }}
+    \caption{...}
+    \label{our_algorithm_1I_vs_2I_steps}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \subfloat[\centering LEEEEEEEGEEEENDDAAA]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/legend_fraction.pdf} }}
+    \newline
+    \subfloat[\centering $10 \times 10$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fraction.pdf} }}
+    \qquad
+    \subfloat[\centering $20 \times 20$ maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fraction.pdf} }}
+    \qquad
+    \newline
+    \subfloat[\centering $30 \times 30$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fraction.pdf} }}
+    \qquad
+    \subfloat[\centering $40 \times 40$maze]
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pdf} }}
+    \caption{...}
+    \label{our_algorithm_1I_vs_2I_fraction}
+\end{figure}
 
 \section{Our algorithm vs. Tarry's algorithm}
 \label{section_results_tarry_vs_our}
