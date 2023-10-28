@@ -3,15 +3,25 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Blue and red agents traversing a $6\times 6$ maze. The goal is represented by the green entity. This maze is a perfect maze \cite {Muhammad2021}.\relax }}{24}{figure.caption.10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Maze cell indices. Source: \citeonline {Muhammad2021}.\relax }}{25}{figure.caption.11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Red agent traversing a maze toward the green goal. This maze is a perfect maze \cite {Muhammad2021}.\relax }}{25}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Agent at starting cell}}}{25}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Agent's 2nd step}}}{25}{subfigure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Agent's 10th step}}}{25}{subfigure.3.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out. The agent starts at index (3,3), and achieves the goal at index (1,1).\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Red agent traversing a maze toward the green goal. This maze is a perfect maze \cite {Muhammad2021}.\relax }}{26}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Agent at starting cell}}}{26}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Agent's 2nd step}}}{26}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Agent's 10th step}}}{26}{subfigure.3.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Graph representation of the maze presented in Figure \ref {maze_example}. The cell indices are pointed out. The agent starts at index (3,3), and achieves the goal at index (1,1).\relax }}{26}{figure.caption.13}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Three agents (Red, Blue, and Yellow) disperse from each other in a fictional and perfect maze.\relax }}{28}{figure.caption.14}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces A fictional maze represented as a tree where each node has an established interval according to an agent's traverse guided by Pseudocode \ref {pseudocode_1}. The green node represents the goal.\relax }}{29}{figure.caption.15}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces A red agent with an interval $[0,\frac {1}{2}[$ prioritizing to fill completely its interval in a fictional maze.\relax }}{29}{figure.caption.16}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces An agent with interval $[\frac {1}{3},\frac {2}{3}[$ finishes its interval in the visit order indicated. Regardless of the behavior that it assumes after finishing its interval, it never finds the green goal since it doesn't go through already visited nodes, except in backtracking situations. It is a fictional maze.\relax }}{32}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces An agent with interval $[\frac {1}{3},\frac {2}{3}[$ finishes its interval in the visit order indicated. Regardless of the behavior that it assumes after finishing its interval, it never finds the green goal since it doesn't go through already visited nodes, except in backtracking situations. It is a fictional maze.\relax }}{30}{figure.caption.17}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Both trees have the same format, but the first one has its node convergence intervals presented in a fractional representation, and the second one has its node convergence intervals presented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.\relax }}{35}{figure.caption.18}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Put your sub-caption here\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Put your sub-caption here\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Put your sub-caption here\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Put your sub-caption here\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Put your caption here\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces ...\relax }}{39}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Agent at starting cell}}}{39}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Agent's 2nd step}}}{39}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Agent's 10th step}}}{39}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Agent's 10th step}}}{39}{subfigure.6.4}
 \addvspace {10\p@ }
