@@ -14,37 +14,37 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces An agent with interval $[\frac {1}{3},\frac {2}{3}[$ finishes its interval in the visit order indicated. Regardless of the behavior that it assumes after finishing its interval, it never finds the green goal since it doesn't go through already visited nodes, except in backtracking situations. It is a fictional maze.\relax }}{33}{figure.caption.17}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Both trees have the same format, but the first one has its node convergence intervals presented in a fractional representation, and the second one has its node convergence intervals presented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.\relax }}{36}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Results of average of steps, pioneer's average of steps, and standard deviation of the average of steps. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.\relax }}{40}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.\relax }}{40}{figure.caption.19}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $10 \times 10$ maze}}}{40}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $20 \times 20$ maze}}}{40}{subfigure.1.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$maze}}}{40}{subfigure.1.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$maze}}}{40}{subfigure.1.4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Results of fraction of explored maze and fraction of maze explored when pioneer reaches the target. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.\relax }}{41}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$ maze}}}{40}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$ maze}}}{40}{subfigure.1.4}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Results of the fraction of maze explored and the fraction of maze explored when the pioneer reaches the target. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.\relax }}{41}{figure.caption.20}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $10 \times 10$ maze}}}{41}{subfigure.2.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $20 \times 20$ maze}}}{41}{subfigure.2.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$maze}}}{41}{subfigure.2.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$maze}}}{41}{subfigure.2.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$ maze}}}{41}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$ maze}}}{41}{subfigure.2.4}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Example of an agent with interval $[0, \frac {1}{3}[$ under the incremental policy, where it changes its interval to $[\frac {1}{3}, \frac {2}{3}[$ when it finishes its starting interval, in the 5th visited cell, and it changes the order of action to right-left. It is a fictional maze.\relax }}{42}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison between the results of average of steps, pioneer's average of steps, and standard deviation of the average of steps relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison between the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{43}{figure.caption.22}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Legend}}}{43}{subfigure.4.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $10 \times 10$ maze}}}{43}{subfigure.4.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $20 \times 20$ maze}}}{43}{subfigure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $30 \times 30$maze}}}{43}{subfigure.4.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering $40 \times 40$maze}}}{43}{subfigure.4.5}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between the results of fraction of explored maze and fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{44}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $30 \times 30$ maze}}}{43}{subfigure.4.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering $40 \times 40$ maze}}}{43}{subfigure.4.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between the results of the fraction of maze explored and the fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{44}{figure.caption.23}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Legend}}}{44}{subfigure.5.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $10 \times 10$ maze}}}{44}{subfigure.5.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $20 \times 20$ maze}}}{44}{subfigure.5.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $30 \times 30$maze}}}{44}{subfigure.5.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering $40 \times 40$maze}}}{44}{subfigure.5.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison between the results of pioneer's average of steps relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{46}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $30 \times 30$ maze}}}{44}{subfigure.5.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering $40 \times 40$ maze}}}{44}{subfigure.5.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison between the results of the pioneer's average of steps relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{46}{figure.caption.24}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $10 \times 10$ maze}}}{46}{subfigure.6.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $20 \times 20$ maze}}}{46}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$maze}}}{46}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$maze}}}{46}{subfigure.6.4}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison between the results of fraction of maze explored when pioneer reaches the target relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{47}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$ maze}}}{46}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$ maze}}}{46}{subfigure.6.4}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison between the results of the fraction of maze explored when pioneer reaches the target relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.\relax }}{47}{figure.caption.25}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering $10 \times 10$ maze}}}{47}{subfigure.7.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering $20 \times 20$ maze}}}{47}{subfigure.7.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$maze}}}{47}{subfigure.7.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$maze}}}{47}{subfigure.7.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering $30 \times 30$ maze}}}{47}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering $40 \times 40$ maze}}}{47}{subfigure.7.4}
 \addvspace {10\p@ }
