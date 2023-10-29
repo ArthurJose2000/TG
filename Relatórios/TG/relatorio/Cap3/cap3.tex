@@ -75,7 +75,7 @@ Figure \ref{tree_example_incremental_policy} gives an example of such incrementa
 
 Figures \ref{our_algorithm_1I_vs_2I_steps} and \ref{our_algorithm_1I_vs_2I_fraction} present the comparison between our ``1 interval'' algorithm - evaluated in Section \ref{section_results_our_performance} - and our ``2 intervals'' algorithm, where the incremental policy was implemented.
 
-The first conclusion that can taken from the incremental is that it improves the search in the sense of amount of steps the a pioneer must do to reach the target. For instance, as seen in Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40}, in the context of 40 cooperative agents in $40 \times 40$ mazes, with the incremental policy, the pioneer reaches the target with about 18\% less steps compared to the our ``1 interval'' approach. Moreover, as such policy improves the dispersion, more cells are visited, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction}.
+The first conclusion that might be taken from the incremental policy is that it improves the search in the sense of amount of steps the a pioneer must do to reach the target. For instance, as seen in Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40}, in the context of 40 cooperative agents in $40 \times 40$ mazes, with the incremental policy, the pioneer reaches the target with about 18\% less steps compared to the our ``1 interval'' approach. Moreover, as such policy improves the dispersion, more cells are visited, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction}.
 
 \begin{figure}[ht!]
 \centering
@@ -99,13 +99,15 @@ The first conclusion that can taken from the incremental is that it improves the
  		[$\vdots$,draw=black!0]]]
 
 \end{forest}
-\caption{Example of an agent with interval $[0, \frac{1}{3}[$ under the incremental policy, where it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$ when it finishes its starting interval, in the 5th visited cell, and it changes the order of action to right-left.}
+\caption{Example of an agent with interval $[0, \frac{1}{3}[$ under the incremental policy, where it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$ when it finishes its starting interval, in the 5th visited cell, and it changes the order of action to right-left. It is a fictional maze.}
 \label{tree_example_incremental_policy}
 \end{figure}
 
 \begin{figure}
     \centering
-    \subfloat[\centering LEEEEEEEGEEEENDDAAA]
+    \qquad
+    \qquad
+    \subfloat[\centering Legend]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/legend_steps.pdf} }}
     \newline
     \subfloat[\centering $10 \times 10$ maze]
@@ -121,14 +123,16 @@ The first conclusion that can taken from the incremental is that it improves the
     \subfloat[\centering $40 \times 40$maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.pdf}
     \label{our_algorithm_1I_vs_2I_steps_40_x_40} }}
-    \caption{...}
+    \caption{Comparison between the results of average of steps, pioneer's average of steps, and standard deviation of the average of steps relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
     \label{our_algorithm_1I_vs_2I_steps}
 \end{figure}
 
 \begin{figure}
     \centering
-    \subfloat[\centering LEEEEEEEGEEEENDDAAA]
-    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/legend_fraction.pdf} }}
+    \qquad
+    \qquad
+    \subfloat[\centering Legend]
+    {{\includegraphics[width=.7\linewidth]{Cap3/our_algorithm_incremental_policy/legend_fraction.pdf} }}
     \newline
     \subfloat[\centering $10 \times 10$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fraction.pdf} }}
@@ -142,12 +146,20 @@ The first conclusion that can taken from the incremental is that it improves the
     \qquad
     \subfloat[\centering $40 \times 40$maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pdf} }}
-    \caption{...}
+    \caption{Comparison between the results of fraction of explored maze and fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
     \label{our_algorithm_1I_vs_2I_fraction}
 \end{figure}
 
 \section{Our algorithm vs. Tarry's algorithm}
 \label{section_results_tarry_vs_our}
+
+Finally our algorithm was compared to the extended Tarry's algorithm \cite{KivelevitchCohen2010}, that considers all agents with the capability to communicate with each other. As pointed out in Section \ref{section_models_tarry_algorithm}, the extended Tarry's algorithm also aims to find the goal node of some undirected graph. Thus, this work implemented such algorithm for testing in the same mazes previously generated.
+
+It is important to emphasize that, differently from the extended Tarry's algorithm, our algorithm considers that the agents cannot communicate with each other. Furthermore, \citen{KivelevitchCohen2010} use the ``Last Common Location'' concept, where the agents are able to come back to the last location that matches on the pioneer's path, and then they go through the maze following the pioneer's path to also achieve the goal.
+
+Figure \ref{our_algorithm_vs_tarry_steps} compares the pioneer's average of steps of the three algorithms, i.e., our ``1 interval'' algorithm, whose results were exposed in Section \ref{section_results_our_performance}, our ``2 intervals'' algorithm, whose results were exposed in Section \ref{section_results_incremental_policy}, and the extended Tarry's algorithm. Similarly, Figure \ref{our_algorithm_vs_tarry_fraction} compares the fraction of maze explored when pioneer reaches the target. As seen, this work doesn't compare the average of steps of the three algorithms, since all the agents in the extended Tarry's algorithm reach the goal, and it also doesn't compare the fraction of maze explored, since the agents stop the exploration when the pioneer finds the goal, once they come back to the ``Last Common Location'' to follow the pioneer's path.
+
+For reaching the goal, the performance of the extended Tarry's algorithm is better than our algorithm, since the first improves the agent dispersion mainly because of the network of visited cells shared with each agent, in which they are able to make the decision of avoiding paths that have already been covered. Fortunately, our algorithm is open to improvements, since it can accept new policies to guide the agent after it finishes its interval. As seen in Section \ref{section_results_incremental_policy}, our incremental policy improves our algorithm performance, since the pioneer finds the goal faster than our algorithm without incremental policy. Moreover, as seen in Figure \ref{our_algorithm_vs_tarry_fraction}, the agents explore more maze cells in the context of the extended Tarry's algorithm, since it boosts the dispersion.
 
 \begin{figure}
     \centering
@@ -163,7 +175,7 @@ The first conclusion that can taken from the incremental is that it improves the
     \qquad
     \subfloat[\centering $40 \times 40$maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.pdf} }}
-    \caption{...}
+    \caption{Comparison between the results of pioneer's average of steps relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
     \label{our_algorithm_vs_tarry_steps}
 \end{figure}
 
@@ -181,6 +193,6 @@ The first conclusion that can taken from the incremental is that it improves the
     \qquad
     \subfloat[\centering $40 \times 40$maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fraction.pdf} }}
-    \caption{...}
+    \caption{Comparison between the results of fraction of maze explored when pioneer reaches the target relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
     \label{our_algorithm_vs_tarry_fraction}
 \end{figure}
