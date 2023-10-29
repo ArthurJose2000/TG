@@ -1,14 +1,14 @@
 \label{section_results}
-The authors developed a code in Python based on the methods exposed in Section \ref{section_models_maze} for assessing our algorithm's performance. Pseudocode \ref{pseudocode_1} and Pseudocode \ref{pseudocode_2} guided the reasoning behind the code, which is available on \href{https://github.com/ArthurJose2000/mazeexploration}{github.com/ArthurJose2000/mazeexploration}.
+The authors developed a code in Python based on the methods exposed in Section \ref{section_models} for assessing our algorithm's performance. Pseudocode \ref{pseudocode_1} and Pseudocode \ref{pseudocode_2} guided the reasoning behind the code, which is available on \href{https://github.com/ArthurJose2000/mazeexploration}{github.com/ArthurJose2000/mazeexploration}.
 
-This work used perfect mazes for simulating multi-agent scenarios where agents go through the mazes in order to find the goal. Section \ref{section_results_our_performance} presents the agents's performance when they use our algorithm. Section \ref{section_results_incremental_policy} proposes an agent policy modification when it finishes its interval to improve its performance. Finally Section \ref{section_results_tarry_vs_our} compares our algorithm's performance to the performance of the extended Tarry's algorithm \cite{KivelevitchCohen2010}, despite the latter having communication between agents.
+This work used perfect mazes for simulating multi-agent scenarios where agents go through the mazes in order to find the goal. Section \ref{section_results_our_performance} presents the agents's performance when they use our algorithm. Section \ref{section_results_incremental_policy} proposes an agent policy modification to improve the agent's performance when it finishes its interval. Finally, Section \ref{section_results_tarry_vs_our} compares our algorithm's performance to the performance of the extended Tarry's algorithm \cite{KivelevitchCohen2010}, despite the latter having communication between agents.
 
 \section{Our algorithm's perfomance}
 \label{section_results_our_performance}
 
-To assess our algorithm's performance, this work generates, using the code provided by \citen{Muhammad2021}, 250 random and perfect mazes for each type of size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$. As they are perfect mazes, i.e., there is only one path to the goal from any cell, any node of the maze's tree representation has the same convergence interval for every agent. Thus, the developed code aims to fill the concept of dispersion, where the agents try to go through the maze as dispersed as possible without communication.
+To assess our algorithm's performance, this work generated, using the code provided by \citen{Muhammad2021}, 250 random and perfect mazes for each size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$. As they are perfect mazes, i.e., there is only one path to the goal from any cell, any node of the maze's tree representation has the same convergence interval for every agent. Thus, the developed code aims to fill the concept of dispersion, where the agents try to go through the maze as dispersed as possible without communication.
 
-For each maze size, the code ran 1 single agent until 40 cooperative agents that went through 250 different mazes, since this work generated 250 random perfect mazes for each type of size. In order to analyze the results, the authors computed the following classes of analysis:
+For each maze size, the code ran 1 single agent until 40 cooperative agents that went through 250 different mazes, since this work generated 250 random perfect mazes for each size. In order to analyze the results, the authors computed the following classes of analysis:
 
 \begin{itemize}
 \item Average of steps: the average of steps of one agent in each maze, where the total number of steps is divided by the number of agents.
@@ -22,9 +22,9 @@ For each maze size, the code ran 1 single agent until 40 cooperative agents that
 \item Fraction of maze explored when pioneer reaches target: the percentage of visited cells at the moment when the pioneer reaches the goal.
 \end{itemize}
 
-As pointed out in Section \ref{section_models_exploration_key_concepts}, where the key concepts of this research are exposed, it is worth emphasizing that some agents don't find the goal, so it is possible that some agent stops the search before the pioneer finds the goal. It is clearer for big mazes, as seen in Figure \ref{our_algorithm_steps_40_x_40}, where in some situations the average of steps is smaller than the pioneer's average of steps, that might seem incoherent at first look. If the approach of Pseudocode \ref{pseudocode_1} is modified so that each agent must find the goal anyway, obviously the average of steps must be bigger than the pioneer's average of steps.
+As pointed out in Section \ref{section_models_exploration_key_concepts}, where the key concepts of this research are exposed, it is worth emphasizing that some agents don't find the goal, so it is possible that some agents stop the search even before the pioneer finds the goal. It is clearer for big mazes, as seen in Figure \ref{our_algorithm_steps_40_x_40}, where in some situations the average of steps is smaller than the pioneer's average of steps, that might seem incoherent at first look. If the approach of Pseudocode \ref{pseudocode_1} is modified so that each agent must find the goal anyway, obviously the average of steps must be bigger than the pioneer's average of steps.
 
-Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$ -, the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps considering all the 250 different mazes. Similarly, Figure \ref{our_algorithm_fraction} presents the results of the fraction of explored maze and the fraction of maze explored when the pioneer reaches the target.
+Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$ -, the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps considering all the 250 different mazes for each size. Similarly, Figure \ref{our_algorithm_fraction} presents the results of the fraction of explored maze and the fraction of maze explored when the pioneer reaches the target.
 
 \begin{figure}
     \centering
@@ -41,7 +41,7 @@ Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, 
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_40x40_steps.pdf}
     \label{our_algorithm_steps_40_x_40} }}
-    \caption{Results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.}
+    \caption{Results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size.}
     \label{our_algorithm_steps}
 \end{figure}
 
@@ -59,7 +59,7 @@ Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, 
     \qquad
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf} }}
-    \caption{Results of the fraction of maze explored and the fraction of maze explored when the pioneer reaches the target. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size.}
+    \caption{Results of the fraction of maze explored and the fraction of maze explored when the pioneer reaches the target. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size.}
     \label{our_algorithm_fraction}
 \end{figure}
 
@@ -69,13 +69,13 @@ Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, 
 
 After establishing an algorithm where the agents focus on filling its interval, this work implemented a slight modification, where the agent changes its interval and its order of action after finishing its starting interval.
 
-As pointed out in Pseudocode \ref{pseudocode_1}, the order of action of each agent is clockwise in the context of mazes - North, East, South, and West. Supposing that there are $k$ agents $a_{1}, a_{2},...,a_{k}$ to explore the maze, there will be $k$ different acting intervals, as seen in Equation \ref{equation_agent_intervals}. With our incremental policy, when the agent $a_{i}$ finishes its interval, its interval gets the value of the starting interval of $a_{i+1}$ if $i < k$. If $i = k$, it gets the value of the starting interval of $a_{0}$. Furthermore, the agent changes its order of action from clockwise to counter-clockwise - West, South, East, and North -, i.e., from right to left relating to the order of children.
+As pointed out in Pseudocode \ref{pseudocode_1}, the order of action of each agent is clockwise in the context of mazes - North, East, South, and West. Supposing that there are $k$ agents $a_{1}, a_{2},...,a_{k}$ to explore the maze, there will be $k$ different acting intervals, as seen in Equation \ref{equation_agent_intervals}. With our incremental policy, when the agent $a_{i}$ finishes its interval, its interval gets the value of the starting interval of $a_{i+1}$ if $i < k$, and, if $i = k$, it gets the value of the starting interval of the agent $a_{1}$. Furthermore, the agent changes its order of action from clockwise to counter-clockwise - West, South, East, and North -, i.e., from right to left relating to the order of children.
 
-Figure \ref{tree_example_incremental_policy} gives an example of such incremental policy, where an agent with interval $[0, \frac{1}{3}[$ finishes its interval in the 5th node, and then it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$, and changes the order of action from left-right to right-left.
+Figure \ref{tree_example_incremental_policy} gives an example of such an incremental policy, where an agent with interval $[0, \frac{1}{3}[$ finishes its interval in the 5th node, and then it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$, and also changes the order of action from left-to-right to right-to-left.
 
 Figures \ref{our_algorithm_1I_vs_2I_steps} and \ref{our_algorithm_1I_vs_2I_fraction} present the comparison between our ``1 interval'' algorithm - evaluated in Section \ref{section_results_our_performance} - and our ``2 intervals'' algorithm, where the incremental policy was implemented.
 
-The first conclusion that might be taken from the incremental policy is that it improves the search in the sense of the number of steps that the pioneer must take to reach the target. For instance, as seen in Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40}, in the context of 40 cooperative agents in $40 \times 40$ mazes, with the incremental policy, the pioneer reaches the target with about 18\% fewer steps compared to our ``1 interval'' approach. Moreover, as such policy improves the dispersion, more cells are visited, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction}.
+The first conclusion that might be taken from the incremental policy is that it improves the search in the sense of the number of steps that the pioneer must take to reach the target. For instance, as seen in Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40}, in the context of 40 cooperative agents in $40 \times 40$ mazes, with the incremental policy, the pioneer reaches the target with about 18\% fewer steps compared to our ``1 interval'' approach. Moreover, as such a policy improves the dispersion, more cells are visited, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction}.
 
 \begin{figure}[ht!]
 \centering
@@ -88,18 +88,18 @@ The first conclusion that might be taken from the incremental policy is that it 
  		[3,label=below:{$[0,\frac{1}{9}[$},fill=red!100]
  		[4,label=below:{$[\frac{1}{9},\frac{2}{9}[$},fill=red!100]
  		[5,label=below:{$[\frac{2}{9},\frac{1}{3}[$},fill=red!100]]
- 	[6,label=right:{$[\frac{1}{3},\frac{2}{3}]$},fill=red!100
+ 	[6,label=right:{$[\frac{1}{3},\frac{2}{3}[$},fill=red!100
  		[10,label=below:{$[\frac{1}{3},\frac{1}{2}[$},fill=red!100
  		[12,label=below:{$[\frac{1}{3},\frac{5}{12}[$},fill=red!100]
  		[11,label=below:{$[\frac{5}{12},\frac{1}{2}[$},fill=red!100]]
- 		[7,label=below:{$[\frac{1}{2},\frac{2}{3}]$},fill=red!100
+ 		[7,label=below:{$[\frac{1}{2},\frac{2}{3}[$},fill=red!100
  			[9,label=below:{$[\frac{1}{2},\frac{7}{12}[$},fill=red!100]
- 			[8,label=below:{$[\frac{7}{12},\frac{2}{3}]$},fill=red!100]]]
+ 			[8,label=below:{$[\frac{7}{12},\frac{2}{3}[$},fill=red!100]]]
  	[
  		[$\vdots$,draw=black!0]]]
 
 \end{forest}
-\caption{Example of an agent with interval $[0, \frac{1}{3}[$ under the incremental policy, where it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$ when it finishes its starting interval, in the 5th visited cell, and it changes the order of action to right-left. It is a fictional maze.}
+\caption{Example of an agent with interval $[0, \frac{1}{3}[$ under the incremental policy, where it changes its interval to $[\frac{1}{3}, \frac{2}{3}[$ when it finishes its starting interval, which occurs in the 5th visited cell, and it changes the order of action to right-to-left. It is a fictional maze.}
 \label{tree_example_incremental_policy}
 \end{figure}
 
@@ -123,7 +123,7 @@ The first conclusion that might be taken from the incremental policy is that it 
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.pdf}
     \label{our_algorithm_1I_vs_2I_steps_40_x_40} }}
-    \caption{Comparison between the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
+    \caption{Comparison between the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size, and for each algorithm.}
     \label{our_algorithm_1I_vs_2I_steps}
 \end{figure}
 
@@ -146,7 +146,7 @@ The first conclusion that might be taken from the incremental policy is that it 
     \qquad
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pdf} }}
-    \caption{Comparison between the results of the fraction of maze explored and the fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
+    \caption{Comparison between the results of the fraction of maze explored and the fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size, and for each algorithm.}
     \label{our_algorithm_1I_vs_2I_fraction}
 \end{figure}
 
@@ -159,7 +159,7 @@ It is important to emphasize that, differently from the extended Tarry's algorit
 
 Figure \ref{our_algorithm_vs_tarry_steps} compares the pioneer's average of steps of the three algorithms, i.e., our ``1 interval'' algorithm, whose results were exposed in Section \ref{section_results_our_performance}, our ``2 intervals'' algorithm, whose results were exposed in Section \ref{section_results_incremental_policy}, and the extended Tarry's algorithm. Similarly, Figure \ref{our_algorithm_vs_tarry_fraction} compares the fraction of maze explored when the pioneer reaches the target. As seen, this work doesn't compare the average of steps of the three algorithms, since all the agents in the extended Tarry's algorithm reach the goal, and it also doesn't compare the fraction of maze explored, since the agents stop the exploration when the pioneer finds the goal, once they come back to the ``Last Common Location'' to follow the pioneer's path.
 
-For reaching the goal, the performance of the extended Tarry's algorithm is better than our algorithm, since the first improves the agent dispersion mainly because of the network of visited cells shared with each agent, in which they are able to make the decision of avoiding paths that have already been covered. Fortunately, our algorithm is open to improvements, since it can accept new policies to guide the agent after it finishes its interval. As seen in Section \ref{section_results_incremental_policy}, our incremental policy improves our algorithm performance, since the pioneer finds the goal faster than our algorithm without incremental policy. Moreover, as seen in Figure \ref{our_algorithm_vs_tarry_fraction}, the agents explore more maze cells in the context of the extended Tarry's algorithm, since it boosts the dispersion.
+For reaching the goal, the performance of the extended Tarry's algorithm is better than our algorithm, since the first improves the agent dispersion mainly because of the network of visited cells shared with each agent, in which they are able to make the decision of avoiding paths that have already been covered. Fortunately, our algorithm is open to improvements, since it can accept new policies to guide the agent after it finishes its interval. As seen in Section \ref{section_results_incremental_policy}, our incremental policy improves our algorithm performance, since the pioneer finds the goal faster than our algorithm without incremental policy. Moreover, as seen in Figure \ref{our_algorithm_vs_tarry_fraction}, the agents explore more maze cells in the context of the extended Tarry's algorithm, at least until the pioneer finds the goal, since it boosts the dispersion.
 
 \begin{figure}
     \centering
@@ -175,7 +175,7 @@ For reaching the goal, the performance of the extended Tarry's algorithm is bett
     \qquad
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.pdf} }}
-    \caption{Comparison between the results of the pioneer's average of steps relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
+    \caption{Comparison between the results of the pioneer's average of steps relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size, and for each algorithm.}
     \label{our_algorithm_vs_tarry_steps}
 \end{figure}
 
@@ -193,6 +193,6 @@ For reaching the goal, the performance of the extended Tarry's algorithm is bett
     \qquad
     \subfloat[\centering $40 \times 40$ maze]
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fraction.pdf} }}
-    \caption{Comparison between the results of the fraction of maze explored when pioneer reaches the target relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each type of size, and for each algorithm.}
+    \caption{Comparison between the results of the fraction of maze explored when pioneer reaches the target relating to our algorithms and the extended Tarry's algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size, and for each algorithm.}
     \label{our_algorithm_vs_tarry_fraction}
 \end{figure}

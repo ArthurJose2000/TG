@@ -1,3 +1,4 @@
+\label{section_models}
 \section{Maze and multi-agent exploration}
 \label{section_models_maze}
 For simulation purposes, this work used an open-source tool that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze through the corresponding edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall. Likewise, if an edge has not a wall, the edge of the adjacent corresponding cell doesn't have a wall.
@@ -563,8 +564,8 @@ It is important to note that the value of the mixed radix numerical representati
  	[,label=left:{$[\frac{1}{3},\frac{2}{3}[$}
  		[,label=below:{$[\frac{1}{3},\frac{1}{2}[$}]
  		[,label=below:{$[\frac{1}{2},\frac{2}{3}[$}]]
- 	[,label=above:{$[\frac{2}{3},1[$}
- 		[,label=right:{$[\frac{2}{3},1[$}
+ 	[,label=above:{$[\frac{2}{3},1]$}
+ 		[,label=right:{$[\frac{2}{3},1]$}
  			[,label=below:{$[\frac{1}{3},\frac{5}{6}[$}]
  			[,label=below:{$[\frac{5}{6},1]$}]]]]
  		
@@ -585,10 +586,10 @@ It is important to note that the value of the mixed radix numerical representati
  	[,label=right:{$0.1_{3}$},label=left:{$[0.1_{3},0.2_{3}[$}
  		[,label=right:{$0.1_{3}0_{2}$},label=below:{$[0.1_{3}0_{2},0.1_{3}1_{2}[$}]
  		[,label=right:{$0.1_{3}1_{2}$},label=below:{$[0.1_{3}1_{2},0.2_{3}[$}]]
- 	[,label=right:{$0.2_{3}$},label=above:{$[0.2_{3},1[$}
- 		[,label=below:{$0.2_{3}I_{1}$},label=right:{$[0.2_{3},1[$}
+ 	[,label=right:{$0.2_{3}$},label=above:{$[0.2_{3},1]$}
+ 		[,label=below:{$0.2_{3}I_{1}$},label=right:{$[0.2_{3},1]$}
  			[,label=right:{$0.2_{3}I_{1}0_{2}$},label=below:{$[0.2_{3}0_{2},0.2_{3}1_{2}[$}]
- 			[,label=right:{$0.2_{3}I_{1}1_{2}$},label=below:{$[0.2_{3}1_{2},1[$}]]]]
+ 			[,label=right:{$0.2_{3}I_{1}1_{2}$},label=below:{$[0.2_{3}1_{2},1]$}]]]]
  		
 
 \end{forest}
