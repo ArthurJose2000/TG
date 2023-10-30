@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  29 OCT 2023 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  30 OCT 2023 02:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3076,13 +3076,24 @@ Package hyperref Info: Anchor `chapter.4' on input line 191.
 Chapter 4.
 pdftex: bookmark at 191: {4} {\numberline{4}Conclusions and Future Works} {chap
 ter.4}{0}{toc}
-(Cap4/cap4.tex) (tese.bbl (tese.brf)
+(Cap4/cap4.tex
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 5.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 5.
+Package hyperref Info: Reference (link) `section.3.2' on input line 7.
+) (tese.bbl (tese.brf)
 \tf@brf=\write13
 \openout13 = `tese.brf'.
 
 Package hyperref Info: Anchor `page.48' on input line 3.
  [48
 
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 5.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 5.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 7.
 ]
 Package hyperref Info: Anchor `chapter*.26' on input line 3.
 Package hyperref Info: Anchor `chapter.5' on input line 3.
@@ -3241,12 +3252,10 @@ onts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/a
-rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:
-/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmu10
-.pfb>
-Output written on tese.pdf (51 pages, 2189787 bytes).
+rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on tese.pdf (51 pages, 2182756 bytes).
 PDF statistics:
- 2550 PDF objects out of 2984 (max. 8388607)
+ 2548 PDF objects out of 2984 (max. 8388607)
  164 named destinations out of 1000 (max. 500000)
  477 words of extra memory for PDF output out of 10000 (max. 10000000)
 
