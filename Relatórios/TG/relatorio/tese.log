@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  30 OCT 2023 02:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  30 OCT 2023 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2177,7 +2177,7 @@ l.445
 Package hyperref Info: Anchor `section.2.4' on input line 446.
 
 pdftex: bookmark at 446: {2.4} {\numberline{2.4}Mixed radix representation to t
-he agent path} {section.2.4}{1}{toc}
+he agent's path} {section.2.4}{1}{toc}
 Package hyperref Info: Reference (link) `section.2.3' on input line 448.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 448.
 Package hyperref Info: Reference (link) `algorithm.2' on input line 450.
@@ -3219,8 +3219,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 2A270D4C7C917FE9FC45CE4A18B2C83F;6252.
+
+Package rerunfilecheck Warning: File `tese.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tese.out':
+(rerunfilecheck)             Before: 2A270D4C7C917FE9FC45CE4A18B2C83F;6252
+(rerunfilecheck)             After:  F2567225F022FA8E476914B0CEEC6761;6262.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -3253,7 +3259,7 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/a
 rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (51 pages, 2182756 bytes).
+Output written on tese.pdf (51 pages, 2182777 bytes).
 PDF statistics:
  2548 PDF objects out of 2984 (max. 8388607)
  164 named destinations out of 1000 (max. 500000)

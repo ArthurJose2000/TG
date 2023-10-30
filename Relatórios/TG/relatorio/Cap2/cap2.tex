@@ -264,7 +264,7 @@ The following pictures expose key concepts of our algorithms:
 \subsection{Pseudocode for our algorithm}
 \label{section_models_exploration_pseudocode}
 
-As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree in the situation approached in Section \ref{section_models_maze_graph}, where an agent does not go through already visited cells, except in backtracking situations, and considering the agent path as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node specifically in the context of perfect mazes \cite{Muhammad2021}, despite being a starting point to solve similar problems in the context of imperfect mazes, i.e., the graph of the maze cannot be considered as tree in a macro view.
+As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree in the situation approached in Section \ref{section_models_maze_graph}, where an agent does not go through already visited cells, except in backtracking situations, and considering the tree as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node specifically in the context of perfect mazes \cite{Muhammad2021}, despite being a starting point to solve similar problems in the context of imperfect mazes, i.e., the graph of the maze cannot be considered as tree in a macro view.
 
 As mentioned previously, there is no communication between agents. Therefore, Pseudocode \ref{pseudocode_1} considers that each agent needs to explore the maze individually and calculate by itself the convergence intervals of each node. Furthermore, it is important to emphasize that each agent considers individually the maze as tree, where the root is the agent's starting node.
 
@@ -443,7 +443,7 @@ As mentioned previously, there is no communication between agents. Therefore, Ps
 
 Thus, the goal of this work aims to establish an efficient algorithm that interrelates agent intervals to node convergence intervals. Furthermore, the authors observed that a mixed radix representation to the agents' path is a powerful mathematical tool for relating such path to the node's convergence interval that the agent is visiting. Section \ref{section_models_mixed_radix} discusses the mixed radix representation.
 
-\section{Mixed radix representation to the agent path}
+\section{Mixed radix representation to the agent's path}
 \label{section_models_mixed_radix}
 In Section \ref{section_models_exploration}, this work presented a method for an agent to traverse the maze by defining ranges of action. Pseudocode \ref{pseudocode_1} exposes this method and establishes a way to explore the maze while an agent records the visited nodes and the explored tree. However, the agent doesn't need in fact to save all the structure of the tree, because it only needs to know the current node's convergence interval and the current node's edges to make a decision.
 
