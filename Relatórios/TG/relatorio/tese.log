@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  30 OCT 2023 17:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  31 OCT 2023 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3256,11 +3256,11 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41395 strings out of 476331
- 881564 string characters out of 5787765
- 1909660 words of memory out of 5000000
- 60911 multiletter control sequences out of 15000+600000
- 569110 words of font info for 137 fonts, out of 8000000 for 9000
+ 41399 strings out of 476331
+ 881596 string characters out of 5787765
+ 1910660 words of memory out of 5000000
+ 60912 multiletter control sequences out of 15000+600000
+ 571594 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  143i,12n,141p,1600b,2978s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\arthu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -3282,11 +3282,13 @@ pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/arthu/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Users/arthu/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/a
-rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (51 pages, 2187865 bytes).
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/a
+rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C
+:/Users/arthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
+8.pfb>
+Output written on tese.pdf (51 pages, 2199281 bytes).
 PDF statistics:
- 2560 PDF objects out of 2984 (max. 8388607)
+ 2565 PDF objects out of 2984 (max. 8388607)
  164 named destinations out of 1000 (max. 500000)
  477 words of extra memory for PDF output out of 10000 (max. 10000000)
 
