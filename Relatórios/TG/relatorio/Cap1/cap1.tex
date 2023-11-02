@@ -1,4 +1,4 @@
-This thesis aims to discuss maze exploration by multi-agents programmed to find a goal cell. The agents traverse the maze with no type of communication, only working with coordinated and deterministic distributions to guide their behaviors. The main challenge of this research is to establish an approach that distributes the agents through the cells as dispersed as possible with total communication restriction, since an agent's partial knowledge cannot be shared with another agent, and, at the same time, a single agent must avoid repeating a branch of another agent. The proposed maze structure abstraction is a traditional regular grid that might be generalized into graphs.
+This thesis aims to discuss maze exploration by multi-agents programmed to find a goal cell. The main challenge of this research is to distribute the agents through the cells as dispersed as possible with total communication restriction, since an agent's partial knowledge cannot be shared with another agent, and, at the same time, a single agent must avoid repeating a branch of another agent. The only coordination between the agents occurs before they start their traversal: each one receives a different goal, represented as a different real interval between 0 and 1. The proposed maze structure abstraction is a traditional regular grid that might be generalized into graphs.
 
 The current section intends to introduce the general concept of this research and present the motivation (Section \ref{section_intro_motivation}), the related works (Section \ref{section_intro_relatedwork}), and the main definitions about maze-solving algorithms (Section \ref{section_intro_definitions}).
 
@@ -6,23 +6,23 @@ The current section intends to introduce the general concept of this research an
 \label{section_intro_motivation}
 Graph exploration has been the target of studies since Leonhard Euler proved that Seven Bridges of Königsberg \cite{ShieldsR2012} has no solution. It has been researched not only in academia but also in the industry due to several practical applications, like airline scheduling, planning path on maps, search engine algorithms, social media marketing, Internet routing protocols, and robotics.
 
-Specifically in robotics, graph exploration can be used to explore a maze with a single agent through a bunch of traditional algorithms: random mouse, wall follower, Trémaux, etc \cite{Sadik2010}. It can be useful to guide many real-life problems such as search in nuclear plant disasters, burning buildings, and extraterrestrial environments. In these previous examples, the multi-agent exploration potentially can speed up the exploration, despite being ineffective if different agents explore the same portions of the graph. Recent studies have explored multi-agent maze-solving algorithms as seen in the Multi-Agent Maze Exploration paper \cite{KivelevitchCohen2010}, where authors proposed a generalization of Tarry's algorithm. It is important to emphasize that maze-solving algorithms consider that the structure is unknown.
+Specifically in robotics, graph exploration can be used to explore a maze with a single agent through a bunch of traditional algorithms: random mouse, wall follower, Trémaux, etc \cite{Sadik2010}. It can be useful to guide many real-life problems such as search in nuclear plant disasters, burning buildings, and extraterrestrial environments. In these previous examples, multi-agent exploration potentially can speed up the exploration, despite being ineffective if different agents explore the same portions of the graph. Recent studies have explored multi-agent maze-solving algorithms as seen in the Multi-Agent Maze Exploration paper \cite{KivelevitchCohen2010}, where authors proposed a generalization of Tarry's algorithm. It is important to emphasize that maze-solving algorithms consider that the maze structure is unknown.
 
-Traditional multi-agent maze exploration approaches are based on internal communication between agents, where each agent knows about the visited cells by another agent. It avoids a second exploration in a useless path and thus it decreases computational costs. But there are some real situations where communication is limited or impossible, such as deep sea exploration, search in large wall structures, or search with low energy-based autonomous agents. 
+Traditional multi-agent maze exploration approaches are based on communication between agents, where each agent knows which cells were visited by other agents. This avoids a second exploration of the same path and thus decreases computational costs. But there are some real situations where communication is limited or impossible, such as deep sea exploration, search in large wall structures, or search with energy-limited autonomous agents. 
 
-However, the zero-communication approach between agents has not been concretely found in the literature although it may have real applications and may guide search plans in real-world problems. In order to explore it, this work presents some ways to achieve the solution of a maze based on agents without communication, which might be generalized to graph exploration.
+However, the zero-communication approach between agents has not been concretely found in the literature although it may have real applications and may guide search plans in real-world problems. In order to explore it, this work presents some ways to achieve the solution of a perfect maze, i.e., a tree, based on agents without communication, which might be generalized to graph exploration.
 
 \section{Related works}
 \label{section_intro_relatedwork}
-Multi-agent cooperative system approaches are common in literature, especially when it comes from robotics researches. In the context of communicable agents, mainly in robotics, this chapter presents some related works.
+Multi-agent cooperative system approaches are common in literature, especially in robotics. This chapter presents related works of multi-agent cooperative systems where the agents communicate among themselves, mainly in robotics.
 
 \citen{MataricMJ1995} established common properties across different scenarios of mobile multi-agent interactions, such as dispersion - ``the ability of a group of agents to spread out in order to establish and maintain some minimum interagent distance'' -, aggregation - ``the ability of a group of agents to gather in order to establish and maintain some maximum interagent distance'' -, homing - ``the ability of an agent to find a particular region or location'' -, etc. The author proposes a synthetic structure in order to abstract different types of interagent ``basis behaviors''.
 
-\citen{Burgard2005} pointed out that an exploration group of robots takes several advantages over single-agent exploration, although a coordinating group might introduce redundancy. The authors present an algorithm to efficiently explore an environment by mobile and autonomous robots within a centralized communication range. These coordinated robots can completely cover the environment in a significantly reduced time compared to other related approaches cited in the article. Otherwise, this thesis intends to study a different technique based on a zero-communication range. 
+\citen{Burgard2005} pointed out that an exploration group of robots takes several advantages over single-agent exploration, although a coordinating group might introduce redundancy. The authors present an algorithm to efficiently explore an environment by mobile and autonomous robots within a centralized communication range. These coordinated robots can completely cover the environment in a significantly reduced time compared to other related approaches cited in the article.
 
-\citen{Sadik2010} presents, as seen in the title of the paper, a comprehensive and comparative study of maze-solving algorithms techniques by implementing graph theory. The research is delimited in the ``Micromouse competition'' context, which is a famous maze competition that has been performed worldwide since the late 1970s. The authors compared maze-solving methods based on graph theory algorithms, such as DFS (Depth First Search) and BFS (Breath First Search) flood-fill, to common algorithms in the ``Micromouse'' context, such as Wall Follower. They concluded that, despite the fact that graph theory algorithms demand higher computational complexity, they are more proficient compared to related algorithms that don't use graph representation, and only make decisions relying on the neighborhood.
+\citen{Sadik2010} presents, as seen in the title of the paper, a comprehensive and comparative study of maze-solving algorithms techniques by implementing graph theory. The research is delimited in the ``Micromouse competition'' context, which is a famous maze competition that has been performed worldwide since the late 1970s. The authors compared maze-solving methods based on graph theory algorithms, such as DFS (Depth First Search) and BFS (Breath First Search) flood-fill, to common algorithms in the ``Micromouse'' context, such as Wall Follower. They concluded that, despite the fact that graph algorithms demand higher computational complexity, they are more proficient compared to related algorithms that don't use graph representation, and only make decisions relying on the neighborhood.
 
-Based on maze-solving algorithms, \citen{KivelevitchCohen2010} proposed a generalization of Tarry's algorithm, but one important characteristic of this approach is that all visited cells of the maze are known by each agent, since each agent shares its knowledge with all the others. In that sense, each one holds a dynamic map of the maze excluding redundant information, allowing information sharing. The authors present in the article the performance of the proposed solution, where a group of virtual coordinating agents is required to find the goal without an \textit{a priori} knowledge of the maze, so-called ``maze exploration''.
+Based on maze-solving algorithms, \citen{KivelevitchCohen2010} proposed a generalization of Tarry's algorithm, but one important characteristic of this approach is that all visited cells of the maze are known by each agent, since each agent shares its knowledge with all the others. In that sense, each one holds a dynamic map of the maze, allowing information sharing. The authors present in the article the performance of the proposed solution, where a group of virtual coordinating agents is required to find the goal without an \textit{a priori} knowledge of the maze, so-called ``maze exploration''.
 
 \citen{Beisel2014}, similarly to the aforementioned, worked in simulation and mathematical analysis for strategies related to cooperative autonomous robots, that can share messages with each other to exit a maze. The author concluded that a cooperative approach might result in significant performance improvements compared to uncooperative and uncoordinated robots.
 
@@ -32,11 +32,11 @@ Mainly considering these previous references, this chapter intends to define com
 
 \subsection{Graph}
 \label{section_definitions_graph}
-Graph theory has been used in various real-life applications, such as in biology, social sciences, engineering, computer science, etc. \citen{Manber1989} establishes that a graph $G=(V,E)$ consists of a set $V$ of vertices (also called nodes), and a set $E$ of edges. Each edge corresponds to a pair of vertices and represents relationships among the vertices. A graph can be directed or undirected. The edges in a directed graph are ordered pairs, i.e., the order of the edge connection between two vertices is important. On the other hand, the edges in an undirected graph are unordered pairs, i.e., the order of the edge connection between two vertices is not important. \citen{Manber1989} gives an example: a graph may represent a set of people, and the edges may connect any two persons who know each other. Moreover, he discusses several computational problems in terms of graphs, where he describes famous graph exploration algorithms, such as DFS (Depth First Search) and BFS (Breath First Search). For more details, please check \citen{Manber1989}.
+Graph theory has been used in various real-life applications, such as in biology, social sciences, engineering, computer science, etc. \citen{Manber1989} establishes that a graph $G=(V,E)$ consists of a set $V$ of vertices (also called nodes), and a set $E$ of edges. Each edge corresponds to a pair of vertices and represents relationships among the vertices. A graph can be directed or undirected. The edges in a directed graph are ordered pairs, i.e., the order of the edge connection between two vertices is important. On the other hand, the edges in an undirected graph are unordered pairs, i.e., the order of the edge connection between two vertices is not important. \citen{Manber1989} gives an example: a graph may represent a set of people, and the edges may connect any two persons who know each other. Moreover, he discusses several computational problems in terms of graphs, where he describes famous graph exploration algorithms, such as DFS (Depth First Search) and BFS (Breath First Search).
 
 \citen{Manber1989} works with some representations of graphs in his book. One of the representations is the adjacency list of a graph, that is described by an array of lists. In the adjacency list representation, each vertex is associated with a linked list consisting of all the edges adjacent to this vertex. Supposing that $|V|=n$, the adjacency list will have $n$ linked lists. In the case of this work, graphs are always undirected, therefore, if the linked list $i$ of a vertex $v_{i}$ has a vertex $v_{j}$, the linked list $j$ surely has the vertex $v_{i}$.
 
-It is worth mentioning that there is a subdomain of graph data type called tree. A tree is also an abstract data type, which can be represented topologically as a hierarchical structure of nodes. \citen{Manber1989} indicates that, in a tree, it is possible to hierarchize all the edges from the root (the head node in terms of tree hierarchy), and hence trees are sometimes called rooted trees.
+It is worth mentioning that trees are a subset of graphs. \citen{Manber1989} indicates that, in a tree, it is possible to hierarchize all the edges from the root (the head node in terms of tree hierarchy), and hence trees are sometimes called rooted trees.
 
 Section \ref{section_models_maze_graph} exposes the perspective of a maze from tree and graph topologies.
 
@@ -57,7 +57,7 @@ A maze has a goal to be achieved, which is usually a single marked cell or a pat
 
 
 \subsection{Mixed Radix}
-Mixed radix is a numerical representation that generalizes standard positional numerical systems to allow a different base for each digit. In a traditional numerical system, there is not a base variation through the numbers, nevertheless, in a mixed radix representation, a number is represented by a sequence of numerals in different bases, where each numeral is a multiple of the previous numerical sequence, however, relied on a different base.
+Mixed radix is a numerical representation that generalizes standard positional numerical systems to allow a different base for each digit. In a mixed radix representation, a number is represented by a sequence of numerals in different bases, where each numeral is a multiple of the previous numerical sequence, however, relied on a different base.
 
 For example, \citen{Arndt2011} establishes a arithmetical method to manipulate a specific subset of mixed radix numbers. The mixed radix representation $A=[a_{0},a_{1},a_{2},...,a_{n-1}]$ of a number $x$ with respect to a radix vector $M=[m_{0},m_{1},m_{2},...,m_{n-1}]$ is given by:
 
@@ -70,7 +70,7 @@ where $0 \le a_{j} < m_{j}$ (and $0 \le x < \prod_{j=0}^{n-1} m_j$, so that n di
 	x = \sum_{k=0}^{n-1} a_{k} r^{k}
 \end{equation}
 
-For instance, if $x$ is represented by $1_{2}3_{9}5_{6}$, $x$ might be transformed to the decimal base by the following steps:
+For instance, if $x$ is represented by $1_{2}3_{9}5_{6}$, and considering that $a_{i}$ is on the right of $a_{i+1}$, $x$ might be transformed to the decimal base by the following steps:
 
 \begin{equation}
 \begin{flalign}
@@ -82,7 +82,26 @@ For instance, if $x$ is represented by $1_{2}3_{9}5_{6}$, $x$ might be transform
 \end{flalign}
 \end{equation}
 
-Despite the aforementioned perspective, this work presents a slightly different approach in Section \ref{section_models_mixed_radix}, since it uses a mixed radix representation of numbers contained in the real range $[0,1]$.
+Despite the aforementioned perspective, this work presents a slightly different approach, since it uses a mixed radix representation of numbers contained in the real range $[0,1]$. In this context, the mixed radix representation $A=[a_{0},a_{1},a_{2},...,a_{n-1}]$ of a number $x$ with respect to a radix vector $M=[m_{0},m_{1},m_{2},...,m_{n-1}]$, where $x \in [0,1]$, is given by:
+
+\begin{equation}
+	x = \sum_{k=0}^{n-1} a_{k} \prod_{j=0}^{k} \frac{1}{m_j}
+\end{equation}
+where $0 \le a_{j} < m_{j}$.
+
+For instance, if $x$ is represented by $0.5_{8}1_{2}8_{10}0_{3}3_{9}$, and considering that $a_{i}$ is on the left of $a_{i+1}$, $x$ might be transformed to the decimal base by the following steps:
+
+\begin{equation}
+\begin{flalign}
+& x=0.5_{8}1_{2}8_{10}0_{3}3_{9}\\
+& A=[5,1,8,0,3]\\
+& M=[8,2,10,3,9]\\
+& n=5\\
+& x = \sum_{k=0}^{4} a_{k} \prod_{j=0}^{k} \frac{1}{m_j} \approx 0.7381944\\
+\end{flalign}
+\end{equation}
+
+This thesis also presents a pseudocode in Section \ref{section_models_mixed_radix} for calculating the value of a mixed radix number inside the real range $[0,1]$. 
 
 
 %\section{Exemplo}

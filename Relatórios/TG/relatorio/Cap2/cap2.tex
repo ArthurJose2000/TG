@@ -1,11 +1,11 @@
 \label{section_models}
 \section{Maze and multi-agent exploration}
 \label{section_models_maze}
-For simulation purposes, this work used an open-source tool that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze through the corresponding edge. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge. It is worth to mention that, if an edge has a wall, the edge of the adjacent corresponding cell also has necessarily a wall. Likewise, if an edge has not a wall, the edge of the adjacent corresponding cell doesn't have a wall.
+For simulation purposes, this work used an open-source tool that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze through the corresponding edge, in any direction. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge in both directions.
 
-The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm and previously programmed rules. So that it doesn't go through the same path more than one time, it stores the visited cells. Thus, when there are various possible branches to extend the agent's path, it ignores cells already visited by itself. If there is no candidate to be a possible branch, the agent goes back to the previous visited cell. Furthermore, if more than one agent traverses the maze in order to find the goal, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in the approach of this research, i.e., an agent knows nothing about another agent's search.
+The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm and previously programmed rules. To avoid revisiting cells, it stores the visited cells. Thus, when there are various possible branches to extend the agent's path, it ignores cells already visited by itself. If there is no candidate to be a possible branch, the agent backtracks through already visited cells until it finds an unvisited branch. Furthermore, if more than one agent traverse the maze in order to find the goal, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in the approach of this research, i.e., an agent knows nothing about another agent's search.
 
-\citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates randomly mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
+\citen{Muhammad2021} developed an open-source maze generator. It is a python module that creates random mazes and enables the user to simulate its own maze-solving algorithm. In this context, this work presents a multi-agent maze-solving algorithm that has been simulated over \citen{Muhammad2021} open-source code, with modifications. Figure \ref{maze_model} presents, for example, 2 agents traversing a $6 \times 6$ maze toward the goal.
 
 \citen{Muhammad2021} software creates by default a ``perfect maze'', which means that there is one and only one path to the goal from any cell. However, it is possible to set the code to generate a imperfect maze.
 
@@ -79,9 +79,9 @@ The goal of this work is to present a maze-solving algorithm in a multi-agent en
 First of all, this research considers a maze as a graph, where each node is a cell representing the maze. Given an initial node from which the agent starts its path, the agent checks if the node has children. Since the graph is undirected, i.e., there are no completely walled cells, this work establishes some statements:
 
 \begin{itemize}
-\item if an agent finds the cell where the goal is, the agent finishes its path;
+\item if an agent finds the goal cell, the agent finishes its path;
 
-\item if an agent is not in the cell where the goal is and the cell has only one unwalled edge, the agent necessarily goes through such edge;
+\item if an agent is not in the goal cell and the cell has only one unwalled edge, the agent necessarily goes through such edge;
 
 \item if an agent is not in the cell where the goal is and the cell has more than one unwalled edge, the agent needs to decide which edge it will go through.
 \end{itemize}
@@ -99,7 +99,9 @@ To establish a decision algorithm to the last statement, this work proposes firs
 		a_{k} \textnormal{: } [(k-1)d, 1]
 	\end{align}
 \end{equation}
-where $d$ is the size of the partition corresponding to each agent. On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node's convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
+where $d$ is the size of the partition corresponding to each agent. Furthermore, every node will also have an interval in order to converge to itself the agents whose intervals intersect the node's convergence interval. 
+
+%On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node's convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
 
 To disperse the agents through the maze, this work establishes some steps in order to guide the agent, that knows nothing about another agent's search. As a starting point for graph exploration, our algorithm works specifically in the context of perfect mazes \cite{Muhammad2021}. The following steps base the reasoning expressed in the proposed pseudocode in Section \ref{section_models_exploration_pseudocode}:
 
@@ -108,7 +110,7 @@ To disperse the agents through the maze, this work establishes some steps in ord
 
 \item every agent starts its search at the same cell, i.e., the root of an agent's tree is the same for any agent. The root's converge interval is $[0,1]$;
 
-\item every agent explores the maze calculating dynamically the converge intervals of the children of the current node where the agent is. These convergence intervals are calculated based on the following steps:
+\item every agent explores the maze calculating dynamically the convergence intervals of the children of the current node where the agent is. These convergence intervals are calculated based on the following steps:
 
 	\begin{itemize}
 
@@ -118,22 +120,22 @@ To disperse the agents through the maze, this work establishes some steps in ord
 	
 	\end{itemize}
 	
-\item every agent must go to the first child that its convergence interval intersects the agent's interval. The order of children must be well defined so that every agent gets the same calculation result of some node's convergence interval. Then, in the context of perfect mazes, it ensures that every cell (node) has the same convergence interval regardless of the agent. This research established a clockwise order for the cells - North, East, South, West - from left to right regarding the insertion of children;
+\item every agent must go to the first child whose convergence interval intersects the agent's interval. The order of children must be well defined so that every agent gets the same calculation result of some node's convergence interval. For perfect mazes, this ensures that every cell (node) has the same convergence interval regardless of the agent. This research established a clockwise order for the cells - North, East, South, West - from left to right regarding the insertion of children, which helps visualize the dispersion as each agent tends to follow a different direction. But there is no need for the children to have any specific ordering - the ordering just needs to be consistent among all agents;
 
-\item an agent doesn't visit an already visited node, except in backtracking situations where there are no children to visit, i.e., the node in fact has no children, the children have already been visited, or there are no more children that match its convergence intervals to the agent's interval;
+\item an agent doesn't visit an already visited node, except in backtracking situations where there are no children to visit, i.e., the node in fact has no children, the children have already been visited, or there are no remaining unvisited children that match their convergence intervals to the agent's interval;
 
-\item every agent must fill its interval going through the correspondent nodes until finds the goal. If it doesn't find the goal, but it fills its interval, surely the convergence interval of the goal node is outside of the agent's interval. In this context, the agent stops the search or changes its decision algorithm. In the case that it changes its behavior, this work proposes two optional secondary conducts:
+\item every agent must fill its interval going through the corresponding nodes in in-order until finds the goal. If it doesn't find the goal, but it fills its interval, surely the convergence interval of the goal node is outside of the agent's interval. In this context, the agent stops the search or changes its decision algorithm. In the case that it changes its behavior, this work proposes two optional secondary conducts:
 
 	\begin{itemize}
 
-	\item the agent modifies its interval and the exploration order from left-right to right-left. Section \ref{section_results} discusses broader about this point;
+	\item the agent modifies its target interval and the exploration order from left-right to right-left. Section \ref{section_results} discusses broader about this point;
 	
 	\item the agent explores the maze using some DFS algorithm, but ignores already visited nodes.
 	
 	\end{itemize}
 \end{itemize}
 
-The following pictures expose key concepts of our algorithms:
+The following figures expose key concepts of our algorithms:
 
 \begin{itemize}
 
@@ -264,7 +266,7 @@ The following pictures expose key concepts of our algorithms:
 \subsection{Pseudocode for our algorithm}
 \label{section_models_exploration_pseudocode}
 
-As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree in the situation approached in Section \ref{section_models_maze_graph}, where an agent does not go through already visited cells, except in backtracking situations, and considering the tree as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node specifically in the context of perfect mazes \cite{Muhammad2021}, despite being a starting point to solve similar problems in the context of imperfect mazes, i.e., the graph of the maze cannot be considered as tree in a macro view.
+As pointed out in Section \ref{section_definitions_graph}, a graph may be represented as an adjacency list. Given that an agent path through an unknown maze may be represented as a tree in the situation approached in Section \ref{section_models_maze_graph}, where an agent does not go through already visited cells, except in backtracking situations, and considering the tree as an adjacency list $A$, where the first explored node (root) $v_{1}$ has a convergence interval equal to $[0,1]$, while the other nodes $v_{i}$ of the maze are unknown, i.e., the agent doesn't know previously their convergence intervals, Pseudocode \ref{pseudocode_1} establishes the convergence intervals of each node specifically in the context of perfect mazes \cite{Muhammad2021}.
 
 As mentioned previously, there is no communication between agents. Therefore, Pseudocode \ref{pseudocode_1} considers that each agent needs to explore the maze individually and calculate by itself the convergence intervals of each node. Furthermore, it is important to emphasize that each agent considers individually the maze as tree, where the root is the agent's starting node.
 
@@ -308,7 +310,7 @@ As mentioned previously, there is no communication between agents. Therefore, Ps
 
 \State
 
-\State /* \textit{Create a flag to know if the agent filled its interval passing by all the correspondent nodes in the tree} */
+\State /* \textit{Create a flag to know if the agent filled its interval passing by all the corresponding nodes in the tree} */
 
 \State finished\_interval $\gets$ FALSE
 
@@ -594,13 +596,13 @@ It is important to note that the value of the mixed radix numerical representati
 
 \end{forest}
 }
-\caption{Both trees have the same format, but the first one has its node convergence intervals presented in a fractional representation, and the second one has its node convergence intervals presented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.}
+\caption{Both trees are the same, but the top one has its node convergence intervals presented in a fractional representation, and the bottom one has its node convergence intervals presented in a mixed radix representation. As the agent's path carries information about the nodes' convergence intervals when the path is structured in a mixed radix representation, it is possible to save, with only one numerical representation, information about the tree explored by the agent and the convergence intervals of the tree's nodes. It is a fictional maze.}
 \label{mixed_radix_path_example}
 \end{figure}
 
 \section{Extended Tarry's algorithm}
 \label{section_models_tarry_algorithm}
-\citen{Rao1999} explain that Tarry's algorithm is a graph search algorithm where a single agent passes through each edge of a graph in order to visit all of its vertex, going through each edge once and only once in each direction. As \citen{Rao1999} state, it is similar to the common depth-first search algorithm used in graphs. Thus, if a maze is structured as a graph, Tarry's algorithm might be a tool to solve such maze.
+\citen{Rao1999} explain that Tarry's algorithm is a graph search algorithm where a single agent passes through each edge of a graph in order to visit all vertices, going through each edge once and only once in each direction. As \citen{Rao1999} state, it is similar to the common depth-first search algorithm used in graphs. Thus, if a maze is structured as a graph, Tarry's algorithm might be a tool to solve such maze.
 
 \citen{KivelevitchCohen2010} propose an extended version of Tarry's algorithm to solve a maze where a set of agents tries to find the goal cooperatively. Such agents have no \textit{a priori} knowledge about the maze's structure, but they can share information dynamically about the cells explored by each agent. Therefore, the authors present a multi-agent maze-solving algorithm with communication, whose performance was compared to our algorithm's performance, even though the agents cannot share information in the scope of this work.
 
@@ -611,7 +613,7 @@ Basically, to solve a maze in a multi-agent context, \citen{KivelevitchCohen2010
 
 \item If there are several such cells, the agent should choose one arbitrarily.
 
-\item If there is no cell that has not been traveled by an agent, the agent should prefer to move to a cell that has not been traveled by it.
+\item If there is no cell that has not been traveled by an agent, the agent should prefer to move to a cell that has not been traveled by itself.
 
 \item If all the possible directions have already been traveled by the agent, or if the agent has reached a dead-end, the agent should retreat until a cell that meets one of the previous conditions.
 
