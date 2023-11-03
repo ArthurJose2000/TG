@@ -6,12 +6,12 @@ This work used perfect mazes for simulating multi-agent scenarios where agents g
 \section{Our algorithm's perfomance}
 \label{section_results_our_performance}
 
-To assess our algorithm's performance, this work generated, using the code provided by \citen{Muhammad2021}, 250 random and perfect mazes for each size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$. As they are perfect mazes, i.e., there is only one path to the goal from any cell, any node of the maze's tree representation has the same convergence interval for every agent. Thus, the developed code aims to fill the concept of dispersion, where the agents try to go through the maze as dispersed as possible without communication.
+To assess our algorithm's performance, this work generated, using the code provided by \citen{Muhammad2021}, 250 random and perfect mazes for each size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$. As they are perfect mazes, i.e., there is only one path to the goal from any cell, any node of the maze's tree representation has the same convergence interval for every agent. Thus, the developed code demonstrates the dispersion concept, where the agents try to go through the maze as dispersed as possible without communication.
 
-For each maze size, the code ran 1 single agent until 40 cooperative agents that went through 250 different mazes, since this work generated 250 random perfect mazes for each size. In order to analyze the results, the authors computed the following classes of analysis:
+Over each generated maze, simulations were run varying the number of agents from 1 to 40. Thus, in total, $250\times 40\times 4$ simulations were executed. In order to analyze the results, the authors computed the following classes of analysis:
 
 \begin{itemize}
-\item Average of steps: the average of steps of one agent in each maze, where the total number of steps is divided by the number of agents.
+\item Average of steps: the average number of steps of one agent in each maze. In other words, the average distance for one agent.
 
 \item Pioneer's average of steps: the average of steps of the first agent that reaches the goal, i.e., the pioneer.
 
@@ -22,7 +22,7 @@ For each maze size, the code ran 1 single agent until 40 cooperative agents that
 \item Fraction of maze explored when pioneer reaches target: the percentage of visited cells at the moment when the pioneer reaches the goal.
 \end{itemize}
 
-As pointed out in Section \ref{section_models_exploration_key_concepts}, where the key concepts of this research are exposed, it is worth emphasizing that some agents don't find the goal, so it is possible that some agents stop the search even before the pioneer finds the goal. It is clearer for big mazes, as seen in Figure \ref{our_algorithm_steps_40_x_40}, where in some situations the average of steps is smaller than the pioneer's average of steps, that might seem incoherent at first look. If the approach of Pseudocode \ref{pseudocode_1} is modified so that each agent must find the goal anyway, obviously the average of steps must be bigger than the pioneer's average of steps.
+As pointed out in Section \ref{section_models_exploration_key_concepts}, where the key concepts of this research are exposed, it is worth emphasizing that some agents don't find the goal, so it is possible that some agents stop the search even before the pioneer finds the goal. It is clearer for big mazes, as seen in Figure \ref{our_algorithm_steps_40_x_40}, in which, in some situations, the average of steps is smaller than the pioneer's average of steps, which might seem incoherent at first look. If the approach of Pseudocode \ref{pseudocode_1} is modified so that each agent must find the goal anyway, obviously the average of steps must be bigger than the pioneer's average of steps.
 
 Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$ -, the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps considering all the 250 different mazes for each size. Similarly, Figure \ref{our_algorithm_fraction} presents the results of the fraction of explored maze and the fraction of maze explored when the pioneer reaches the target.
 
