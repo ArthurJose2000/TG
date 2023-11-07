@@ -1,7 +1,9 @@
+This chapter intends to present the models that support our multi-agent search algorithm. Section \ref{section_models_maze} approaches multi-agent exploration in the context of mazes. Section \ref{section_models_maze_graph} establishes a maze from a graph topology perspective. Section \ref{section_models_exploration} presents our algorithm's key concepts and a pseudocode that guides the implementation. Section \ref{section_models_mixed_radix} presents a mixed radix numerical representation to represent the agent's path and support its behavior. Finally, Section \ref{section_models_tarry_algorithm} describes the extended Tarry's algorithm proposed by \citen{KivelevitchCohen2010}.
+
 \label{section_models}
 \section{Maze and multi-agent exploration}
 \label{section_models_maze}
-For simulation purposes, this work used an open-source tool that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze through the corresponding edge, in any direction. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge in both directions.
+For simulation purposes, this work used an open-source tool \cite{Muhammad2021} that models a maze under a 4-neighbor 2D grid graph perspective, where each cell is a square with its edges composed by a wall or not. If there is a wall, an agent cannot traverse the maze through the corresponding edge, in any direction. On the other hand, if there is not a wall, an agent has a free way to traverse the maze through the related edge in both directions.
 
 The maze has a goal that is a single marked cell, and an agent inside the maze aims to find the marked cell, traversing the maze cell by cell. This agent is an autonomous entity that follows a specific algorithm and previously programmed rules. To avoid revisiting cells, it stores the visited cells. Thus, when there are various possible branches to extend the agent's path, it ignores cells already visited by itself. If there is no candidate to be a possible branch, the agent backtracks through already visited cells until it finds an unvisited branch. Furthermore, if more than one agent traverse the maze in order to find the goal, differently from some approaches presented in \citen{Beisel2014}, \citen{Burgard2005}, and \citen{KivelevitchCohen2010}, there is no intercommunication between agents in the approach of this research, i.e., an agent knows nothing about another agent's search.
 
@@ -12,7 +14,7 @@ The maze has a goal that is a single marked cell, and an agent inside the maze a
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.5\textwidth]{Cap2/maze_model.png}
-\caption{Blue and red agents traversing a $6\times 6$ maze. The goal is represented by the green entity. This maze is a perfect maze \cite{Muhammad2021}.}
+\caption{Blue and red agents traversing a $6\times 6$ maze. The darkest blue cell and the darkest red cell represent the current location of the agents. The lightest blue cells and the lightest red cells represent the path of the agents with some overlaps. The goal is represented by the green entity. This maze is a perfect maze \cite{Muhammad2021}.}
 \label{maze_model}
 \end{figure}
 
@@ -37,7 +39,7 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 \label{maze_indices_muhammad}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \subfloat[\centering Agent at starting cell]
     {{\includegraphics[width=3cm]{Cap2/maze_perfect_3x3_1agent_1.png} }}
@@ -72,6 +74,8 @@ Figure \ref{maze_example_graph} gives an example of the graph representation of 
 
 \section{Multi-agent exploration without communication}
 \label{section_models_exploration}
+Section \ref{section_models_exploration_key_concepts} presents our algorithm's key concepts, and Section \ref{section_models_exploration_pseudocode} presents the pseudocode that guides our algorithm's implementation.
+
 \subsection{Our algorithm's key concepts}
 \label{section_models_exploration_key_concepts}
 The goal of this work is to present a maze-solving algorithm in a multi-agent environment, where an agent cannot communicate with the other agents. Thus, each agent must be previously programmed to avoid exploring the same portion of the maze as other agents. Indeed, they should be as dispersed as possible.
@@ -99,7 +103,7 @@ To establish a decision algorithm to the last statement, this work proposes firs
 		a_{k} \textnormal{: } [(k-1)d, 1]
 	\end{align}
 \end{equation}
-where $d$ is the size of the partition corresponding to each agent. Furthermore, every node will also have an interval in order to converge to itself the agents whose intervals intersect the node's convergence interval. 
+where $d$ is the size of the partition corresponding to each agent. Furthermore, every node will also have an interval, to which the agents will converge according to their intervals.
 
 %On the other hand, this work has handled convergence intervals to each node, where the agents tends to match its interval with the node's convergence interval. In this way, an agent intends to traverse the maze as dispersed from the others as possible.
 
@@ -602,7 +606,7 @@ It is important to note that the value of the mixed radix numerical representati
 
 \section{Extended Tarry's algorithm}
 \label{section_models_tarry_algorithm}
-\citen{Rao1999} explain that Tarry's algorithm is a graph search algorithm where a single agent passes through each edge of a graph in order to visit all vertices, going through each edge once and only once in each direction. As \citen{Rao1999} state, it is similar to the common depth-first search algorithm used in graphs. Thus, if a maze is structured as a graph, Tarry's algorithm might be a tool to solve such maze.
+\citen{Rao1993} explain that Tarry's algorithm is a graph search algorithm where a single agent passes through each edge of a graph in order to visit all vertices, going through each edge once and only once in each direction. As \citen{Rao1993} state, it is similar to the common depth-first search algorithm used in graphs. Thus, if a maze is structured as a graph, Tarry's algorithm might be a tool to solve such maze.
 
 \citen{KivelevitchCohen2010} propose an extended version of Tarry's algorithm to solve a maze where a set of agents tries to find the goal cooperatively. Such agents have no \textit{a priori} knowledge about the maze's structure, but they can share information dynamically about the cells explored by each agent. Therefore, the authors present a multi-agent maze-solving algorithm with communication, whose performance was compared to our algorithm's performance, even though the agents cannot share information in the scope of this work.
 

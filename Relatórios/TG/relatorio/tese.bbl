@@ -7,7 +7,7 @@
 
 \bibitem[Arndt 2011]{Arndt2011}
 \abntrefinfo{Arndt}{ARNDT}{2011}
-{ARNDT, J. \textbf{Mixed radix numbers.} In: Matters Computational. Springer, Berlin, Heidelberg, 2011. https://doi.org/10.1007/978-3-642-14764-7\_9}
+{ARNDT, J. \textbf{Mixed radix numbers.} In: Matters Computational. Springer, Berlin, Heidelberg, 2011. DOI: 10.1007/978-3-642-14764-7\_9}
 
 \bibitem[Beisel 2014]{Beisel2014}
 \abntrefinfo{Beisel}{BEISEL}{2014}
@@ -15,7 +15,7 @@
 
 \bibitem[Burgard et al. 2005]{Burgard2005}
 \abntrefinfo{Burgard et al.}{BURGARD et al.}{2005}
-{BURGARD, W.; MOORS, M.; STACHNISS, C.; SCHNEIDER, F. E. \textbf{Coordinated multi-robot exploration.} IEEE Transactions on Robotics, 2005. 21(3), 376-386. doi:10.1109/tro.2004.839232}
+{BURGARD, W.; MOORS, M.; STACHNISS, C.; SCHNEIDER, F. E. \textbf{Coordinated multi-robot exploration.} IEEE Transactions on Robotics, 2005. 21(3), 376-386. DOI: 10.1109/tro.2004.839232}
 
 \bibitem[Cormen et al. 2022]{Cormen2022}
 \abntrefinfo{Cormen et al.}{CORMEN et al.}{2022}
@@ -27,11 +27,11 @@
 
 \bibitem[Kivelevitch \& Cohen 2010]{KivelevitchCohen2010}
 \abntrefinfo{Kivelevitch \& Cohen}{KIVELEVITCH; COHEN}{2010}
-{KIVELEVITCH, Elad; COHEN, Kelly. \textbf{Multi-Agent Maze Exploration.} Journal of Aerospace Computing, Information, and Communication, 2010. 7. 391-405. 10.2514/1.46304.}
+{KIVELEVITCH, Elad; COHEN, Kelly. \textbf{Multi-Agent Maze Exploration.} Journal of Aerospace Computing, Information, and Communication, 2010. Vol. 7, 391\?405. DOI: 10.2514/1.46304.}
 
 \bibitem[Matari\'c M. J.]{MataricMJ1995}
 \abntrefinfo{Matari\'c}{MATARI\'C}{1995}
-{MATARI\'C, M. J. \textbf{Designing and Understanding Adaptive Group Behavior.} Adaptive Behavior, Vol. 4, No. 1, 51-80. 1995. 4(1), 51-80. doi:10.1177/105971239500400104}
+{MATARI\'C, M. J. \textbf{Designing and Understanding Adaptive Group Behavior.} Adaptive Behavior, Vol. 4, No. 1, 51-80. 1995. 4(1), 51-80. DOI: 10.1177/105971239500400104}
 
 \bibitem[Manber 1989]{Manber1989}
 \abntrefinfo{Manber}{MANBER}{1989}
@@ -41,17 +41,17 @@
 \abntrefinfo{Naeem}{NAEEM}{2021}
 {NAEEM, M. A. \textbf{pyamaze}. GitHub, 2021. Available at: \htmladdnormallink{$<$https:\-/\-/www\-.github\-.com\-/MAN1986\-/pyamaze$>$}{}. Accessed on: June 6, 2023.}
 
-\bibitem[Rao et al. 1999]{Rao1999}
-\abntrefinfo{Rao et al.}{RAO et al.}{1999}
-{RAO, Nageswara; KARETI, Srikumar; SHI, Weimin; IYENGAR, Sundararaj. \textbf{Robot Navigation in Unknown Terrains}: Introductory Survey of Non-Heuristic Algorithms. 1999. 10.2172/10180101. }
+\bibitem[Rao et al. 1993]{Rao1993}
+\abntrefinfo{Rao et al.}{RAO et al.}{1993}
+{RAO, Nageswara; KARETI, Srikumar; SHI, Weimin; IYENGAR, Sundararaj. \textbf{Robot Navigation in Unknown Terrains}: Introductory Survey of Non-Heuristic Algorithms. Tech. Report ORNL/TM-12410, Oak Ridge National Lab., 1993. DOI: 10.2172/10180101. }
 
 \bibitem[Sadik et al. 2010]{Sadik2010}
 \abntrefinfo{Sadik et al.}{SADIK et al.}{2010}
-{SADIK, A. M. J.; DHALI, M. A.; FARID, H. M. A. B.; RASHID, T. U.; SYEED, A. \textbf{A Comprehensive and Comparative Study of Maze-Solving Techniques by Implementing Graph Theory.} International Conference on Artificial Intelligence and Computational Intelligence, 2010. doi:10.1109/aici.2010.18.}
+{SADIK, A. M. J.; DHALI, M. A.; FARID, H. M. A. B.; RASHID, T. U.; SYEED, A. \textbf{A Comprehensive and Comparative Study of Maze-Solving Techniques by Implementing Graph Theory.} International Conference on Artificial Intelligence and Computational Intelligence, 2010. DOI: 10.1109/aici.2010.18.}
 
 \bibitem[Shields R 2012]{ShieldsR2012}
 \abntrefinfo{Shields}{SHIELDS}{2012}
-{SHIELDS, R. \textbf{Cultural Topology: The Seven Bridges of K\¨{o}nigsburg, 1736.} Theory, Culture \& Society, 2012. 29(4-5), 43-57. doi:10.1177/0263276412451161.}
+{SHIELDS, R. \textbf{Cultural Topology: The Seven Bridges of K\¨{o}nigsburg, 1736.} Theory, Culture \& Society, 2012. 29(4-5), 43-57. DOI: 10.1177/0263276412451161.}
 
 
 
