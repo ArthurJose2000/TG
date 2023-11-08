@@ -26,6 +26,10 @@ As pointed out in Section \ref{section_models_exploration_key_concepts}, where t
 
 Figure \ref{our_algorithm_steps} presents, for each maze size - $10 \times 10$, $20 \times 20$, $30 \times 30$, and $40 \times 40$ -, the results of the average of steps, the pioneer's average of steps, and the standard deviation of the average of steps considering all the 250 different mazes for each size. Similarly, Figure \ref{our_algorithm_fraction} presents the results of the fraction of explored maze and the fraction of maze explored when the pioneer reaches the target.
 
+From the result, we conclude that the bigger the number of agents, the faster the pioneer finds the goal cell, although the pioneer's average of steps tends to settle in the long term. Moreover, as we used, for each maze size, the same set of mazes, the standard deviation is stable at a certain value. 
+
+Additionally, for each maze size, the average of steps starts at the highest point and falls until the number of agents is 4, and then it has a slight tendency to settle at a certain value, except when the number of agents is power of 2. This anomalous behavior has been still studied, but we suppose that, as the tree representation of a 4-neighbor 2D perfect maze has a similar structure to a binary tree, the convergence interval of some nodes fits exactly the interval of some agents, then the agents avoid rising and going down subtrees to find another subtree that matches its interval, which generates a smaller average of steps. This unusual situation is also commented in Section \ref{section_results_incremental_policy}, where Figure \ref{incremental_policy_anomaly} exposes it.
+
 \begin{figure}
     \centering
     \subfloat[\centering $10 \times 10$ maze]
@@ -77,6 +81,10 @@ Figures \ref{our_algorithm_1I_vs_2I_steps} and \ref{our_algorithm_1I_vs_2I_fract
 
 The first conclusion that might be taken from the incremental policy is that it improves the search in the sense of the number of steps that the pioneer must take to reach the target. For instance, as seen in Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40}, in the context of 40 cooperative agents in $40 \times 40$ mazes, with the incremental policy, the pioneer reaches the target with about 18\% fewer steps compared to our ``1 interval'' approach. Moreover, as such a policy improves the dispersion, more cells are visited, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction}.
 
+Furthermore, as pointed out in Section \ref{section_results_our_performance}, our algorithm shows an anomalous result when the number of agents is power of 2. We are still investigating this behavior, but our hypothesis is that, as the tree representation of a 4-neighbor 2D perfect maze has a similar structure to a binary tree, the convergence interval of some nodes fits exactly the interval of some agents, then the agents avoid rising and going down subtrees to find another subtree that matches its interval, which means that, when the agent finishes its first interval, it probably needs to rise a relatively bigger branch to fill the second interval. Thus, the pioneer tends to find the goal in the first interval. It is clearer with bigger mazes, such as in the context of $40 \times 40$ mazes. 
+
+Figure \ref{incremental_policy_anomaly} shows proportionally when the pioneer finds the goal: in the first interval, in the second interval, or in the DFS situation. When the number of agents is power of 2, the pioneers tend to find the goal in the first interval. Similarly, as an example of such an anomaly, Figure \ref{our_algorithm_1I_vs_2I_steps_40_x_40} exposes that, when the number of agents is power of 2, the incremental policy doesn't provide significant improvements, since the pioneers avoid the second interval. Moreover, as seen in Figure \ref{our_algorithm_1I_vs_2I_fraction_40_x_40}, the agents explore the tree relatively less when the number of agents is power of 2, since they probably need to backtrack a long way until starting the second interval, avoiding possibly big subtrees. We are still analyzing this case.
+
 \begin{figure}[ht!]
 \centering
 \begin{forest}
@@ -103,7 +111,7 @@ The first conclusion that might be taken from the incremental policy is that it 
 \label{tree_example_incremental_policy}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \qquad
     \qquad
@@ -127,7 +135,7 @@ The first conclusion that might be taken from the incremental policy is that it 
     \label{our_algorithm_1I_vs_2I_steps}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \qquad
     \qquad
@@ -145,9 +153,17 @@ The first conclusion that might be taken from the incremental policy is that it 
     {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fraction.pdf} }}
     \qquad
     \subfloat[\centering $40 \times 40$ maze]
-    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pdf} }}
+    {{\includegraphics[width=.45\linewidth]{Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pdf}
+    \label{our_algorithm_1I_vs_2I_fraction_40_x_40} }}
     \caption{Comparison between the results of the fraction of maze explored and the fraction of maze explored when pioneer reaches the target relating to our ``1 interval'' algorithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were run in 250 different mazes for each size, and for each algorithm.}
     \label{our_algorithm_1I_vs_2I_fraction}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.8\textwidth]{Cap3/our_algorithm_incremental_policy/anomaly.pdf}
+\caption{Proportionally, the moment when the pioneer finds the goal in the context of the incremental policy: in the first interval, in the second interval, or in the DFS situation. An anomalous behavior occurs when the number of agents is power of 2. This case has been still investigated.}
+\label{incremental_policy_anomaly}
 \end{figure}
 
 \section{Our algorithm vs. Tarry's algorithm}
