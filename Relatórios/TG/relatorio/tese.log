@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  7 NOV 2023 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.30)  18 NOV 2023 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2514,167 +2514,142 @@ Package hyperref Info: Reference (link) `subfigure.3.1.4' on input line 25.
 Package hyperref Info: Reference (link) `algorithm.1' on input line 25.
 Package hyperref Info: Reference (link) `figure.caption.17' on input line 27.
 Package hyperref Info: Reference (link) `figure.caption.18' on input line 27.
-Package hyperref Info: Reference (link) `section.3.2' on input line 31.
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 31.
-Package hyperref Info: Anchor `figure.caption.17' on input line 34.
-Package hyperref Info: Anchor `subfigure.3.1.1' on input line 35.
-<Cap3/our_algorithm/our_algorithm_10x10_steps.pdf, id=619, 454.99548pt x 337.89
-674pt>
+Package hyperref Info: Anchor `figure.caption.17' on input line 32.
+Package hyperref Info: Anchor `subfigure.3.1.1' on input line 33.
+<Cap3/our_algorithm/our_algorithm_10x10_steps.pdf, id=617, 454.9798pt x 337.891
+11pt>
 File: Cap3/our_algorithm/our_algorithm_10x10_steps.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm/our_algorithm_10x10_steps.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_10x10_steps.pdf  used
- on input line 36.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.1.2' on input line 38.
-<Cap3/our_algorithm/our_algorithm_20x20_steps.pdf, id=620, 454.99548pt x 337.89
-674pt>
+ on input line 34.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.1.2' on input line 36.
+<Cap3/our_algorithm/our_algorithm_20x20_steps.pdf, id=618, 454.9798pt x 337.891
+11pt>
 File: Cap3/our_algorithm/our_algorithm_20x20_steps.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm/our_algorithm_20x20_steps.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_20x20_steps.pdf  used
- on input line 39.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.1.3' on input line 42.
-<Cap3/our_algorithm/our_algorithm_30x30_steps.pdf, id=621, 454.99548pt x 337.89
-674pt>
+ on input line 37.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.1.3' on input line 40.
+<Cap3/our_algorithm/our_algorithm_30x30_steps.pdf, id=619, 454.9798pt x 337.891
+11pt>
 File: Cap3/our_algorithm/our_algorithm_30x30_steps.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm/our_algorithm_30x30_steps.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_30x30_steps.pdf  used
- on input line 43.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.1.4' on input line 45.
-<Cap3/our_algorithm/our_algorithm_40x40_steps.pdf, id=622, 454.96788pt x 337.89
-674pt>
+ on input line 41.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.1.4' on input line 43.
+<Cap3/our_algorithm/our_algorithm_40x40_steps.pdf, id=620, 454.94908pt x 337.89
+111pt>
 File: Cap3/our_algorithm/our_algorithm_40x40_steps.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm/our_algorithm_40x40_steps.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_40x40_steps.pdf  used
- on input line 47.
-(pdftex.def)             Requested size: 204.85846pt x 152.14493pt.
+ on input line 45.
+(pdftex.def)             Requested size: 204.85846pt x 152.14754pt.
 
-pdftex: bookmark at 48: {3.1} {\numberline{3.1}{\ignorespaces Results of the av
+pdftex: bookmark at 46: {3.1} {\numberline{3.1}{\ignorespaces Results of the av
 erage of steps, the pioneer's average of steps, and the standard deviation of t
 he average of steps. 1 single agent until 40 cooperative agents were run in 250
  different mazes for each size.\relax }} {figure.caption.17}{0}{lof}
-pdftex: bookmark at 50: {} {\numberline{(a)}{\ignorespaces {\centering $10 \tim
+pdftex: bookmark at 48: {} {\numberline{(a)}{\ignorespaces {\centering $10 \tim
 es 10$ maze}}} {subfigure.1.1}{1}{lof}
-pdftex: bookmark at 50: {} {\numberline{(b)}{\ignorespaces {\centering $20 \tim
+pdftex: bookmark at 48: {} {\numberline{(b)}{\ignorespaces {\centering $20 \tim
 es 20$ maze}}} {subfigure.1.2}{1}{lof}
-pdftex: bookmark at 50: {} {\numberline{(c)}{\ignorespaces {\centering $30 \tim
+pdftex: bookmark at 48: {} {\numberline{(c)}{\ignorespaces {\centering $30 \tim
 es 30$ maze}}} {subfigure.1.3}{1}{lof}
-pdftex: bookmark at 50: {} {\numberline{(d)}{\ignorespaces {\centering $40 \tim
+pdftex: bookmark at 48: {} {\numberline{(d)}{\ignorespaces {\centering $40 \tim
 es 40$ maze}}} {subfigure.1.4}{1}{lof}
-Package hyperref Info: Anchor `figure.caption.18' on input line 53.
-Package hyperref Info: Anchor `subfigure.3.2.1' on input line 54.
-<Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf, id=623, 454.93275pt x 337
-.89674pt>
+Package hyperref Info: Anchor `figure.caption.18' on input line 51.
+Package hyperref Info: Anchor `subfigure.3.2.1' on input line 52.
+<Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf, id=621, 454.92018pt x 337
+.89111pt>
 File: Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf Graphic file (type pd
 f)
 <use Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf  u
-sed on input line 55.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.2.2' on input line 57.
-<Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf, id=624, 454.93275pt x 337
-.89674pt>
+sed on input line 53.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.2.2' on input line 55.
+<Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf, id=622, 454.92018pt x 337
+.89111pt>
 File: Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf Graphic file (type pd
 f)
 <use Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_20x20_fraction.pdf  u
-sed on input line 58.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.2.3' on input line 61.
-<Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf, id=625, 454.93275pt x 337
-.89674pt>
+sed on input line 56.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.2.3' on input line 59.
+<Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf, id=623, 454.92018pt x 337
+.89111pt>
 File: Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf Graphic file (type pd
 f)
 <use Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf  u
-sed on input line 62.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.2.4' on input line 64.
-<Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf, id=626, 455.02373pt x 337
-.89674pt>
+sed on input line 60.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.2.4' on input line 62.
+<Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf, id=624, 455.01744pt x 337
+.89111pt>
 File: Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf Graphic file (type pd
 f)
 <use Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf>
 Package pdftex.def Info: Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf  u
-sed on input line 65.
-(pdftex.def)             Requested size: 204.85846pt x 152.12431pt.
-pdftex: bookmark at 66: {3.2} {\numberline{3.2}{\ignorespaces Results of the fr
+sed on input line 63.
+(pdftex.def)             Requested size: 204.85846pt x 152.12177pt.
+pdftex: bookmark at 64: {3.2} {\numberline{3.2}{\ignorespaces Results of the fr
 action of maze explored and the fraction of maze explored when the pioneer reac
 hes the target. 1 single agent until 40 cooperative agents were run in 250 diff
 erent mazes for each size.\relax }} {figure.caption.18}{0}{lof}
-pdftex: bookmark at 68: {} {\numberline{(a)}{\ignorespaces {\centering $10 \tim
+pdftex: bookmark at 66: {} {\numberline{(a)}{\ignorespaces {\centering $10 \tim
 es 10$ maze}}} {subfigure.2.1}{1}{lof}
-pdftex: bookmark at 68: {} {\numberline{(b)}{\ignorespaces {\centering $20 \tim
+pdftex: bookmark at 66: {} {\numberline{(b)}{\ignorespaces {\centering $20 \tim
 es 20$ maze}}} {subfigure.2.2}{1}{lof}
-pdftex: bookmark at 68: {} {\numberline{(c)}{\ignorespaces {\centering $30 \tim
+pdftex: bookmark at 66: {} {\numberline{(c)}{\ignorespaces {\centering $30 \tim
 es 30$ maze}}} {subfigure.2.3}{1}{lof}
-pdftex: bookmark at 68: {} {\numberline{(d)}{\ignorespaces {\centering $40 \tim
+pdftex: bookmark at 66: {} {\numberline{(d)}{\ignorespaces {\centering $40 \tim
 es 40$ maze}}} {subfigure.2.4}{1}{lof}
-Package hyperref Info: Anchor `section.3.2' on input line 71.
-pdftex: bookmark at 71: {3.2} {\numberline{3.2}Incremental policy for the agent
+Package hyperref Info: Anchor `section.3.2' on input line 69.
+pdftex: bookmark at 69: {3.2} {\numberline{3.2}Incremental policy for the agent
 s} {section.3.2}{1}{toc}
-Package hyperref Info: Reference (link) `algorithm.1' on input line 76.
-Package hyperref Info: Reference (link) `equation.2.3.1' on input line 76.
-Package hyperref Info: Anchor `page.37' on input line 77.
+Package hyperref Info: Reference (link) `algorithm.1' on input line 74.
+Package hyperref Info: Reference (link) `equation.2.3.1' on input line 74.
+Package hyperref Info: Reference (link) `figure.caption.19' on input line 76.
+Package hyperref Info: Reference (link) `figure.caption.20' on input line 78.
+Package hyperref Info: Reference (link) `figure.caption.21' on input line 78.
+Package hyperref Info: Reference (link) `section.3.1' on input line 78.
+Package hyperref Info: Anchor `page.37' on input line 79.
 [37
 Package `hyperref' Info: End of reference (link) `subsection.2.3.1', line 25.
 Package `hyperref' Info: End of reference (link) `subfigure.3.1.4', line 25.
 Package `hyperref' Info: End of reference (link) `algorithm.1', line 25.
 Package `hyperref' Info: End of reference (link) `figure.caption.17', line 27.
 Package `hyperref' Info: End of reference (link) `figure.caption.18', line 27.
-Package `hyperref' Info: End of reference (link) `section.3.2', line 31.
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 31.
-Package `hyperref' Info: End of reference (link) `algorithm.1', line 76.
+Package `hyperref' Info: End of reference (link) `algorithm.1', line 74.
+Package `hyperref' Info: End of reference (link) `equation.2.3.1', line 74.
+Package `hyperref' Info: End of reference (link) `figure.caption.19', line 76.
 ]
-Package hyperref Info: Anchor `page.38' on input line 77.
+Package hyperref Info: Anchor `page.38' on input line 79.
  [38 <./Cap3/our_algorithm/our_algorithm_10x10_steps.pdf> <./Cap3/our_algorithm
-/our_algorithm_20x20_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_20x20_steps.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Cap3/our_algorithm/our_algorithm_30x30_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_30x30_steps.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Cap3/our_algorithm/our_algorithm_40x40_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_40x40_steps.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `page.39' on input line 77.
+/our_algorithm_20x20_steps.pdf> <./Cap3/our_algorithm/our_algorithm_30x30_steps
+.pdf> <./Cap3/our_algorithm/our_algorithm_40x40_steps.pdf>]
+Package hyperref Info: Anchor `page.39' on input line 79.
  [39 <./Cap3/our_algorithm/our_algorithm_10x10_fraction.pdf> <./Cap3/our_algori
-thm/our_algorithm_20x20_fraction.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_20x20_fractio
-n.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Cap3/our_algorithm/our_algorithm_30x30_fraction.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_30x30_fractio
-n.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm/our_algorithm_40x40_fractio
-n.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 78.
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 80.
+thm/our_algorithm_20x20_fraction.pdf> <./Cap3/our_algorithm/our_algorithm_30x30
+_fraction.pdf> <./Cap3/our_algorithm/our_algorithm_40x40_fraction.pdf>]
+Package hyperref Info: Reference (link) `subfigure.3.4.5' on input line 80.
 Package hyperref Info: Reference (link) `figure.caption.21' on input line 80.
-Package hyperref Info: Reference (link) `section.3.1' on input line 80.
-Package hyperref Info: Reference (link) `subfigure.3.4.5' on input line 82.
-Package hyperref Info: Reference (link) `figure.caption.21' on input line 82.
-Package hyperref Info: Reference (link) `section.3.1' on input line 84.
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 86.
-Package hyperref Info: Reference (link) `subfigure.3.4.5' on input line 86.
-Package hyperref Info: Reference (link) `subfigure.3.5.5' on input line 86.
-Package hyperref Info: Anchor `figure.caption.19' on input line 88.
+Package hyperref Info: Reference (link) `figure.caption.22' on input line 84.
+Package hyperref Info: Reference (link) `subfigure.3.4.5' on input line 84.
+Package hyperref Info: Reference (link) `subfigure.3.5.5' on input line 84.
+Package hyperref Info: Anchor `figure.caption.19' on input line 86.
 
 Runaway argument?
 {
 ! Paragraph ended before \forestrset was complete.
 <to be read again> 
                    \par 
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2683,7 +2658,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> \forestrset {preamble}{\par \par }
                                              
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2696,7 +2671,7 @@ Runaway argument?
 ! Paragraph ended before \forestOeappto was complete.
 <to be read again> 
                    \par 
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2705,7 +2680,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Extra }, or forgotten \endgroup.
 <argument> ...{,afterthought={\unexpanded { \par }
                                                   }}
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2716,7 +2691,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...,afterthought={\unexpanded { \par }}
                                                   }
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2727,7 +2702,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten \endgroup.
 <argument> ...afterthought={\unexpanded { \par }}}
                                                   
-l.109 \end{forest}
+l.107 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2735,419 +2710,346 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-pdftex: bookmark at 110: {3.3} {\numberline{3.3}{\ignorespaces Example of an ag
+pdftex: bookmark at 108: {3.3} {\numberline{3.3}{\ignorespaces Example of an ag
 ent with interval $[0, \frac {1}{3}[$ under the incremental policy, where it ch
 anges its interval to $[\frac {1}{3}, \frac {2}{3}[$ when it finishes its start
 ing interval, which occurs in the 5th visited cell, and it changes the order of
  action to right-to-left. It is a fictional maze.\relax }} {figure.caption.19}{
 0}{lof}
-Package hyperref Info: Anchor `figure.caption.20' on input line 114.
-Package hyperref Info: Anchor `subfigure.3.4.1' on input line 118.
-<Cap3/our_algorithm_incremental_policy/legend_steps.pdf, id=1185, 216.81pt x 14
+Package hyperref Info: Anchor `figure.caption.20' on input line 112.
+Package hyperref Info: Anchor `subfigure.3.4.1' on input line 116.
+<Cap3/our_algorithm_incremental_policy/legend_steps.pdf, id=1037, 216.81pt x 14
 4.54pt>
 File: Cap3/our_algorithm_incremental_policy/legend_steps.pdf Graphic file (type
  pdf)
 <use Cap3/our_algorithm_incremental_policy/legend_steps.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/legend_steps.pdf
-  used on input line 119.
+  used on input line 117.
 (pdftex.def)             Requested size: 204.85846pt x 136.57997pt.
-Package hyperref Info: Anchor `subfigure.3.4.2' on input line 121.
+Package hyperref Info: Anchor `subfigure.3.4.2' on input line 119.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.pdf, 
-id=1186, 454.99548pt x 337.89674pt>
+id=1038, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_10x10_steps.pdf  used on input line 122.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.4.3' on input line 124.
+_vs_2I_10x10_steps.pdf  used on input line 120.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.4.3' on input line 122.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.pdf, 
-id=1187, 454.99548pt x 337.89674pt>
+id=1039, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_20x20_steps.pdf  used on input line 125.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.4.4' on input line 128.
+_vs_2I_20x20_steps.pdf  used on input line 123.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.4.4' on input line 126.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.pdf, 
-id=1188, 454.99548pt x 337.89674pt>
+id=1040, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_30x30_steps.pdf  used on input line 129.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.4.5' on input line 131.
+_vs_2I_30x30_steps.pdf  used on input line 127.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.4.5' on input line 129.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.pdf, 
-id=1189, 454.96788pt x 337.89674pt>
+id=1041, 454.94908pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_40x40_steps.pdf  used on input line 133.
-(pdftex.def)             Requested size: 204.85846pt x 152.14493pt.
-pdftex: bookmark at 134: {3.4} {\numberline{3.4}{\ignorespaces Comparison betwe
+_vs_2I_40x40_steps.pdf  used on input line 131.
+(pdftex.def)             Requested size: 204.85846pt x 152.14754pt.
+pdftex: bookmark at 132: {3.4} {\numberline{3.4}{\ignorespaces Comparison betwe
 en the results of the average of steps, the pioneer's average of steps, and the
  standard deviation of the average of steps relating to our ``1 interval'' algo
 rithm and our ``2 intervals'' algorithm. 1 single agent until 40 cooperative ag
 ents were run in 250 different mazes for each size, and for each algorithm.\rel
 ax }} {figure.caption.20}{0}{lof}
-pdftex: bookmark at 136: {} {\numberline{(a)}{\ignorespaces {\centering Legend}
+pdftex: bookmark at 134: {} {\numberline{(a)}{\ignorespaces {\centering Legend}
 }} {subfigure.4.1}{1}{lof}
-pdftex: bookmark at 136: {} {\numberline{(b)}{\ignorespaces {\centering $10 \ti
+pdftex: bookmark at 134: {} {\numberline{(b)}{\ignorespaces {\centering $10 \ti
 mes 10$ maze}}} {subfigure.4.2}{1}{lof}
-pdftex: bookmark at 136: {} {\numberline{(c)}{\ignorespaces {\centering $20 \ti
+pdftex: bookmark at 134: {} {\numberline{(c)}{\ignorespaces {\centering $20 \ti
 mes 20$ maze}}} {subfigure.4.3}{1}{lof}
-pdftex: bookmark at 136: {} {\numberline{(d)}{\ignorespaces {\centering $30 \ti
+pdftex: bookmark at 134: {} {\numberline{(d)}{\ignorespaces {\centering $30 \ti
 mes 30$ maze}}} {subfigure.4.4}{1}{lof}
-pdftex: bookmark at 136: {} {\numberline{(e)}{\ignorespaces {\centering $40 \ti
+pdftex: bookmark at 134: {} {\numberline{(e)}{\ignorespaces {\centering $40 \ti
 mes 40$ maze}}} {subfigure.4.5}{1}{lof}
-Package hyperref Info: Anchor `figure.caption.21' on input line 138.
-Package hyperref Info: Anchor `subfigure.3.5.1' on input line 142.
-<Cap3/our_algorithm_incremental_policy/legend_fraction.pdf, id=1190, 433.62pt x
+Package hyperref Info: Anchor `figure.caption.21' on input line 136.
+Package hyperref Info: Anchor `subfigure.3.5.1' on input line 140.
+<Cap3/our_algorithm_incremental_policy/legend_fraction.pdf, id=1042, 433.62pt x
  144.54pt>
 File: Cap3/our_algorithm_incremental_policy/legend_fraction.pdf Graphic file (t
 ype pdf)
 <use Cap3/our_algorithm_incremental_policy/legend_fraction.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/legend_fraction.
-pdf  used on input line 143.
+pdf  used on input line 141.
 (pdftex.def)             Requested size: 318.66948pt x 106.22789pt.
-Package hyperref Info: Anchor `subfigure.3.5.2' on input line 145.
+Package hyperref Info: Anchor `subfigure.3.5.2' on input line 143.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fraction.pd
-f, id=1191, 454.93275pt x 337.89674pt>
+f, id=1043, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_10x10_fraction.pdf  used on input line 146.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.5.3' on input line 148.
+_vs_2I_10x10_fraction.pdf  used on input line 144.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.5.3' on input line 146.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fraction.pd
-f, id=1192, 454.99548pt x 337.89674pt>
+f, id=1044, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_20x20_fraction.pdf  used on input line 149.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.5.4' on input line 152.
+_vs_2I_20x20_fraction.pdf  used on input line 147.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.5.4' on input line 150.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fraction.pd
-f, id=1193, 454.99548pt x 337.89674pt>
+f, id=1045, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_30x30_fraction.pdf  used on input line 153.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.5.5' on input line 155.
+_vs_2I_30x30_fraction.pdf  used on input line 151.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.5.5' on input line 153.
 <Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fraction.pd
-f, id=1194, 454.99548pt x 337.89674pt>
+f, id=1046, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/our_algorithm_1I
-_vs_2I_40x40_fraction.pdf  used on input line 157.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-pdftex: bookmark at 158: {3.5} {\numberline{3.5}{\ignorespaces Comparison betwe
+_vs_2I_40x40_fraction.pdf  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+pdftex: bookmark at 156: {3.5} {\numberline{3.5}{\ignorespaces Comparison betwe
 en the results of the fraction of maze explored and the fraction of maze explor
 ed when pioneer reaches the target relating to our ``1 interval'' algorithm and
  our ``2 intervals'' algorithm. 1 single agent until 40 cooperative agents were
  run in 250 different mazes for each size, and for each algorithm.\relax }} {fi
 gure.caption.21}{0}{lof}
-pdftex: bookmark at 160: {} {\numberline{(a)}{\ignorespaces {\centering Legend}
+pdftex: bookmark at 158: {} {\numberline{(a)}{\ignorespaces {\centering Legend}
 }} {subfigure.5.1}{1}{lof}
-pdftex: bookmark at 160: {} {\numberline{(b)}{\ignorespaces {\centering $10 \ti
+pdftex: bookmark at 158: {} {\numberline{(b)}{\ignorespaces {\centering $10 \ti
 mes 10$ maze}}} {subfigure.5.2}{1}{lof}
-pdftex: bookmark at 160: {} {\numberline{(c)}{\ignorespaces {\centering $20 \ti
+pdftex: bookmark at 158: {} {\numberline{(c)}{\ignorespaces {\centering $20 \ti
 mes 20$ maze}}} {subfigure.5.3}{1}{lof}
-pdftex: bookmark at 160: {} {\numberline{(d)}{\ignorespaces {\centering $30 \ti
+pdftex: bookmark at 158: {} {\numberline{(d)}{\ignorespaces {\centering $30 \ti
 mes 30$ maze}}} {subfigure.5.4}{1}{lof}
-pdftex: bookmark at 160: {} {\numberline{(e)}{\ignorespaces {\centering $40 \ti
+pdftex: bookmark at 158: {} {\numberline{(e)}{\ignorespaces {\centering $40 \ti
 mes 40$ maze}}} {subfigure.5.5}{1}{lof}
-Package hyperref Info: Anchor `figure.caption.22' on input line 162.
-<Cap3/our_algorithm_incremental_policy/anomaly.pdf, id=1195, 462.52798pt x 346.
+Package hyperref Info: Anchor `figure.caption.22' on input line 160.
+<Cap3/our_algorithm_incremental_policy/anomaly.pdf, id=1047, 462.52798pt x 346.
 89601pt>
 File: Cap3/our_algorithm_incremental_policy/anomaly.pdf Graphic file (type pdf)
 
 <use Cap3/our_algorithm_incremental_policy/anomaly.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_incremental_policy/anomaly.pdf  use
-d on input line 164.
+d on input line 162.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
-pdftex: bookmark at 165: {3.6} {\numberline{3.6}{\ignorespaces Proportionally, 
+pdftex: bookmark at 163: {3.6} {\numberline{3.6}{\ignorespaces Proportionally, 
 the moment when the pioneer finds the goal in the context of the incremental po
 licy: in the first interval, in the second interval, or in the DFS situation. A
 n anomalous behavior occurs when the number of agents is power of 2. This case 
 has been still investigated.\relax }} {figure.caption.22}{0}{lof}
-Package hyperref Info: Anchor `section.3.3' on input line 169.
-pdftex: bookmark at 169: {3.3} {\numberline{3.3}Our algorithm vs. Tarry's algor
+Package hyperref Info: Anchor `section.3.3' on input line 167.
+pdftex: bookmark at 167: {3.3} {\numberline{3.3}Our algorithm vs. Tarry's algor
 ithm} {section.3.3}{1}{toc}
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 170.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
+ne 170.
+Package hyperref Info: Reference (link) `section.2.5' on input line 170.
+Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 172.
 Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
 ne 172.
-Package hyperref Info: Reference (link) `section.2.5' on input line 172.
-Package hyperref Info: Anchor `page.40' on input line 173.
+Package hyperref Info: Anchor `page.40' on input line 174.
 [40
-Package `hyperref' Info: End of reference (link) `equation.2.3.1', line 76.
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 78.
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 80.
+Package `hyperref' Info: End of reference (link) `figure.caption.20', line 78.
+Package `hyperref' Info: End of reference (link) `figure.caption.21', line 78.
+Package `hyperref' Info: End of reference (link) `section.3.1', line 78.
+Package `hyperref' Info: End of reference (link) `subfigure.3.4.5', line 80.
 Package `hyperref' Info: End of reference (link) `figure.caption.21', line 80.
-Package `hyperref' Info: End of reference (link) `section.3.1', line 80.
-Package `hyperref' Info: End of reference (link) `subfigure.3.4.5', line 82.
-Package `hyperref' Info: End of reference (link) `figure.caption.21', line 82.
-Package `hyperref' Info: End of reference (link) `section.3.1', line 84.
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 86.
-Package `hyperref' Info: End of reference (link) `subfigure.3.4.5', line 86.
-Package `hyperref' Info: End of reference (link) `subfigure.3.5.5', line 86.
+Package `hyperref' Info: End of reference (link) `figure.caption.22', line 84.
+Package `hyperref' Info: End of reference (link) `subfigure.3.4.5', line 84.
+Package `hyperref' Info: End of reference (link) `subfigure.3.5.5', line 84.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 170.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 170.
+Package `hyperref' Info: End of reference (link) `section.2.5', line 170.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 172.
+Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
+ine 172.
 ]
-Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 174.
-Package hyperref Info: Reference (cite) `cite.KivelevitchCohen2010' on input li
-ne 174.
-Package hyperref Info: Reference (link) `figure.caption.23' on input line 176.
-Package hyperref Info: Reference (link) `section.3.1' on input line 176.
+Package hyperref Info: Reference (link) `figure.caption.23' on input line 174.
+Package hyperref Info: Reference (link) `section.3.1' on input line 174.
+Package hyperref Info: Reference (link) `section.3.2' on input line 174.
+Package hyperref Info: Reference (link) `figure.caption.24' on input line 174.
 Package hyperref Info: Reference (link) `section.3.2' on input line 176.
 Package hyperref Info: Reference (link) `figure.caption.24' on input line 176.
-Package hyperref Info: Reference (link) `section.3.2' on input line 178.
-Package hyperref Info: Reference (link) `figure.caption.24' on input line 178.
-Package hyperref Info: Anchor `page.41' on input line 179.
- [41
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 172.
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 172.
-Package `hyperref' Info: End of reference (link) `section.2.5', line 172.
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 174.
-Package `hyperref' Info: End of reference (cite) `cite.KivelevitchCohen2010', l
-ine 174.
-Package `hyperref' Info: End of reference (link) `figure.caption.23', line 176.
-
-Package `hyperref' Info: End of reference (link) `section.3.1', line 176.
-Package `hyperref' Info: End of reference (link) `section.3.2', line 176.
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 176.
-
-]
-Package hyperref Info: Anchor `page.42' on input line 179.
- [42
-Package `hyperref' Info: End of reference (link) `section.3.2', line 178.
- <./Cap3/our_algorithm_incremental_policy/legend_steps.pdf> <./Cap3/our_algorit
-hm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_10x10_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
-> <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.p
-df
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_20x20_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
-> <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.p
-df
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_30x30_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
-> <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.p
-df
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_40x40_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
->]
-Package hyperref Info: Anchor `figure.caption.23' on input line 181.
-Package hyperref Info: Anchor `subfigure.3.7.1' on input line 182.
+Package hyperref Info: Anchor `figure.caption.23' on input line 179.
+Package hyperref Info: Anchor `subfigure.3.7.1' on input line 180.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_steps.pdf, 
-id=1569, 454.99548pt x 337.89674pt>
+id=1066, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_10x10_steps.pdf  used on input line 183.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.7.2' on input line 185.
+_tarry_10x10_steps.pdf  used on input line 181.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.7.2' on input line 183.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_steps.pdf, 
-id=1570, 455.08582pt x 337.89674pt>
+id=1067, 455.07013pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_20x20_steps.pdf  used on input line 186.
-(pdftex.def)             Requested size: 204.85846pt x 152.10368pt.
-Package hyperref Info: Anchor `subfigure.3.7.3' on input line 189.
+_tarry_20x20_steps.pdf  used on input line 184.
+(pdftex.def)             Requested size: 204.85846pt x 152.1063pt.
+Package hyperref Info: Anchor `subfigure.3.7.3' on input line 187.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_steps.pdf, 
-id=1571, 454.99548pt x 337.89674pt>
+id=1068, 454.9798pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_30x30_steps.pdf  used on input line 190.
-(pdftex.def)             Requested size: 204.85846pt x 152.13461pt.
-Package hyperref Info: Anchor `subfigure.3.7.4' on input line 192.
+_tarry_30x30_steps.pdf  used on input line 188.
+(pdftex.def)             Requested size: 204.85846pt x 152.13724pt.
+Package hyperref Info: Anchor `subfigure.3.7.4' on input line 190.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.pdf, 
-id=1572, 454.96788pt x 337.89674pt>
+id=1069, 454.94908pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.
 pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.p
 df>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_40x40_steps.pdf  used on input line 193.
-(pdftex.def)             Requested size: 204.85846pt x 152.14493pt.
+_tarry_40x40_steps.pdf  used on input line 191.
+(pdftex.def)             Requested size: 204.85846pt x 152.14754pt.
 
-pdftex: bookmark at 194: {3.7} {\numberline{3.7}{\ignorespaces Comparison betwe
+pdftex: bookmark at 192: {3.7} {\numberline{3.7}{\ignorespaces Comparison betwe
 en the results of the pioneer's average of steps relating to our algorithms and
  the extended Tarry's algorithm. 1 single agent until 40 cooperative agents wer
 e run in 250 different mazes for each size, and for each algorithm.\relax }} {f
 igure.caption.23}{0}{lof}
-pdftex: bookmark at 196: {} {\numberline{(a)}{\ignorespaces {\centering $10 \ti
+pdftex: bookmark at 194: {} {\numberline{(a)}{\ignorespaces {\centering $10 \ti
 mes 10$ maze}}} {subfigure.7.1}{1}{lof}
-pdftex: bookmark at 196: {} {\numberline{(b)}{\ignorespaces {\centering $20 \ti
+pdftex: bookmark at 194: {} {\numberline{(b)}{\ignorespaces {\centering $20 \ti
 mes 20$ maze}}} {subfigure.7.2}{1}{lof}
-pdftex: bookmark at 196: {} {\numberline{(c)}{\ignorespaces {\centering $30 \ti
+pdftex: bookmark at 194: {} {\numberline{(c)}{\ignorespaces {\centering $30 \ti
 mes 30$ maze}}} {subfigure.7.3}{1}{lof}
-pdftex: bookmark at 196: {} {\numberline{(d)}{\ignorespaces {\centering $40 \ti
+pdftex: bookmark at 194: {} {\numberline{(d)}{\ignorespaces {\centering $40 \ti
 mes 40$ maze}}} {subfigure.7.4}{1}{lof}
-Package hyperref Info: Anchor `figure.caption.24' on input line 199.
-Package hyperref Info: Anchor `subfigure.3.8.1' on input line 200.
+Package hyperref Info: Anchor `figure.caption.24' on input line 197.
+Package hyperref Info: Anchor `subfigure.3.8.1' on input line 198.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_fraction.pd
-f, id=1573, 454.93275pt x 337.89674pt>
+f, id=1070, 454.92018pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_10x10_fraction.pdf  used on input line 201.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.8.2' on input line 203.
+_tarry_10x10_fraction.pdf  used on input line 199.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.8.2' on input line 201.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_fraction.pd
-f, id=1574, 454.93275pt x 337.89674pt>
+f, id=1071, 454.92018pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_20x20_fraction.pdf  used on input line 204.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.8.3' on input line 207.
+_tarry_20x20_fraction.pdf  used on input line 202.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.8.3' on input line 205.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_fraction.pd
-f, id=1575, 454.93275pt x 337.89674pt>
+f, id=1072, 454.92018pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_30x30_fraction.pdf  used on input line 208.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-Package hyperref Info: Anchor `subfigure.3.8.4' on input line 210.
+_tarry_30x30_fraction.pdf  used on input line 206.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+Package hyperref Info: Anchor `subfigure.3.8.4' on input line 208.
 <Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fraction.pd
-f, id=1576, 454.93275pt x 337.89674pt>
+f, id=1073, 454.92018pt x 337.89111pt>
 File: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fracti
 on.pdf Graphic file (type pdf)
 <use Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fractio
 n.pdf>
 Package pdftex.def Info: Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs
-_tarry_40x40_fraction.pdf  used on input line 211.
-(pdftex.def)             Requested size: 204.85846pt x 152.15524pt.
-pdftex: bookmark at 212: {3.8} {\numberline{3.8}{\ignorespaces Comparison betwe
+_tarry_40x40_fraction.pdf  used on input line 209.
+(pdftex.def)             Requested size: 204.85846pt x 152.15785pt.
+pdftex: bookmark at 210: {3.8} {\numberline{3.8}{\ignorespaces Comparison betwe
 en the results of the fraction of maze explored when pioneer reaches the target
  relating to our algorithms and the extended Tarry's algorithm. 1 single agent 
 until 40 cooperative agents were run in 250 different mazes for each size, and 
 for each algorithm.\relax }} {figure.caption.24}{0}{lof}
-pdftex: bookmark at 214: {} {\numberline{(a)}{\ignorespaces {\centering $10 \ti
+pdftex: bookmark at 212: {} {\numberline{(a)}{\ignorespaces {\centering $10 \ti
 mes 10$ maze}}} {subfigure.8.1}{1}{lof}
-pdftex: bookmark at 214: {} {\numberline{(b)}{\ignorespaces {\centering $20 \ti
+pdftex: bookmark at 212: {} {\numberline{(b)}{\ignorespaces {\centering $20 \ti
 mes 20$ maze}}} {subfigure.8.2}{1}{lof}
-pdftex: bookmark at 214: {} {\numberline{(c)}{\ignorespaces {\centering $30 \ti
+pdftex: bookmark at 212: {} {\numberline{(c)}{\ignorespaces {\centering $30 \ti
 mes 30$ maze}}} {subfigure.8.3}{1}{lof}
-pdftex: bookmark at 214: {} {\numberline{(d)}{\ignorespaces {\centering $40 \ti
+pdftex: bookmark at 212: {} {\numberline{(d)}{\ignorespaces {\centering $40 \ti
 mes 40$ maze}}} {subfigure.8.4}{1}{lof}
 )
+Package hyperref Info: Anchor `page.41' on input line 192.
+ [41
+Package `hyperref' Info: End of reference (link) `figure.caption.23', line 174.
+
+Package `hyperref' Info: End of reference (link) `section.3.1', line 174.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 174.
+Package `hyperref' Info: End of reference (link) `figure.caption.24', line 174.
+
+Package `hyperref' Info: End of reference (link) `section.3.2', line 176.
+Package `hyperref' Info: End of reference (link) `figure.caption.24', line 176.
+
+]
+Package hyperref Info: Anchor `page.42' on input line 192.
+ [42 <./Cap3/our_algorithm_incremental_policy/legend_steps.pdf> <./Cap3/our_alg
+orithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_steps.pdf> <./Cap3/our_a
+lgorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_steps.pdf> <./Cap3/our
+_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_steps.pdf> <./Cap3/o
+ur_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_steps.pdf>]
 Package hyperref Info: Anchor `page.43' on input line 192.
- [43
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 178.
 
- <./Cap3/our_algorithm_incremental_policy/legend_fraction.pdf> <./Cap3/our_algo
-rithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fraction.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_10x10_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
-> <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fractio
-n.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_20x20_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
-> <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fractio
-n.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_30x30_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
+[43 <./Cap3/our_algorithm_incremental_policy/legend_fraction.pdf> <./Cap3/our_a
+lgorithm_incremental_policy/our_algorithm_1I_vs_2I_10x10_fraction.pdf> <./Cap3/
+our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_20x20_fraction.pdf> <./
+Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_30x30_fraction.pdf
 > <./Cap3/our_algorithm_incremental_policy/our_algorithm_1I_vs_2I_40x40_fractio
-n.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_incremental_policy/our_algo
-rithm_1I_vs_2I_40x40_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
->]
+n.pdf>]
 Package hyperref Info: Anchor `page.44' on input line 192.
  [44 <./Cap3/our_algorithm_incremental_policy/anomaly.pdf>]
 Package hyperref Info: Anchor `page.45' on input line 192.
  [45 <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_step
 s.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_st
-eps.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_20x20_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
-> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_steps.p
-df
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_30x30_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
-> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_steps.p
-df
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_40x40_steps.pdf): PDF inclusion: multiple pdfs with page group i
-ncluded in a single page
->]
+eps.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_
+steps.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x4
+0_steps.pdf>]
 Package hyperref Info: Anchor `page.46' on input line 192.
- [46 <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_frac
-tion.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20
-_fraction.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_20x20_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
-> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_30x30_fractio
-n.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_30x30_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
-> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_40x40_fractio
-n.pdf
-
-pdfTeX warning: pdflatex (file ./Cap3/our_algorithm_vs_tarry_algorithm/our_algo
-rithm_vs_tarry_40x40_fraction.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
->]
+[46 <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_10x10_fract
+ion.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_20x20_
+fraction.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_tarry_3
+0x30_fraction.pdf> <./Cap3/our_algorithm_vs_tarry_algorithm/our_algorithm_vs_ta
+rry_40x40_fraction.pdf>]
 Package hyperref Info: Anchor `chapter.4' on input line 192.
 
 Chapter 4.
@@ -3288,9 +3190,9 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arthu/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/arthu/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/a
 rthu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (50 pages, 2215757 bytes).
+Output written on tese.pdf (50 pages, 1352321 bytes).
 PDF statistics:
- 2619 PDF objects out of 2984 (max. 8388607)
+ 2088 PDF objects out of 2487 (max. 8388607)
  161 named destinations out of 1000 (max. 500000)
  466 words of extra memory for PDF output out of 10000 (max. 10000000)
 
